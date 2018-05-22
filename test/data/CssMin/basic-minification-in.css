@@ -1,0 +1,11813 @@
+@variables color {
+    myVariable: blue;
+}
+
+.cssVariableDeclaration {
+    --main-bg-color: brown;
+}
+
+.cssVariableUsage {
+    background-color: var(--main-bg-color);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('sansation_light.woff');
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: normal;
+    unicode-range: "U+0-10FFFF";
+}
+
+.myDiv {
+    left: expression(document.body.offsetWidth - 110 + "px");
+    top: expression(document.body.offsetHeight - 110 + "px");
+}
+
+@import 'navigation.css';
+@import url('menu.css');
+@import "nav.css";
+@import url("hamburger.css");
+@import "printstyle.css" print;
+@import "mobstyle.css" screen and (max-width: 768px);@charset "UTF-8";@page {
+    margin: 1cm;
+}
+
+@page :first {
+    margin: 2cm;
+}@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (any-hover: hover) {
+    a:hover {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (any-pointer: coarse) {
+    a {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (aspect-ratio: 8/5) {
+    div {
+        background: yellow;
+    }
+}
+
+@media only screen and (color: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (color-gamut: srgb) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (color-index: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (grid: 0) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (height: 360px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (hover: hover) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (inverted-colors: inverted) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (light-level: normal) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 2/1) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-color: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-color-index: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-monochrome: 0) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-resolution: 264dpi) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 8/5) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-color: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-color-index: 15000) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-height: 400px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-monochrome: 8) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-resolution: 96dpi) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (monochrome: 0) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (overflow-block: scroll) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (overflow-inline: scroll) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (pointer: coarse) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (resolution: 150dpi) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (scan: interlace) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (scripting: initial-only) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (update: fast) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (width: 400px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Simple urls (using background as use case) */
+.urlDoubleQuotes {
+    background: url("http://mysite.example.com/mycursor.png");
+}
+
+.urlSingleQuotes {
+    background: url('http://mysite.example.com/mycursor.png');
+}
+
+.urlNoQuotes {
+    background: url(http://mysite.example.com/mycursor.png);
+}
+
+/* Simple strings (using content as use case) */
+.stringDoubleQuotes {
+    content: "This string is demarkated by double quotes.";
+}
+
+.stringSingleQuotes {
+    content: 'This string is demarkated by single quotes.';
+}
+
+/* Character escaping */
+.stringEscapedDoubleQuotes {
+    content: "This string also has \22 an escaped double quote.";
+}
+
+.stringEscapedSingleQuotes {
+    content: 'This is a string with \' an escaped single quote.';
+}
+
+.stringEscapedSingleQuotesAlt {
+    content: 'This string also has \27 an escaped single quote.';
+}
+
+.stringEcapedBackslash {
+    content: "This is a string with \\ an escaped backslash.";
+}
+
+/* New line in a string */
+.stringLineBreak {
+    content: "This string has a \Aline break in it.";
+}
+
+/* String spanning two lines of code (these two strings will have identical output) */
+.stringEscapedMultiLineLong {
+    content: "A really long \
+awesome string";
+}
+
+@keyframes myMove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes myMoveA {
+    0% {top: 0px;}
+    25% {top: 200px;}
+    50% {top: 100px;}
+    75% {top: 200px;}
+    100% {top: 0px;}
+}
+
+@keyframes myMoveB {
+    0% {top: 0px; background: red; width: 100px;}
+    100% {top: 200px; background: yellow; width: 300px;}
+}
+
+@keyframes myMoveC {
+    0% {top: 0px; left: 0px; background: red;}
+    25% {top: 0px; left: 100px; background: blue;}
+    50% {top: 100px; left: 100px; background: yellow;}
+    75% {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+@keyframes myMoveD {
+    from {top: 0px;}
+    50% {top: 100px !important;} /* ignored */
+    to {top: 200px;}
+}
+
+.p1 {
+    background-color: #ff0000;
+}
+
+.p2 {
+    background-color: #00ff00;
+}
+
+.p3 {
+    background-color: #0000FF;
+}
+
+.gridTemplateNone {
+    grid-template: none;
+}
+
+.gridTemplateGridTemplateAll {
+    grid-template: 80px 120px / auto auto auto;
+}
+
+.gridTemplateInitial {
+    grid-template: initial;
+}
+
+.gridTemplateInherit {
+    grid-template: inherit;
+}
+
+.flexFlexGrow {
+    flex: flex-grow;
+}
+
+.flexFlexShrink {
+    flex: flex-shrink;
+}
+
+.flexFlexBasis {
+    flex: flex-basis;
+}
+
+.flexAuto {
+    flex: auto;
+}
+
+.flexInitial {
+    flex: initial;
+}
+
+.flexInherit {
+    flex: inherit;
+}
+
+.floatNone {
+    float: none;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatInitial {
+    float: initial;
+}
+
+.floatInherit {
+    float: inherit;
+}
+
+.flexShrinkNumber {
+    flex-shrink: 1;
+}
+
+.flexShrinkInitial {
+    flex-shrink: initial;
+}
+
+.flexShrinkInherit {
+    flex-shrink: inherit;
+}
+
+.paddingRightLengthNone {
+    padding-right: none;
+}
+
+.paddingRightLengthMm {
+    padding-right: 1mm;
+}
+
+.paddingRightLengthIn {
+    padding-right: 1in;
+}
+
+.paddingRightLengthPx {
+    padding-right: 1px;
+}
+
+.paddingRightLengthPt {
+    padding-right: 1pt;
+}
+
+.paddingRightLengthPc {
+    padding-right: 1pc;
+}
+
+.paddingRightLengthEm {
+    padding-right: 1em;
+}
+
+.paddingRightLengthEx {
+    padding-right: 1ex;
+}
+
+.paddingRightLengthRem {
+    padding-right: 1rem;
+}
+
+.paddingRightLengthVw {
+    padding-right: 1vw;
+}
+
+.paddingRightLengthVh {
+    padding-right: 1vh;
+}
+
+.paddingRightLengthVmin {
+    padding-right: 1vmin;
+}
+
+.paddingRightLengthVmax {
+    padding-right: 1vmax;
+}
+
+.paddingRightLengthPercent {
+    padding-right: 1%;
+}
+
+.paddingRightInitial {
+     padding-right: initial;
+}
+
+.paddingRightInherit {
+     padding-right: inherit;
+}
+
+.rtlOrderingLogical {
+    rtl-ordering: logical;
+}
+
+.rtlOrderingVisual {
+    rtl-ordering: visual;
+}
+
+.paddingStartLengthNone {
+    padding-start: none;
+}
+
+.paddingStartLengthMm {
+    padding-start: 1mm;
+}
+
+.paddingStartLengthIn {
+    padding-start: 1in;
+}
+
+.paddingStartLengthPx {
+    padding-start: 1px;
+}
+
+.paddingStartLengthPt {
+    padding-start: 1pt;
+}
+
+.paddingStartLengthPc {
+    padding-start: 1pc;
+}
+
+.paddingStartLengthEm {
+    padding-start: 1em;
+}
+
+.paddingStartLengthEx {
+    padding-start: 1ex;
+}
+
+.paddingStartLengthRem {
+    padding-start: 1rem;
+}
+
+.paddingStartLengthVw {
+    padding-start: 1vw;
+}
+
+.paddingStartLengthVh {
+    padding-start: 1vh;
+}
+
+.paddingStartLengthVmin {
+    padding-start: 1vmin;
+}
+
+.paddingStartLengthVmax {
+    padding-start: 1vmax;
+}
+
+.paddingStartLengthPercent {
+    padding-start: 1%;
+}
+
+.paddingStartInitial {
+    padding-start: initial;
+}
+
+.paddingStartInherit {
+    padding-start: inherit;
+}
+
+.marqueeAll {
+    marquee: up medium 2 normal scroll; 
+}
+
+.scrollbarBaseColorHex
+{
+    scrollbar-base-color: #000;
+}
+
+.scrollbarBaseColorInherit
+{
+    scrollbar-base-color: inherit;
+}
+
+.columnBreakAfterAlways {
+    column-break-after: always;
+}
+
+.columnBreakAfterAuto {
+    column-break-after: auto;
+}
+
+.columnBreakAfterAvoid {
+    column-break-after: avoid;
+}
+
+.columnBreakAfterInherit {
+    column-break-after: inherit;
+}
+
+.clearNone {
+    clear: none;
+}
+
+.clearLeft {
+    clear: left;
+}
+
+.clearRight {
+    clear: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.clearInitial {
+    clear: initial;
+}
+
+.clearInherit {
+    clear: inherit;
+}
+
+.allInitial {
+    all: initial;
+}
+
+.allInherit {
+    all: inherit;
+}
+
+.allUnset {
+    all: unset;
+}
+
+.textEmphasisNone {
+    text-emphasis: none;
+}
+
+.textEmphasisString {
+    text-emphasis: 'x';
+}
+
+.textEmphasisStringHex {
+    text-emphasis: 'x' #555;
+}
+
+.textEmphasisFilled {
+    text-emphasis: filled;
+}
+
+.textEmphasisOpen {
+    text-emphasis: open;
+}
+
+.textEmphasisFilledSesame {
+    text-emphasis: filled sesame;
+}
+
+.textEmphasisOpenSesame {
+    text-emphasis: open sesame;
+}
+
+.textEmphasisFilledSesameHex {
+    text-emphasis: filled sesame #555;
+}
+
+.textEmphasisInherit {
+    text-emphasis: inherit;
+}
+
+.textEmphasisInitial {
+    text-emphasis: initial;
+}
+
+.textEmphasisUnset {
+    text-emphasis: unset;
+}
+
+.boxShadowAll {
+    box-shadow: 20px 20px 50px 10px pink inset;
+}
+
+.boxShadowSpread {
+    box-shadow: 5px 10px #000;
+}
+
+.boxShadowPxPx {
+    box-shadow: 5px 10px;
+}
+
+.boxShadowNone {
+    box-shadow: none;
+}
+
+.boxShadowBlur {
+    box-shadow: blur;
+}
+
+.boxShadowColor {
+    box-shadow: #000;
+}
+
+.boxShadowInset {
+    box-shadow: inset;
+}
+
+.boxShadowInitial {
+    box-shadow: initial;
+}
+
+.boxShadowInherit {
+    box-shadow: inherit;
+}
+
+.tableLayoutAuto {
+    table-layout: auto;
+}
+
+.tableLayoutFixed {
+    table-layout: fixed;
+}
+
+.tableLayoutInitial {
+    table-layout: initial;
+}
+
+.tableLayoutInherit {
+    table-layout: inherit;
+}
+
+.borderCollapseSeparate {
+    border-collapse: separate;
+}
+
+.borderCollapseCollapse {
+    border-collapse: collapse;
+}
+
+.borderCollapseInitial {
+    border-collapse: initial;
+}
+
+.borderCollapseInherit {
+    border-collapse: inherit;
+}
+
+.borderLeftStyleNone {
+    border-left-style: none;
+}
+
+.borderLeftStyleHidden {
+    border-left-style: hidden;
+}
+
+.borderLeftStyleDotted {
+    border-left-style: dotted;
+}
+
+.borderLeftStyleDashed {
+    border-left-style: dashed;
+}
+
+.borderLeftStyleSolid {
+    border-left-style: solid;
+}
+
+.borderLeftStyleDouble {
+    border-left-style: double;
+}
+
+.borderLeftStyleGroove {
+    border-left-style: groove;
+}
+
+.borderLeftStyleRidge {
+    border-left-style: ridge;
+}
+
+.borderLeftStyleInset {
+    border-left-style: inset;
+}
+
+.borderLeftStyleOutset {
+    border-left-style: outset;
+}
+
+.borderLeftStyleInitial {
+    border-left-style: initial;
+}
+
+.borderLeftStyleInherit {
+    border-left-style: inherit;
+}
+
+.transformNone {
+    transform: none;
+}
+
+.transformTransformFunctions {
+    transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+}
+
+.transformTransformFunctions {
+    transform: matrix3d(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+}
+
+.transformTransformFunctions {
+    transform: translate(1, 2);
+}
+
+.transformTransformFunctions {
+    transform: translate3d(1, 2, 3);
+}
+
+.transformTransformFunctions {
+    transform: translateX(1);
+}
+
+.transformTransformFunctions {
+    transform: translateY(2);
+}
+
+.transformTransformFunctions {
+    transform: translateZ(3);
+}
+
+.transformTransformFunctions {
+    transform: scale(1, 2);
+}
+
+.transformTransformFunctions {
+    transform: scale3d(1, 2, 3);
+}
+
+.transformTransformFunctions {
+    transform: scaleX(1);
+}
+
+.transformTransformFunctions {
+    transform: scaleY(2);
+}
+
+.transformTransformFunctions {
+    transform: scaleZ(3);
+}
+
+.transformTransformFunctions {
+    transform: rotate(10deg);
+}
+
+.transformTransformFunctions {
+    transform: rotate3d(1, 2, 3, 10deg);
+}
+
+.transformTransformFunctions {
+    transform: rotateX(10deg);
+}
+
+.transformTransformFunctions {
+    transform: rotateY(10deg);
+}
+
+.transformTransformFunctions {
+    transform: rotateZ(10deg);
+}
+
+.transformTransformFunctions {
+    transform: skew(20deg, 30deg);
+}
+
+.transformTransformFunctions {
+    transform: skewX(10deg);
+}
+
+.transformTransformFunctions {
+    transform: skewY(10deg);
+}
+
+.transformTransformFunctions {
+    transform: perspective(1);
+}
+
+.transformInitial {
+    transform: initial;
+}
+
+.transformInherit {
+    transform: inherit;
+}
+
+.borderBottomColorsAll {
+    border-bottom-colors: #000 #050 #fff #f00;
+}
+
+.outlineRadiusBottomLeftNone {
+    outline-radius-bottomleft: none;
+}
+
+.outlineRadiusBottomLeftMm {
+    outline-radius-bottomleft: 1mm;
+}
+
+.outlineRadiusBottomLeftIn {
+    outline-radius-bottomleft: 1in;
+}
+
+.outlineRadiusBottomLeftPx {
+    outline-radius-bottomleft: 1px;
+}
+
+.outlineRadiusBottomLeftPt {
+    outline-radius-bottomleft: 1pt;
+}
+
+.outlineRadiusBottomLeftPc {
+    outline-radius-bottomleft: 1pc;
+}
+
+.outlineRadiusBottomLeftEm {
+    outline-radius-bottomleft: 1em;
+}
+
+.outlineRadiusBottomLeftEx {
+    outline-radius-bottomleft: 1ex;
+}
+
+.outlineRadiusBottomLeftCh {
+    outline-radius-bottomleft: 1ch;
+}
+
+.outlineRadiusBottomLeftRem {
+    outline-radius-bottomleft: 1rem;
+}
+
+.outlineRadiusBottomLeftVw {
+    outline-radius-bottomleft: 1vw;
+}
+
+.outlineRadiusBottomLeftVh {
+    outline-radius-bottomleft: 1vh;
+}
+
+.outlineRadiusBottomLeftVmin {
+    outline-radius-bottomleft: 1vmin;
+}
+
+.outlineRadiusBottomLeftVmax {
+    outline-radius-bottomleft: 1vmax;
+}
+
+.outlineRadiusBottomLeftPercent {
+    outline-radius-bottomleft: 1%;
+}
+
+.outlineRadiusBottomLeftInherit {
+    outline-radius-bottomleft: inherit;
+}
+
+.outlineRadiusBottomLeftInitial {
+    outline-radius-bottomleft: initial;
+}
+
+.outlineRadiusBottomLeftUnset {
+    outline-radius-bottomleft: unset;
+}
+
+.columnRuleStyleNone {
+    column-rule-style: none;
+}
+
+.columnRuleStyleHidden {
+    column-rule-style: hidden;
+}
+
+.columnRuleStyleDotted {
+    column-rule-style: dotted;
+}
+
+.columnRuleStyleDashed {
+    column-rule-style: dashed;
+}
+
+.columnRuleStyleSolid {
+    column-rule-style: solid;
+}
+
+.columnRuleStyleDouble {
+    column-rule-style: double;
+}
+
+.columnRuleStyleGroove {
+    column-rule-style: groove;
+}
+
+.columnRuleStyleRidge {
+    column-rule-style: ridge;
+}
+
+.columnRuleStyleInset {
+    column-rule-style: inset;
+}
+
+.columnRuleStyleOutset {
+    column-rule-style: outset;
+}
+
+.columnRuleStyleInitial {
+    column-rule-style: initial;
+}
+
+.columnRuleStyleInherit {
+    column-rule-style: inherit;
+}
+
+.gridGapGridRowAll {
+    grid-gap: 20px 50px;
+}
+
+.paddingLeftLengthNone {
+    padding-left: none;
+}
+
+.paddingLeftLengthMm {
+    padding-left: 1mm;
+}
+
+.paddingLeftLengthIn {
+    padding-left: 1in;
+}
+
+.paddingLeftLengthPx {
+    padding-left: 1px;
+}
+
+.paddingLeftLengthPt {
+    padding-left: 1pt;
+}
+
+.paddingLeftLengthPc {
+    padding-left: 1pc;
+}
+
+.paddingLeftLengthEm {
+    padding-left: 1em;
+}
+
+.paddingLeftLengthEx {
+    padding-left: 1ex;
+}
+
+.paddingLeftLengthRem {
+    padding-left: 1rem;
+}
+
+.paddingLeftLengthVw {
+    padding-left: 1vw;
+}
+
+.paddingLeftLengthVh {
+    padding-left: 1vh;
+}
+
+.paddingLeftLengthVmin {
+    padding-left: 1vmin;
+}
+
+.paddingLeftLengthVmax {
+    padding-left: 1vmax;
+}
+
+.paddingLeftLengthPercent {
+    padding-left: 1%;
+}
+
+.paddingLeftInitial {
+    padding-left: initial;
+}
+
+.paddingLeftInherit {
+    padding-left: inherit;
+}
+
+.paddingEndLengthNone {
+    padding-end: none;
+}
+
+.paddingEndLengthMm {
+    padding-end: 1mm;
+}
+
+.paddingEndLengthIn {
+    padding-end: 1in;
+}
+
+.paddingEndLengthPx {
+    padding-end: 1px;
+}
+
+.paddingEndLengthPt {
+    padding-end: 1pt;
+}
+
+.paddingEndLengthPc {
+    padding-end: 1pc;
+}
+
+.paddingEndLengthEm {
+    padding-end: 1em;
+}
+
+.paddingEndLengthEx {
+    padding-end: 1ex;
+}
+
+.paddingEndLengthRem {
+    padding-end: 1rem;
+}
+
+.paddingEndLengthVw {
+    padding-end: 1vw;
+}
+
+.paddingEndLengthVh {
+    padding-end: 1vh;
+}
+
+.paddingEndLengthVmin {
+    padding-end: 1vmin;
+}
+
+.paddingEndLengthVmax {
+    padding-end: 1vmax;
+}
+
+.paddingEndLengthPercent {
+    padding-end: 1%;
+}
+
+.paddingEndInitial {
+    padding-end: initial;
+}
+
+.paddingEndInherit {
+    padding-end: inherit;
+}
+
+.maxHeightNone {
+    max-height: none;
+}
+
+.maxHeightLengthMm {
+   max-height: 1mm;
+}
+
+.maxHeightLengthIn {
+   max-height: 1in;
+}
+
+.maxHeightLengthPx {
+   max-height: 1px;
+}
+
+.maxHeightLengthPt {
+   max-height: 1pt;
+}
+
+.maxHeightLengthPc {
+   max-height: 1pc;
+}
+
+.maxHeightLengthEm {
+   max-height: 1em;
+}
+
+.maxHeightLengthEx {
+   max-height: 1ex;
+}
+
+.maxHeightLengthRem {
+   max-height: 1rem;
+}
+
+.maxHeightLengthVw {
+   max-height: 1vw;
+}
+
+.maxHeightLengthVh {
+   max-height: 1vh;
+}
+
+.maxHeightLengthVmin {
+   max-height: 1vmin;
+}
+
+.maxHeightLengthVmax {
+   max-height: 1vmax;
+}
+
+.maxHeightLengthPercent {
+   max-height: 1%;
+}
+
+.maxHeightInitial {
+    max-height: initial;
+}
+
+.maxHeightInherit {
+    max-height: inherit;
+}
+
+.gridColumnEndAuto {
+    grid-column-end: auto;
+}
+
+.gridColumnEndColumnLine {
+    grid-column-end: column-line;
+}
+
+.gridColumnEndSpan {
+    grid-column-end: span;
+}
+
+.gridColumnEndN {
+    grid-column-end: span 3;
+}
+
+.bottomAuto {
+    bottom: auto;
+}
+
+.bottomLengthCm {
+    bottom: 1cm;
+}
+
+.bottomLengthMm {
+    bottom: 1mm;
+}
+
+.bottomLengthIn {
+    bottom: 1in;
+}
+
+.bottomLengthPx {
+    bottom: 1px;
+}
+
+.bottomLengthPt {
+    bottom: 1pt;
+}
+
+.bottomLengthPc {
+    bottom: 1pc;
+}
+
+.bottomLengthEm {
+    bottom: 1em;
+}
+
+.bottomLengthEx {
+    bottom: 1ex;
+}
+
+.bottomLengthRem {
+    bottom: 1rem;
+}
+
+.bottomLengthVw {
+    bottom: 1vw;
+}
+
+.bottomLengthVh {
+    bottom: 1vh;
+}
+
+.bottomLengthVmin {
+    bottom: 1vmin;
+}
+
+.bottomLengthVmax {
+    bottom: 1vmax;
+}
+
+.bottomLengthPercent {
+    bottom: 1%;
+}
+
+.bottomInitial {
+    bottom: initial;
+}
+
+.bottomInherit {
+    bottom: inherit;
+}
+
+.borderBottomStyleNone {
+    border-bottom-style: none;
+}
+
+.borderBottomStyleHidden {
+    border-bottom-style: hidden;
+}
+
+.borderBottomStyleDotted {
+    border-bottom-style: dotted;
+}
+
+.borderBottomStyleDashed {
+    border-bottom-style: dashed;
+}
+
+.borderBottomStyleSolid {
+    border-bottom-style: solid;
+}
+
+.borderBottomStyleDouble {
+    border-bottom-style: double;
+}
+
+.borderBottomStyleGroove {
+    border-bottom-style: groove;
+}
+
+.borderBottomStyleRidge {
+    border-bottom-style: ridge;
+}
+
+.borderBottomStyleInset {
+    border-bottom-style: inset;
+}
+
+.borderBottomStyleOutset {
+    border-bottom-style: outset;
+}
+
+.borderBottomStyleInitial {
+    border-bottom-style: initial;
+}
+
+.borderBottomStyleInherit {
+    border-bottom-style: inherit;
+}
+
+.maxWidthNone {
+    max-width: none;
+}
+
+.maxWidthLengthMm {
+   max-width: 1mm;
+}
+
+.maxWidthLengthIn {
+   max-width: 1in;
+}
+
+.maxWidthLengthPx {
+   max-width: 1px;
+}
+
+.maxWidthLengthPt {
+   max-width: 1pt;
+}
+
+.maxWidthLengthPc {
+   max-width: 1pc;
+}
+
+.maxWidthLengthEm {
+   max-width: 1em;
+}
+
+.maxWidthLengthEx {
+   max-width: 1ex;
+}
+
+.maxWidthLengthRem {
+   max-width: 1rem;
+}
+
+.maxWidthLengthVw {
+   max-width: 1vw;
+}
+
+.maxWidthLengthVh {
+   max-width: 1vh;
+}
+
+.maxWidthLengthVmin {
+   max-width: 1vmin;
+}
+
+.maxWidthLengthVmax {
+   max-width: 1vmax;
+}
+
+.maxWidthLengthPercent {
+   max-width: 1%;
+}
+
+.maxWidthInitial {
+    max-width: initial;
+}
+
+.maxWidthInherit {
+    max-width: inherit;
+}
+
+.gridTemplateColumnsNone {
+    grid-template-columns: none;
+}
+
+.gridTemplateColumnsAuto {
+    grid-template-columns: auto;
+}
+
+.gridTemplateColumnsMaxContent {
+    grid-template-columns: max-content;
+}
+
+.gridTemplateColumnsMinContent {
+    grid-template-columns: min-content;
+}
+
+.gridTemplateColumnsLengthMm {
+    grid-template-columns: 1mm;
+}
+
+.gridTemplateColumnsLengthIn {
+    grid-template-columns: 1in;
+}
+
+.gridTemplateColumnsLengthPx {
+    grid-template-columns: 1px;
+}
+
+.gridTemplateColumnsLengthPt {
+    grid-template-columns: 1pt;
+}
+
+.gridTemplateColumnsLengthPc {
+    grid-template-columns: 1pc;
+}
+
+.gridTemplateColumnsLengthEm {
+    grid-template-columns: 1em;
+}
+
+.gridTemplateColumnsLengthEx {
+    grid-template-columns: 1ex;
+}
+
+.gridTemplateColumnsLengthRem {
+    grid-template-columns: 1rem;
+}
+
+.gridTemplateColumnsLengthVw {
+    grid-template-columns: 1vw;
+}
+
+.gridTemplateColumnsLengthVh {
+    grid-template-columns: 1vh;
+}
+
+.gridTemplateColumnsLengthVmin {
+    grid-template-columns: 1vmin;
+}
+
+.gridTemplateColumnsLengthVmax {
+    grid-template-columns: 1vmax;
+}
+
+.gridTemplateColumnsLengthPercent {
+    grid-template-columns: 1%;
+}
+
+.gridTemplateColumnsInitial {
+    grid-template-columns: initial;
+}
+
+.gridTemplateColumnsInherit {
+    grid-template-columns: inherit;
+}
+
+.visibilityVisible {
+    visibility: visible;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+.visibilityCollapse {
+    visibility: collapse;
+}
+
+.visibilityInitial {
+    visibility: initial;
+}
+
+.visibilityInherit {
+    visibility: inherit;
+}
+
+.gridAutoRowsAuto {
+    grid-auto-rows: auto;
+}
+
+.gridAutoRowsMaxContent {
+    grid-auto-rows: max-content;
+}
+
+.gridAutoRowsMinContent {
+    grid-auto-rows: min-content;
+}
+
+.gridAutoRowsMm {
+    grid-auto-rows: 1mm;
+}
+
+.gridAutoRowsIn {
+    grid-auto-rows: 1in;
+}
+
+.gridAutoRowsPx {
+    grid-auto-rows: 1px;
+}
+
+.gridAutoRowsPt {
+    grid-auto-rows: 1pt;
+}
+
+.gridAutoRowsPc {
+    grid-auto-rows: 1pc;
+}
+
+.gridAutoRowsEm {
+    grid-auto-rows: 1em;
+}
+
+.gridAutoRowsEx {
+    grid-auto-rows: 1ex;
+}
+
+.gridAutoRowsRem {
+    grid-auto-rows: 1rem;
+}
+
+.gridAutoRowsVw {
+    grid-auto-rows: 1vw;
+}
+
+.gridAutoRowsVh {
+    grid-auto-rows: 1vh;
+}
+
+.gridAutoRowsVmin {
+    grid-auto-rows: 1vmin;
+}
+
+.gridAutoRowsVmax {
+    grid-auto-rows: 1vmax;
+}
+
+.gridAutoRowsPercent {
+    grid-auto-rows: 1%;
+}
+
+.boxDecorationBreakSlice {
+    box-decoration-break: slice;
+}
+
+.boxDecorationBreakClone {
+    box-decoration-break: clone;
+}
+
+.boxDecorationBreakInitial {
+    box-decoration-break: initial;
+}
+
+.boxDecorationBreakInherit {
+    box-decoration-break: inherit;
+}
+
+.boxDecorationBreakUnset {
+    box-decoration-break: unset;
+}
+
+.backgroundCompositeBorder {
+    backround-composite: border;    
+}
+
+.userInputNone {
+    user-input: none;
+}
+
+.userInputEnabled {
+    user-input: enabled;
+}
+
+.userInputDisabled {
+    user-input: disabled;
+}
+
+.userInputInherit {
+    user-input: inherit;
+}
+
+.userInputInitial {
+    user-input: initial;
+}
+
+.userInputUnset {
+    user-input: unset;
+}
+
+.counterIncrementNone {
+    counter-increment: none;
+}
+
+.counterIncrementId {
+    counter-increment: mySecCounter;
+}
+
+.counterIncrementInitial {
+    counter-increment: initial;
+}
+
+.counterIncrementInherit {
+    counter-increment: inherit;
+}
+
+.animationName {
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+    animation-iteration-count: 2;
+    animation-name: myMove;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+}
+
+.backgroundImageUrl {
+    background-image: url('chess.png');
+}
+
+.backgroundImageNone {
+    background-image: none;
+}
+
+.backgroundImageInitial {
+    background-image: initial;
+}
+
+.backgroundImageInherit {
+    background-image: inherit;
+}
+
+.justifyContentFlexStart {
+    justify-content: flex-start;
+}
+
+.justifyContentFlexEnd {
+    justify-content: flex-end;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.justifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.justifyContentSpaceAround {
+    justify-content: space-around;
+}
+
+.justifyContentInitial {
+    justify-content: initial;
+}
+
+.justifyContentInherit {
+    justify-content: inherit;
+}
+
+.transitionTimingFunctionLinear {
+    transition-timing-function: linear;
+}
+
+.transitionTimingFunctionEase {
+    transition-timing-function: ease;
+}
+
+.transitionTimingFunctionEaseIn {
+    transition-timing-function: ease-in;
+}
+
+.transitionTimingFunctionEaseOut {
+    transition-timing-function: ease-out;
+}
+
+.transitionTimingFunctionEaseInOut {
+    transition-timing-function: ease-in-out;
+}
+
+.transitionTimingFunctionStepStart {
+    transition-timing-function: step-start;
+}
+
+.transitionTimingFunctionStepEnd {
+    transition-timing-function: step-end;
+}
+
+.transitionTimingFunctionStepsStart {
+    transition-timing-function: steps(3, start);
+}
+
+.transitionTimingFunctionStepsEnd {
+    transition-timing-function: steps(3, end);
+}
+
+.transitionTimingFunctionCubicBezier {
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.transitionTimingFunctionInitial {
+    transition-timing-function: initial;
+}
+
+.transitionTimingFunctionInherit {
+    transition-timing-function: inherit;
+}
+
+.flexFlowFlexDirectionWrap {
+    flex-flow: row-reverse wrap;
+}
+
+.flexFlowInitial {
+    flex-flow: initial;
+}
+
+.flexFlowInherit {
+    flex-flow: inherit;
+}
+
+.transformOriginAll {
+    transform-origin: 50% 50% 0;
+}
+
+.transformOriginInitial {
+    transform-origin: initial;
+}
+
+.transformOriginInherit {
+    transform-origin: inherit;
+}
+
+.fontStretchUltraCondensed {
+    font-stretch: ultra-condensed;
+}
+
+.fontStretchExtraCondensed {
+    font-stretch: extra-condensed;
+}
+
+.fontStretchCondensed {
+    font-stretch: condensed;
+}
+
+.fontStretchSemiCondensed {
+    font-stretch: semi-condensed;
+}
+
+.fontStretchNormal {
+    font-stretch: normal;
+}
+
+.fontStretchSemiExpanded {
+    font-stretch: semi-expanded;
+}
+
+.fontStretchExpanded {
+    font-stretch: expanded;
+}
+
+.fontStretchExtraExpanded {
+    font-stretch: extra-expanded;
+}
+
+.fontStretchUltraExpanded {
+    font-stretch: ultra-expanded;
+}
+
+.fontStretchInitial {
+    font-stretch: initial;
+}
+
+.fontStretchInherit {
+    font-stretch: inherit;
+}
+
+.animationDurationTime {
+    animation-duration: 2s;
+}
+
+.animationDurationInitial {
+    animation-duration: initial;
+}
+
+.animationDurationInherit {
+    animation-duration: inherit;
+}
+
+.columnWidthAuto {
+    column-width: auto;
+}
+
+.columnWidthLengthCm {
+    column-width: 1cm;
+}
+
+.columnWidthLengthMm {
+    column-width: 1mm;
+}
+
+.columnWidthLengthIn {
+    column-width: 1in;
+}
+
+.columnWidthLengthPx {
+    column-width: 1px;
+}
+
+.columnWidthLengthPt {
+    column-width: 1pt;
+}
+
+.columnWidthLengthPc {
+    column-width: 1pc;
+}
+
+.columnWidthLengthEm {
+    column-width: 1em;
+}
+
+.columnWidthLengthEx {
+    column-width: 1ex;
+}
+
+.columnWidthLengthRem {
+    column-width: 1rem;
+}
+
+.columnWidthLengthVw {
+    column-width: 1vw;
+}
+
+.columnWidthLengthVh {
+    column-width: 1vh;
+}
+
+.columnWidthLengthVmin {
+    column-width: 1vmin;
+}
+
+.columnWidthLengthVmax {
+    column-width: 1vmax;
+}
+
+.columnWidthLengthPercent {
+    column-width: 1%;
+}
+
+.columnWidthInitial {
+    column-width: initial;
+}
+
+.columnWidthInherit {
+    column-width: inherit;
+}
+
+.stackSizingAuto {
+    stack-sizing: auto;
+}
+
+.stackSizingIgnore {
+    stack-sizing: ignore;
+}
+
+.stackSizingInherit {
+    stack-sizing: inherit;
+}
+
+.stackSizingInitial {
+    stack-sizing: initial;
+}
+
+.stackSizingUnset {
+    stack-sizing: unset;
+}
+
+.gridRowGridRowStartEnd {
+    grid-row: 1 / 3;
+}
+
+.gridRowGridRowStartEndSpan {
+    grid-row: 1 / span 2;
+}
+
+.caretColorAuto {
+    caret-color: auto;
+}
+
+.caretColorColor {
+    caret-color: #000;
+}
+
+.animationPlayStatePaused {
+    animation-play-state: paused;
+}
+
+.animationPlayStateRunning {
+    animation-play-state: running;
+}
+
+.animationPlayStateInitial {
+    animation-play-state: initial;
+}
+
+.animationPlayStateInherit {
+    animation-play-state: inherit;
+}
+
+.hangingPunctuationNone {
+    hanging-punctuation: none;
+}
+
+.hangingPunctuationFirst {
+    hanging-punctuation: first;
+}
+
+.hangingPunctuationLast {
+    hanging-punctuation: last;
+}
+
+.hangingPunctuationAllowEnd {
+    hanging-punctuation: allow-end;
+}
+
+.hangingPunctuationForceEnd {
+    hanging-punctuation: force-end;
+}
+
+.hangingPunctuationInitial {
+    hanging-punctuation: initial;
+}
+
+.hangingPunctuationInherit {
+    hanging-punctuation: inherit;
+}
+
+.gridTemplateAreasNone {
+    grid-template-areas: none;
+}
+
+.gridTemplateAreasItemnames {
+    grid-template-areas:
+        'myArea myArea . . .'
+        'myArea myArea . . .';
+}
+
+.marginBottomCollapseCollapse {
+    margin-bottom-collapse: collapse;
+}
+
+.marginBottomCollapseDiscard {
+    margin-bottom-collapse: discard;
+}
+
+.marginBottomCollapseSeperate {
+    margin-bottom-collapse: seperate;
+}
+
+.marginBottomCollapseInherit {
+    margin-bottom-collapse: inherit;
+}
+
+.imeModeAuto {
+    ime-mode: auto;
+}
+
+.imeModeNormal {
+    ime-mode: normal;
+}
+
+.imeModeActive {
+    ime-mode: active;
+}
+
+.imeModeInactive {
+    ime-mode: inactive;
+}
+
+.imeModeDisabled {
+    ime-mode: disabled;
+}
+
+.imeModeInherit {
+    ime-mode: inherit;
+}
+
+.imeModeInitital {
+    ime-mode: initial;
+}
+
+.imeModeUnset {
+    ime-mode: unset;
+}
+
+.maxLogicalHeightNone {
+    max-logical-height: none;
+}
+
+.maxLogicalHeightCm {
+    max-logical-height: 1cm;
+}
+
+.maxLogicalHeightMm {
+    max-logical-height: 1mm;
+}
+
+.maxLogicalHeightIn {
+    max-logical-height: 1in;
+}
+
+.maxLogicalHeightPx {
+    max-logical-height: 1px;
+}
+
+.maxLogicalHeightPt {
+    max-logical-height: 1pt;
+}
+
+.maxLogicalHeightPc {
+    max-logical-height: 1pc;
+}
+
+.maxLogicalHeightEm {
+    max-logical-height: 1em;
+}
+
+.maxLogicalHeightEx {
+    max-logical-height: 1ex;
+}
+
+.maxLogicalHeightCh {
+    max-logical-height: 1ch;
+}
+
+.maxLogicalHeightRem {
+    max-logical-height: 1rem;
+}
+
+.maxLogicalHeightVw {
+    max-logical-height: 1vw;
+}
+
+.maxLogicalHeightVh {
+    max-logical-height: 1vh;
+}
+
+.maxLogicalHeightVmin {
+    max-logical-height: 1vmin;
+}
+
+.maxLogicalHeightVmax {
+    max-logical-height: 1vmax;
+}
+
+.maxLogicalHeightPercent {
+    max-logical-height: 1%;
+}
+
+.logicalHeightCm {
+    logical-height: 1cm;
+}
+
+.logicalHeightMm {
+    logical-height: 1mm;
+}
+
+.logicalHeightIn {
+    logical-height: 1in;
+}
+
+.logicalHeightPx {
+    logical-height: 1px;
+}
+
+.logicalHeightPt {
+    logical-height: 1pt;
+}
+
+.logicalHeightPc {
+    logical-height: 1pc;
+}
+
+.logicalHeightEm {
+    logical-height: 1em;
+}
+
+.logicalHeightEx {
+    logical-height: 1ex;
+}
+
+.logicalHeightCh {
+    logical-height: 1ch;
+}
+
+.logicalHeightRem {
+    logical-height: 1rem;
+}
+
+.logicalHeightVw {
+    logical-height: 1vw;
+}
+
+.logicalHeightVh {
+    logical-height: 1vh;
+}
+
+.logicalHeightVmin {
+    logical-height: 1vmin;
+}
+
+.logicalHeightVmax {
+    logical-height: 1vmax;
+}
+
+.logicalHeightPercent {
+    logical-height: 1%;
+}
+
+.highlightNone {
+    highlight: none;
+}
+
+.boxOrientHorizontal {
+    box-orient: horizontal;
+}
+
+.boxOrientVertical {
+    box-orient: vertical;
+}
+
+.boxOrientInlineAxis {
+    box-orient: inline-axis;
+}
+
+.boxOrientBlockAxis {
+    box-orient: block-axis;
+}
+
+.boxOrientInherit {
+    box-orient: inherit;
+}
+
+.boxOrientInitial {
+    box-orient: initial;
+}
+
+.boxOrientUnset {
+    box-orient: unset;
+}
+
+.userDragAuto {
+    user-drag: auto;
+}
+
+.userDragElement {
+    user-drag: element;
+}
+
+.userDragNone {
+    user-drag: none;
+}
+
+.maskRepeatXRepeat {
+    mask-repeat-x: repeat;
+}
+
+.maskRepeatXNoRepeat {
+    mask-repeat-x: no-repeat;
+}
+
+.maskRepeatXSpace {
+    mask-repeat-x: space;
+}
+
+.maskRepeatXRound {
+    mask-repeat-x: round;
+}
+
+.maskRepeatXRepeatNoRepeatSpace {
+    mask-repeat-x: repeat, no-repeat, space;
+}
+
+.maskRepeatXInherit {
+    mask-repeat-x: inherit;
+}
+
+.maskRepeatXInitial {
+    mask-repeat-x: initial;
+}
+
+.maskRepeatXUnset {
+    mask-repeat-x: unset;
+}
+
+.borderBottomRightRadiusLengthPx {
+    border-bottom-right-radius: 25px;
+}
+
+.borderBottomRightRadiusLengthPxPx {
+    border-bottom-right-radius: 50px 10px;
+}
+
+.borderBottomRightRadiusPercent {
+    border-bottom-right-radius: 2%;
+}
+
+.borderBottomRightRadiusInitial {
+    border-bottom-right-radius: initial;
+}
+
+.borderBottomRightRadiusInherit {
+    border-bottom-right-radius: inherit;
+}
+
+.flexBasisPx {
+    flex-basis: 100px;
+}
+
+.flexBasisAuto {
+    flex-basis: auto;
+}
+
+.flexBasisInitial {
+    flex-basis: initial;
+}
+
+.flexBasisInherit {
+    flex-basis: inherit;
+}
+
+.layoutGridAll {
+    layout-grid: both fixed 12px 12px;
+}
+
+.backfaceVisibilityVisible {
+    backface-visibility: visible;
+}
+
+.backfaceVisibilityHidden {
+    backface-visibility: hidden;
+}
+
+.backfaceVisibilityInitial {
+    backface-visibility: initial;
+}
+
+.backfaceVisibilityInherit {
+    backface-visibility: inherit;
+}
+
+.fontSizeDeltaCm {
+    font-size-delta: 1cm;
+}
+
+.fontSizeDeltaMm {
+    font-size-delta: 1mm;
+}
+
+.fontSizeDeltaIn {
+    font-size-delta: 1in;
+}
+
+.fontSizeDeltaPx {
+    font-size-delta: 1px;
+}
+
+.fontSizeDeltaPt {
+    font-size-delta: 1pt;
+}
+
+.fontSizeDeltaPc {
+    font-size-delta: 1pc;
+}
+
+.fontSizeDeltaEm {
+    font-size-delta: 1em;
+}
+
+.fontSizeDeltaEx {
+    font-size-delta: 1ex;
+}
+
+.fontSizeDeltaCh {
+    font-size-delta: 1ch;
+}
+
+.fontSizeDeltaRem {
+    font-size-delta: 1rem;
+}
+
+.fontSizeDeltaVw {
+    font-size-delta: 1vw;
+}
+
+.fontSizeDeltaVh {
+    font-size-delta: 1vh;
+}
+
+.fontSizeDeltaVmin {
+    font-size-delta: 1vmin;
+}
+
+.fontSizeDeltaVmax {
+    font-size-delta: 1vmax;
+}
+
+.fontSizeDeltaPercent {
+    font-size-delta: 1%;
+}
+
+.userSelectAuto {
+    user-select: auto;
+}
+
+.userSelectNone {
+    user-select: none;
+}
+
+.userSelectText {
+    user-select: text;
+}
+
+.userSelectAll {
+    user-select: all;
+}
+
+.marginBeforeNone {
+    margin-before: none;
+}
+
+.marginBeforeAuto {
+    margin-before: auto;
+}
+
+.marginBeforeCm {
+    margin-before: 1cm;
+}
+
+.marginBeforeMm {
+    margin-before: 1mm;
+}
+
+.marginBeforeIn {
+    margin-before: 1in;
+}
+
+.marginBeforePx {
+    margin-before: 1px;
+}
+
+.marginBeforePt {
+    margin-before: 1pt;
+}
+
+.marginBeforePc {
+    margin-before: 1pc;
+}
+
+.marginBeforeEm {
+    margin-before: 1em;
+}
+
+.marginBeforeEx {
+    margin-before: 1ex;
+}
+
+.marginBeforeCh {
+    margin-before: 1ch;
+}
+
+.marginBeforeRem {
+    margin-before: 1rem;
+}
+
+.marginBeforeVw {
+    margin-before: 1vw;
+}
+
+.marginBeforeVh {
+    margin-before: 1vh;
+}
+
+.marginBeforeVmin {
+    margin-before: 1vmin;
+}
+
+.marginBeforeVmax {
+    margin-before: 1vmax;
+}
+
+.marginBeforePercent {
+    margin-before: 1%;
+}
+
+.marginBeforeInherit {
+    margin-before: inherit;
+}
+
+.marginBeforeInitial {
+    margin-before: initial;
+}
+
+.clipAuto {
+    clip: auto;
+}
+
+.clipShape {
+    clip: rect(0px, 60px, 200px, 0px);
+}
+
+.clipInitial {
+    clip: initial;
+}
+
+.clipInherit {
+    clip: inherit;
+}
+
+.textKashidaSpacePercent {
+    text-kashida-space: 10%;
+}
+
+.transitionDelayTime {
+    transition-delay: 2s;
+}
+
+.transitionDelayInitial {
+    transition-delay: initial;
+}
+
+.transitionDelayInherit {
+    transition-delay: inherit;
+}
+
+.outlineWidthMedium {
+    outline-width: medium;
+}
+
+.outlineWidthThin {
+    outline-width: thin;
+}
+
+.outlineWidthThick {
+    outline-width: thick;
+}
+
+.outlineWidthLengthMm {
+   outline-width: 1mm;
+}
+
+.outlineWidthLengthIn {
+   outline-width: 1in;
+}
+
+.outlineWidthLengthPx {
+   outline-width: 1px;
+}
+
+.outlineWidthLengthPt {
+   outline-width: 1pt;
+}
+
+.outlineWidthLengthPc {
+   outline-width: 1pc;
+}
+
+.outlineWidthLengthEm {
+   outline-width: 1em;
+}
+
+.outlineWidthLengthEx {
+   outline-width: 1ex;
+}
+
+.outlineWidthLengthRem {
+   outline-width: 1rem;
+}
+
+.outlineWidthLengthVw {
+   outline-width: 1vw;
+}
+
+.outlineWidthLengthVh {
+   outline-width: 1vh;
+}
+
+.outlineWidthLengthVmin {
+   outline-width: 1vmin;
+}
+
+.outlineWidthLengthVmax {
+   outline-width: 1vmax;
+}
+
+.outlineWidthLengthPercent {
+   outline-width: 1%;
+}
+
+.outlineWidthInitial {
+    outline-width: initial;
+}
+
+.outlineWidthInherit {
+    outline-width: inherit;
+}
+
+.maskRepeatYRepeat {
+    mask-repeat-y: repeat;
+}
+
+.maskRepeatYNoRepeat {
+    mask-repeat-y: no-repeat;
+}
+
+.maskRepeatYSpace {
+    mask-repeat-y: space;
+}
+
+.maskRepeatYRound {
+    mask-repeat-y: round;
+}
+
+.maskRepeatYRepeatNoRepeatSpace {
+    mask-repeat-y: repeat, no-repeat, space;
+}
+
+.maskRepeatYInherit {
+    mask-repeat-y: inherit;
+}
+
+.maskRepeatYInitial {
+    mask-repeat-y: initial;
+}
+
+.maskRepeatYUnset {
+    mask-repeat-y: unset;
+}
+
+.contentNormal {
+    content: normal;
+}
+
+.contentNone {
+    content: none;
+}
+
+.contentCounter {
+    content: counter(myIndex);
+}
+
+.contentCounterAlt {
+    content: counter(my-sec-counter, upper-roman) '. ';
+}
+
+.contentAttr {
+    content: attr(href);
+}
+
+.contentString {
+    content: 'Read this -';
+}
+
+.contentOpenQuote {
+    content: open-quote;
+}
+
+.contentCloseQuote {
+    content: close-quote;
+}
+
+.contentNoOpenQuote {
+    content: no-open-quote;
+}
+
+.contentNoCloseQuote {
+    content: no-close-quote;
+}
+
+.contentUrl {
+    content: url('chess.png');
+}
+
+.contentInitial {
+    content: initial;
+}
+
+.contentInherit {
+    content: inherit;
+}
+
+.marqueeRepetitionInfinite {
+    marquee-repetition: infinite;
+}
+
+.marqueeRepetitionNumber {
+    marquee-repetition: 3;
+}
+
+.marqueeRepetitionInherit {
+    marquee-repetition: inherit;
+}
+
+.paddingAllCmCmCmCm {
+    padding: 1cm 20cm 300cm 4000cm;
+}
+
+.paddingAllCmCmCm {
+    padding: 1cm 20cm 300cm;
+}
+
+.paddingAllCmCm {
+    padding: 1cm 20cm;
+}
+
+.paddingAllCm {
+    padding: 1cm;
+}
+
+.paddingAllMmMmMmMm {
+    padding: 1mm 20mm 300mm 4000mm;
+}
+
+.paddingAllMmMmMm {
+    padding: 1mm 20mm 300mm;
+}
+
+.paddingAllMmMm {
+    padding: 1mm 20mm;
+}
+
+.paddingAllMm {
+    padding: 1mm;
+}
+
+.paddingAllInInInIn {
+    padding: 1in 20in 300in 4000in;
+}
+
+.paddingAllInInIn {
+    padding: 1in 20in 300in;
+}
+
+.paddingAllInIn {
+    padding: 1in 20in;
+}
+
+.paddingAllIn {
+    padding: 1in;
+}
+
+.paddingAllPxPxPxPx {
+    padding: 1px 20px 300px 4000px;
+}
+
+.paddingAllPxPxPx {
+    padding: 1px 20px 300px;
+}
+
+.paddingAllPxPx {
+    padding: 1px 20px;
+}
+
+.paddingAllPx {
+    padding: 1px;
+}
+
+.paddingAllPtPtPtPt {
+    padding: 1pt 20pt 300pt 4000pt;
+}
+
+.paddingAllPtPtPt {
+    padding: 1pt 20pt 300pt;
+}
+
+.paddingAllPtPt {
+    padding: 1pt 20pt;
+}
+
+.paddingAllPt {
+    padding: 1pt;
+}
+
+.paddingAllPcPcPcPc {
+    padding: 1pc 20pc 300pc 4000pc;
+}
+
+.paddingAllPcPcPc {
+    padding: 1pc 20pc 300pc;
+}
+
+.paddingAllPcPc {
+    padding: 1pc 20pc;
+}
+
+.paddingAllPc {
+    padding: 1pc;
+}
+
+.paddingAllEmEmEmEm {
+    padding: 1em 20em 300em 4000em;
+}
+
+.paddingAllEmEmEm {
+    padding: 1em 20em 300em;
+}
+
+.paddingAllEmEm {
+    padding: 1em 20em;
+}
+
+.paddingAllEm {
+    padding: 1em;
+}
+
+.paddingAllExExExEx {
+    padding: 1ex 20ex 300ex 4000ex;
+}
+
+.paddingAllExExEx {
+    padding: 1ex 20ex 300ex;
+}
+
+.paddingAllExEx {
+    padding: 1ex 20ex;
+}
+
+.paddingAllEx {
+    padding: 1ex;
+}
+
+.paddingAllChChChCh {
+    padding: 1ch 20ch 300ch 4000ch;
+}
+
+.paddingAllChChCh {
+    padding: 1ch 20ch 300ch;
+}
+
+.paddingAllChCh {
+    padding: 1ch 20ch;
+}
+
+.paddingAllCh {
+    padding: 1ch;
+}
+
+.paddingAllRemRemRemRem {
+    padding: 1rem 20rem 300rem 4000rem;
+}
+
+.paddingAllRemRemRem {
+    padding: 1rem 20rem 300rem;
+}
+
+.paddingAllRemRem {
+    padding: 1rem 20rem;
+}
+
+.paddingAllRem {
+    padding: 1rem;
+}
+
+.paddingAllVwVwVwVw {
+    padding: 1vw 20vw 300vw 4000vw;
+}
+
+.paddingAllVwVwVw {
+    padding: 1vw 20vw 300vw;
+}
+
+.paddingAllVwVw {
+    padding: 1vw 20vw;
+}
+
+.paddingAllVw {
+    padding: 1vw;
+}
+
+.paddingAllVhVhVhVh {
+    padding: 1vh 20vh 300vh 4000vh;
+}
+
+.paddingAllVhVhVh {
+    padding: 1vh 20vh 300vh;
+}
+
+.paddingAllVhVh {
+    padding: 1vh 20vh;
+}
+
+.paddingAllVh {
+    padding: 1vh;
+}
+
+.paddingAllVminVminVminVmin {
+    padding: 1vmin 20vmin 300vmin 4000vmin;
+}
+
+.paddingAllVminVminVmin {
+    padding: 1vmin 20vmin 300vmin;
+}
+
+.paddingAllVminVmin {
+    padding: 1vmin 20vmin;
+}
+
+.paddingAllVmin {
+    padding: 1vmin;
+}
+
+.paddingAllVmaxVmaxVmaxVmax {
+    padding: 1vmax 20vmax 300vmax 4000vmax;
+}
+
+.paddingAllVmaxVmaxVmax {
+    padding: 1vmax 20vmax 300vmax;
+}
+
+.paddingAllVmaxVmax {
+    padding: 1vmax 20vmax;
+}
+
+.paddingAllVmax {
+    padding: 1vmax;
+}
+
+.paddingAllPercentPercentPercentPercent {
+    padding: 1% 20% 300% 4000%;
+}
+
+.paddingAllPercentPercentPercent {
+    padding: 1% 20% 300%;
+}
+
+.paddingAllPercentPercent {
+    padding: 1% 20%;
+}
+
+.paddingAllPercent {
+    padding: 1%;
+}
+
+.paddingInitial {
+    padding: initial;
+}
+
+.paddingInherit {
+    padding: inherit;
+}
+
+.boxSizingContentBox {
+    box-sizing: content-box;
+}
+
+.boxSizingBorderBox {
+    box-sizing: border-box;
+}
+
+.boxSizingInitial {
+    box-sizing: initial;
+}
+
+.boxSizingInherit {
+    box-sizing: inherit;
+}
+
+.textJustifyAuto {
+    text-justify: auto;
+}
+
+.textJustifyInterWord {
+    text-justify: inter-word;
+}
+
+.textJustifyInterCharacter {
+    text-justify: inter-character;
+}
+
+.textJustifyNone {
+    text-justify: none;
+}
+
+.textJustifyInitial {
+    text-justify: initial;
+}
+
+.textJustifyInherit {
+    text-justify: inherit;
+}
+
+.colorCorrectionAuto {
+    color-correction: auto;
+}
+
+.colorCorrectionRgb {
+    color-correction: rgb(255, 255, 255);
+}
+
+.boxDirectionNormal {
+    box-direction: normal;
+}
+
+.boxDirectionReverse {
+    box-direction: reverse;
+}
+
+.boxDirectionInherit {
+    box-direction: inherit;
+}
+
+.boxDirectionInitial {
+    box-direction: initial;
+}
+
+.boxDirectionUnset {
+    box-direction: unset;
+}
+
+.pointerEventsAuto {
+    pointer-events: auto;
+}
+
+.pointerEventsNone {
+    pointer-events: none;
+}
+
+.borderTopWidthMedium {
+    border-top-width: medium;
+}
+
+.borderTopWidthThin {
+    border-top-width: thin;
+}
+
+.borderTopWidthThick {
+    border-top-width: thick;
+}
+
+.borderTopWidthLengthCm {
+    border-top-width: 1cm;
+}
+
+.borderTopWidthLengthMm {
+    border-top-width: 1mm;
+}
+
+.borderTopWidthLengthIn {
+    border-top-width: 1in;
+}
+
+.borderTopWidthLengthPx {
+    border-top-width: 1px;
+}
+
+.borderTopWidthLengthPt {
+    border-top-width: 1pt;
+}
+
+.borderTopWidthLengthPc {
+    border-top-width: 1pc;
+}
+
+.borderTopWidthLengthEm {
+    border-top-width: 1em;
+}
+
+.borderTopWidthLengthEx {
+    border-top-width: 1ex;
+}
+
+.borderTopWidthLengthRem {
+    border-top-width: 1rem;
+}
+
+.borderTopWidthLengthVw {
+    border-top-width: 1vw;
+}
+
+.borderTopWidthLengthVh {
+    border-top-width: 1vh;
+}
+
+.borderTopWidthLengthVmin {
+    border-top-width: 1vmin;
+}
+
+.borderTopWidthLengthVmax {
+    border-top-width: 1vmax;
+}
+
+.borderTopWidthLengthPercent {
+    border-top-width: 1%;
+}
+
+.borderTopWidthInitial {
+    border-top-width: initial;
+}
+
+.borderTopWidthInherit {
+    border-top-width: inherit;
+}
+
+.pageBreakAfterAuto {
+    page-break-after: auto;
+}
+
+.pageBreakAfterAlways {
+    page-break-after: always;
+}
+
+.pageBreakAfterAvoid {
+    page-break-after: avoid;
+}
+
+.pageBreakAfterLeft {
+    page-break-after: left;
+}
+
+.pageBreakAfterRight {
+    page-break-after: right;
+}
+
+.pageBreakAfterInitial {
+    page-break-after: initial;
+}
+
+.pageBreakAfterInherit {
+    page-break-after: inherit;
+}
+
+.borderEndWidthMedium {
+    border-end-width: medium;
+}
+
+.borderEndWidthThin {
+    border-end-width: thin;
+}
+
+.borderEndWidthThick {
+    border-end-width: thick;
+}
+
+.borderEndWidthLengthCm {
+    border-end-width: 1cm;
+}
+
+.borderEndWidthLengthMm {
+    border-end-width: 1mm;
+}
+
+.borderEndWidthLengthIn {
+    border-end-width: 1in;
+}
+
+.borderEndWidthLengthPx {
+    border-end-width: 1px;
+}
+
+.borderEndWidthLengthPt {
+    border-end-width: 1pt;
+}
+
+.borderEndWidthLengthPc {
+    border-end-width: 1pc;
+}
+
+.borderEndWidthLengthEm {
+    border-end-width: 1em;
+}
+
+.borderEndWidthLengthEx {
+    border-end-width: 1ex;
+}
+
+.borderEndWidthLengthRem {
+    border-end-width: 1rem;
+}
+
+.borderEndWidthLengthVw {
+    border-end-width: 1vw;
+}
+
+.borderEndWidthLengthVh {
+    border-end-width: 1vh;
+}
+
+.borderEndWidthLengthVmin {
+    border-end-width: 1vmin;
+}
+
+.borderEndWidthLengthVmax {
+    border-end-width: 1vmax;
+}
+
+.borderEndWidthLengthPercent {
+    border-end-width: 1%;
+}
+
+.borderEndWidthInitial {
+    border-end-width: initial;
+}
+
+.borderEndWidthInherit {
+    border-end-width: inherit;
+}
+
+.textUnderlinePositionAuto {
+    text-underline-position: auto;
+}
+
+.textUnderlinePositionUnder {
+    text-underline-position: under;
+}
+
+.textUnderlinePositionLeft {
+    text-underline-position: left;
+}
+
+.textUnderlinePositionRight {
+    text-underline-position: right;
+}
+
+.textUnderlinePositionUnderLeft {
+    text-underline-position: under left;
+}
+
+.textUnderlinePositionRightUnder {
+    text-underline-position: right under;
+}
+
+.textUnderlinePositionInherit {
+    text-underline-position: inherit;
+}
+
+.textUnderlinePositionInitial {
+    text-underline-position: initial;
+}
+
+.textUnderlinePositionUnset {
+    text-underline-position: unset;
+}
+
+.borderRightStyleNone {
+    border-right-style: none;
+}
+
+.borderRightStyleHidden {
+    border-right-style: hidden;
+}
+
+.borderRightStyleDotted {
+    border-right-style: dotted;
+}
+
+.borderRightStyleDashed {
+    border-right-style: dashed;
+}
+
+.borderRightStyleSolid {
+    border-right-style: solid;
+}
+
+.borderRightStyleDouble {
+    border-right-style: double;
+}
+
+.borderRightStyleGroove {
+    border-right-style: groove;
+}
+
+.borderRightStyleRidge {
+    border-right-style: ridge;
+}
+
+.borderRightStyleInset {
+    border-right-style: inset;
+}
+
+.borderRightStyleOutset {
+    border-right-style: outset;
+}
+
+.borderRightStyleInitial {
+    border-right-style: initial;
+}
+
+.borderRightStyleInherit {
+    border-right-style: inherit;
+}
+
+.borderStartWidthMedium {
+    border-start-width: medium;
+}
+
+.borderStartWidthThin {
+    border-start-width: thin;
+}
+
+.borderStartWidthThick {
+    border-start-width: thick;
+}
+
+.borderStartWidthLengthCm {
+    border-start-width: 1cm;
+}
+
+.borderStartWidthLengthMm {
+    border-start-width: 1mm;
+}
+
+.borderStartWidthLengthIn {
+    border-start-width: 1in;
+}
+
+.borderStartWidthLengthPx {
+    border-start-width: 1px;
+}
+
+.borderStartWidthLengthPt {
+    border-start-width: 1pt;
+}
+
+.borderStartWidthLengthPc {
+    border-start-width: 1pc;
+}
+
+.borderStartWidthLengthEm {
+    border-start-width: 1em;
+}
+
+.borderStartWidthLengthEx {
+    border-start-width: 1ex;
+}
+
+.borderStartWidthLengthRem {
+    border-start-width: 1rem;
+}
+
+.borderStartWidthLengthVw {
+    border-start-width: 1vw;
+}
+
+.borderStartWidthLengthVh {
+    border-start-width: 1vh;
+}
+
+.borderStartWidthLengthVmin {
+    border-start-width: 1vmin;
+}
+
+.borderStartWidthLengthVmax {
+    border-start-width: 1vmax;
+}
+
+.borderStartWidthLengthPercent {
+    border-start-width: 1%;
+}
+
+.borderStartWidthInitial {
+    border-start-width: initial;
+}
+
+.borderStartWidthInherit {
+    border-start-width: inherit;
+}
+
+.gridColumnGridColumnAll {
+    grid-column: 1 / span 2;
+}
+
+.backgroundAll {
+    background: lightblue url('img_tree.gif') no-repeat fixed center scroll initial inherit;
+}
+
+.backroundTwoUrls {
+    background: url('img_tree.gif'), url('paper.gif');
+}
+
+.transitionDurationTime {
+    transition-duration: 2s;
+}
+
+.transitionDurationInitial {
+    transition-duration: initial;
+}
+
+.transitionDurationInherit {
+    transition-duration: inherit;
+}
+
+.borderAfterColor {
+    border-after-color: #000;
+}
+
+.listStyleListStyleAll {
+    list-style: square inside url('chess.png');
+}
+
+.listStyleInitial {
+    list-style: initial;
+}
+
+.listStyleInherit {
+    list-style: inherit;
+}
+
+.scrollbarFaceColorHex
+{
+    scrollbar-face-color: #000;
+}
+
+.scrollbarFaceColorInherit
+{
+    scrollbar-face-color: inherit;
+}
+
+.columnsAuto {
+    columns: auto;
+}
+
+.columnsColumnWidthCount {
+    columns: 100px 3;
+}
+
+.columnsInitial {
+    columns: initial;
+}
+
+.columnsInherit {
+    columns: inherit;
+}
+
+.gridNone {
+    grid: none;
+}
+
+.gridGridAll {
+    grid: 80px 120px / auto auto auto;
+}
+
+.gridInitial {
+    grid: initial;
+}
+
+.gridInherit {
+    grid: inherit;
+}
+
+.textAutospaceNone {
+    text-autospace: none;
+}
+
+.textAutospaceIdeographAlpha {
+    text-autospace: ideograph-alpha;
+}
+
+.textAutospaceIdeographNumeric {
+    text-autospace: ideograph-numeric;
+}
+
+.textAutospaceIdeographParenthesis {
+    text-autospace: ideograph-parenthesis;
+}
+
+.textAutospaceIdeographSpace {
+    text-autospace: ideograph-space;
+}
+
+.lineHeightNormal {
+    line-height: normal;
+}
+
+.lineHeightNumber {
+    line-height: 1.6;
+}
+
+.lineHeightLengthMm {
+   line-height: 1mm;
+}
+
+.lineHeightLengthIn {
+   line-height: 1in;
+}
+
+.lineHeightLengthPx {
+   line-height: 1px;
+}
+
+.lineHeightLengthPt {
+   line-height: 1pt;
+}
+
+.lineHeightLengthPc {
+   line-height: 1pc;
+}
+
+.lineHeightLengthEm {
+   line-height: 1em;
+}
+
+.lineHeightLengthEx {
+   line-height: 1ex;
+}
+
+.lineHeightLengthRem {
+   line-height: 1rem;
+}
+
+.lineHeightLengthVw {
+   line-height: 1vw;
+}
+
+.lineHeightLengthVh {
+   line-height: 1vh;
+}
+
+.lineHeightLengthVmin {
+   line-height: 1vmin;
+}
+
+.lineHeightLengthVmax {
+   line-height: 1vmax;
+}
+
+.lineHeightLengthPercent {
+   line-height: 1%;
+}
+
+.lineHeightInitial {
+    line-height: initial;
+}
+
+.lineHeightInherit {
+    line-height: inherit;
+}
+
+.gridAutoColumnsAuto {
+    grid-auto-columns: auto;
+}
+
+.gridAutoColumnsMaxContent {
+    grid-auto-columns: max-content;
+}
+
+.gridAutoColumnsMinContent {
+    grid-auto-columns: min-content;
+}
+
+.gridAutoColumnsMm {
+    grid-auto-columns: 1mm;
+}
+
+.gridAutoColumnsIn {
+    grid-auto-columns: 1in;
+}
+
+.gridAutoColumnsPx {
+    grid-auto-columns: 1px;
+}
+
+.gridAutoColumnsPt {
+    grid-auto-columns: 1pt;
+}
+
+.gridAutoColumnsPc {
+    grid-auto-columns: 1pc;
+}
+
+.gridAutoColumnsEm {
+    grid-auto-columns: 1em;
+}
+
+.gridAutoColumnsEx {
+    grid-auto-columns: 1ex;
+}
+
+.gridAutoColumnsRem {
+    grid-auto-columns: 1rem;
+}
+
+.gridAutoColumnsVw {
+    grid-auto-columns: 1vw;
+}
+
+.gridAutoColumnsVh {
+    grid-auto-columns: 1vh;
+}
+
+.gridAutoColumnsVmin {
+    grid-auto-columns: 1vmin;
+}
+
+.gridAutoColumnsVmax {
+    grid-auto-columns: 1vmax;
+}
+
+.gridAutoColumnsPercent {
+    grid-auto-columns: 1%;
+}
+
+.columnRuleColorHex {
+    column-rule-color: #000;
+}
+
+.columnRuleColorInitial {
+    column-rule-color: initial;
+}
+
+.columnRuleColorInherit {
+    column-rule-color: inherit;
+}
+
+.borderLeftColorHex {
+    border-left-color: #000;
+}
+
+.borderLeftColorName {
+    border-left-color: black;
+}
+
+.borderLeftColorTransparent {
+    border-left-color: transparent;
+}
+
+.borderLeftColorInitial {
+    border-left-color: initial;
+}
+
+.borderLeftColorInherit {
+    border-left-color: inherit;
+}
+
+.outlineRadiusTopLeftNone {
+    outline-radius-topleft: none;
+}
+
+.outlineRadiusTopLeftMm {
+    outline-radius-topleft: 1mm;
+}
+
+.outlineRadiusTopLeftIn {
+    outline-radius-topleft: 1in;
+}
+
+.outlineRadiusTopLeftPx {
+    outline-radius-topleft: 1px;
+}
+
+.outlineRadiusTopLeftPt {
+    outline-radius-topleft: 1pt;
+}
+
+.outlineRadiusTopLeftPc {
+    outline-radius-topleft: 1pc;
+}
+
+.outlineRadiusTopLeftEm {
+    outline-radius-topleft: 1em;
+}
+
+.outlineRadiusTopLeftEx {
+    outline-radius-topleft: 1ex;
+}
+
+.outlineRadiusTopLeftCh {
+    outline-radius-topleft: 1ch;
+}
+
+.outlineRadiusTopLeftRem {
+    outline-radius-topleft: 1rem;
+}
+
+.outlineRadiusTopLeftVw {
+    outline-radius-topleft: 1vw;
+}
+
+.outlineRadiusTopLeftVh {
+    outline-radius-topleft: 1vh;
+}
+
+.outlineRadiusTopLeftVmin {
+    outline-radius-topleft: 1vmin;
+}
+
+.outlineRadiusTopLeftVmax {
+    outline-radius-topleft: 1vmax;
+}
+
+.outlineRadiusTopLeftPercent {
+    outline-radius-topleft: 1%;
+}
+
+.outlineRadiusTopLeftInherit {
+    outline-radius-topleft: inherit;
+}
+
+.outlineRadiusTopLeftInitial {
+    outline-radius-topleft: initial;
+}
+
+.outlineRadiusTopLeftUnset {
+    outline-radius-topleft: unset;
+}
+
+.outlineOffsetLengthMm {
+   outline-offset: 1mm;
+}
+
+.outlineOffsetLengthIn {
+   outline-offset: 1in;
+}
+
+.outlineOffsetLengthPx {
+   outline-offset: 1px;
+}
+
+.outlineOffsetLengthPt {
+   outline-offset: 1pt;
+}
+
+.outlineOffsetLengthPc {
+   outline-offset: 1pc;
+}
+
+.outlineOffsetLengthEm {
+   outline-offset: 1em;
+}
+
+.outlineOffsetLengthEx {
+   outline-offset: 1ex;
+}
+
+.outlineOffsetLengthRem {
+   outline-offset: 1rem;
+}
+
+.outlineOffsetLengthVw {
+   outline-offset: 1vw;
+}
+
+.outlineOffsetLengthVh {
+   outline-offset: 1vh;
+}
+
+.outlineOffsetLengthVmin {
+   outline-offset: 1vmin;
+}
+
+.outlineOffsetLengthVmax {
+   outline-offset: 1vmax;
+}
+
+.outlineOffsetLengthPercent {
+   outline-offset: 1%;
+}
+
+.outlineOffsetInitial {
+    outline-offset: initial;
+}
+
+.outlineOffsetInherit {
+    outline-offset: inherit;
+}
+
+.animationDirectionNormal {
+    animation-direction: normal;
+}
+
+.animationDirectionReverse {
+    animation-direction: reverse;
+}
+
+.animationDirectionAlternate {
+    animation-direction: alternate;
+}
+
+.animationDirectionAlternateReverse {
+    animation-direction: alternate-reverse;
+}
+
+.animationDirectionInitial {
+    animation-direction: initial;
+}
+
+.animationDirectionInherit {
+    animation-direction: inherit;
+}
+
+.listStyleImageNone {
+    list-style-image: none;
+}
+
+.listStyleImageUrl {
+    list-style-image: url('dot.png');
+}
+
+.listStyleImageInitial {
+    list-style-image: initial;
+}
+
+.listStyleImageInherit {
+    list-style-image: inherit;
+}
+
+.layoutGridCharAuto {
+    layout-grid-char: auto;
+}
+
+.layoutGridCharCm {
+    layout-grid-char: 1cm;
+}
+
+.layoutGridCharMm {
+    layout-grid-char: 1mm;
+}
+
+.layoutGridCharIn {
+    layout-grid-char: 1in;
+}
+
+.layoutGridCharPx {
+    layout-grid-char: 1px;
+}
+
+.layoutGridCharPt {
+    layout-grid-char: 1pt;
+}
+
+.layoutGridCharPc {
+    layout-grid-char: 1pc;
+}
+
+.layoutGridCharEm {
+    layout-grid-char: 1em;
+}
+
+.layoutGridCharEx {
+    layout-grid-char: 1ex;
+}
+
+.layoutGridCharCh {
+    layout-grid-char: 1ch;
+}
+
+.layoutGridCharRem {
+    layout-grid-char: 1rem;
+}
+
+.layoutGridCharVw {
+    layout-grid-char: 1vw;
+}
+
+.layoutGridCharVh {
+    layout-grid-char: 1vh;
+}
+
+.layoutGridCharVmin {
+    layout-grid-char: 1vmin;
+}
+
+.layoutGridCharVmax {
+    layout-grid-char: 1vmax;
+}
+
+.layoutGridCharPercent {
+    layout-grid-char: 1%;
+}
+
+.layoutGridCharNone {
+    layout-grid-char: none;
+}
+
+.marqueeStyleSlow {
+    marquee-style: slow;
+}
+
+.marqueeStyleNormal {
+    marquee-style: normal;
+}
+
+.marqueeStyleFast {
+    marquee-style: fast;
+}
+
+.marqueeStyleInitial {
+    marquee-style: initial;
+}
+
+.marqueeStyleInherit {
+    marquee-style: inherit;
+}
+
+.marqueeStyleUnset {
+    marquee-style: unset;
+}
+
+.windowShadowDefault {
+    window-shadow: default;
+}
+
+.windowShadowMenu {
+    window-shadow: menu;
+}
+
+.windowShadowTooltip {
+    window-shadow: tooltip;
+}
+
+.windowShadowSheet {
+    window-shadow: sheet;
+}
+
+.windowShadowNone {
+    window-shadow: none;
+}
+
+.gridAutoFlowRow {
+    grid-auto-flow: row;
+}
+
+.gridAutoFlowColumns {
+    grid-auto-flow: columns;
+}
+
+.gridAutoFlowRow {
+    grid-auto-flow: row;
+}
+
+.gridAutoFlowDense {
+    grid-auto-flow: dense;
+}
+
+.gridAutoFlowColumn {
+    grid-auto-flow: column;
+}
+
+.gridAutoFlowDense {
+    grid-auto-flow: dense;
+}
+
+.directionLtr {
+    direction: ltr;
+}
+
+.directionRtl {
+    direction: rtl;
+}
+
+.directionInitial {
+    direction: initial;
+}
+
+.directionInherit {
+    direction: inherit;
+}
+
+.backgroundColorColor {
+    background-color: color;
+}
+
+.backgroundColorTransparent {
+    background-color: transparent;
+}
+
+.backgroundColorInitial {
+    background-color: initial;
+}
+
+.backgroundColorInherit {
+    background-color: inherit;
+}
+
+.borderVerticalSpacingCm {
+    border-vertical-spacing: 1cm;
+}
+
+.borderVerticalSpacingMm {
+    border-vertical-spacing: 1mm;
+}
+
+.borderVerticalSpacingIn {
+    border-vertical-spacing: 1in;
+}
+
+.borderVerticalSpacingPx {
+    border-vertical-spacing: 1px;
+}
+
+.borderVerticalSpacingPt {
+    border-vertical-spacing: 1pt;
+}
+
+.borderVerticalSpacingPc {
+    border-vertical-spacing: 1pc;
+}
+
+.borderVerticalSpacingEm {
+    border-vertical-spacing: 1em;
+}
+
+.borderVerticalSpacingEx {
+    border-vertical-spacing: 1ex;
+}
+
+.borderVerticalSpacingCh {
+    border-vertical-spacing: 1ch;
+}
+
+.borderVerticalSpacingRem {
+    border-vertical-spacing: 1rem;
+}
+
+.borderVerticalSpacingVw {
+    border-vertical-spacing: 1vw;
+}
+
+.borderVerticalSpacingVh {
+    border-vertical-spacing: 1vh;
+}
+
+.borderVerticalSpacingVmin {
+    border-vertical-spacing: 1vmin;
+}
+
+.borderVerticalSpacingVmax {
+    border-vertical-spacing: 1vmax;
+}
+
+.borderVerticalSpacingPercent {
+    border-vertical-spacing: 1%;
+}
+
+.cursorAlias {
+    cursor: alias;
+}
+
+.cursorAllScroll {
+    cursor: all-scroll;
+}
+
+.cursorAuto {
+    cursor: auto;
+}
+
+.cursorCell {
+    cursor: cell;
+}
+
+.cursorContextMenu {
+    cursor: context-menu;
+}
+
+.cursorColResize {
+    cursor: col-resize;
+}
+
+.cursorCopy {
+    cursor: copy;
+}
+
+.cursorCrosshair {
+    cursor: crosshair;
+}
+
+.cursorDefault {
+    cursor: default;
+}
+
+.cursorEResize {
+    cursor: e-resize;
+}
+
+.cursorEwResize {
+    cursor: ew-resize;
+}
+
+.cursorGrab {
+    cursor: grab;
+}
+
+.cursorGrabbing {
+    cursor: grabbing;
+}
+
+.cursorHelp {
+    cursor: help;
+}
+
+.cursorMove {
+    cursor: move;
+}
+
+.cursorNResize {
+    cursor: n-resize;
+}
+
+.cursorNeResize {
+    cursor: ne-resize;
+}
+
+.cursorNeswResize {
+    cursor: nesw-resize;
+}
+
+.cursorNsResize {
+    cursor: ns-resize;
+}
+
+.cursorNwResize {
+    cursor: nw-resize;
+}
+
+.cursorNwseResize {
+    cursor: nwse-resize;
+}
+
+.cursorNoDrop {
+    cursor: no-drop;
+}
+
+.cursorNone {
+    cursor: none;
+}
+
+.cursorNotAllowed {
+    cursor: not-allowed;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.cursorProgress {
+    cursor: progress;
+}
+
+.cursorRowResize {
+    cursor: row-resize;
+}
+
+.cursorSResize {
+    cursor: s-resize;
+}
+
+.cursorSeResize {
+    cursor: se-resize;
+}
+
+.cursorSwResize {
+    cursor: sw-resize;
+}
+
+.cursorText {
+    cursor: text;
+}
+
+.cursorUrl {
+    cursor: url('myBall.cur'), auto;
+}
+
+.cursorWResize {
+    cursor: w-resize;
+}
+
+.cursorWait {
+    cursor: wait;
+}
+
+.cursorZoomIn {
+    cursor: zoom-in;
+}
+
+.cursorZoomOut {
+    cursor: zoom-out;
+}
+
+.borderAll {
+    border: 5px solid red;
+}
+
+.borderDouble {
+    border: double;
+}
+
+.borderInitial {
+    border: initial;
+}
+
+.borderInherit {
+    border: inherit;
+}
+
+.columnRuleColumnRuleAll {
+    column-rule: 4px double #000;
+}
+
+.columnRuleInitial {
+    column-rule: initial;
+}
+
+.columnRuleInherit {
+    column-rule: inherit;
+}
+
+.gridRowStartAuto {
+    grid-row-start: auto;
+}
+
+.gridRowStartRowLine {
+    grid-row-start: row-line;
+}
+
+.tableBaselineNumber {
+    table-baseline: -1;
+}
+
+.columnSpan1 {
+    column-span: 1;
+}
+
+.columnSpanAll {
+    column-span: all;
+}
+
+.columnSpanInitial {
+    column-span: initial;
+}
+
+.columnSpanInherit {
+    column-span: inherit;
+}
+
+.borderImageRepeatStretch {
+    border-image-repeat: stretch;
+}
+
+.borderImageRepeatRepeat {
+    border-image-repeat: repeat;
+}
+
+.borderImageRepeatRound {
+    border-image-repeat: round;
+}
+
+.borderImageRepeatInitial {
+    border-image-repeat: initial;
+}
+
+.borderImageRepeatInherit {
+    border-image-repeat: inherit;
+}
+
+.borderImageSliceNumber {
+    border-image-slice: 10;
+}
+
+.borderImageSlicePercent {
+    border-image-slice: 1%;
+}
+
+.borderImageSliceFill {
+    border-image-slice: fill;
+}
+
+.borderImageSliceInitial {
+    border-image-slice: initial;
+}
+
+.borderImageSliceInherit {
+    border-image-slice: inherit;
+}
+
+.svgShadowAll {
+    svg-shadow: 0 0 7px #53BE12;
+}
+
+.marginTopCollapseCollapse {
+    margin-top-collapse: collapse;
+}
+
+.marginTopCollapseDiscard {
+    margin-top-collapse: discard;
+}
+
+.marginTopCollapseSeperate {
+    margin-top-collapse: seperate;
+}
+
+.marginTopCollapseInherit {
+    margin-top-collapse: inherit;
+}
+
+
+.borderEndAll {
+    border-end: 4px solid red;  
+}
+
+.gridRowGapLengthMm {
+    grid-row-gap: 1mm;
+}
+
+.gridRowGapLengthIn {
+    grid-row-gap: 1in;
+}
+
+.gridRowGapLengthPx {
+    grid-row-gap: 1px;
+}
+
+.gridRowGapLengthPt {
+    grid-row-gap: 1pt;
+}
+
+.gridRowGapLengthPc {
+    grid-row-gap: 1pc;
+}
+
+.gridRowGapLengthEm {
+    grid-row-gap: 1em;
+}
+
+.gridRowGapLengthEx {
+    grid-row-gap: 1ex;
+}
+
+.gridRowGapLengthRem {
+    grid-row-gap: 1rem;
+}
+
+.gridRowGapLengthVw {
+    grid-row-gap: 1vw;
+}
+
+.gridRowGapLengthVh {
+    grid-row-gap: 1vh;
+}
+
+.gridRowGapLengthVmin {
+    grid-row-gap: 1vmin;
+}
+
+.gridRowGapLengthVmax {
+    grid-row-gap: 1vmax;
+}
+
+.gridRowGapLengthPercent {
+    grid-row-gap: 1%;
+}
+
+.alignItemsStretch {
+    align-items: stretch;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.alignItemsFlexStart {
+    align-items: flex-start;
+}
+
+.alignItemsFlexEnd {
+    align-items: flex-end;
+}
+
+.alignItemsBaseline {
+    align-items: baseline;
+}
+
+.alignItemsInitial {
+    align-items: initial;
+}
+
+.alignItemsInherit {
+    align-items: inherit;
+}
+
+.writingModeHorizontalTb {
+    writing-mode: horizontal-tb;
+}
+
+.writingModeVerticalRl {
+    writing-mode: vertical-rl;
+}
+
+.writingModeVerticalLr {
+    writing-mode: vertical-lr;
+}
+
+.writingModeInherit {
+    writing-mode: inherit;
+}
+
+.writingModeIntitial {
+    writing-mode: intitial;
+}
+
+.writingModeUnset {
+    writing-mode: unset;
+}
+
+.lineBreakAuto {
+    line-break: auto;
+}
+
+.lineBreakLoose {
+    line-break: loose;
+}
+
+.lineBreakNormal {
+    line-break: normal;
+}
+
+.lineBreakStrict {
+    line-break: strict;
+}
+
+.lineBreakInherit {
+    line-break: inherit;
+}
+
+.lineBreakInitial {
+    line-break: initial;
+}
+
+.lineBreakUnset {
+    line-break: unset;
+}
+
+.borderFitClip {
+    border-fit: clip;
+}
+
+.borderFitRepeat {
+    border-fit: repeat;
+}
+
+.borderFitScale {
+    border-fit: scale;
+}
+
+.borderFitStretch {
+    border-fit: stretch;
+}
+
+.borderFitOverwrite {
+    border-fit: overwrite;
+}
+
+.borderFitOverflow {
+    border-fit: overflow;
+}
+
+.borderFitSpace {
+    border-fit: space;
+}
+
+.overflowVisible {
+    overflow: visible;
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.overflowScroll {
+    overflow: scroll;
+}
+
+.overflowAuto {
+    overflow: auto;
+}
+
+.overflowInitial {
+    overflow: initial;
+}
+
+.overflowInherit {
+    overflow: inherit;
+}
+
+.layoutGridLineAuto {
+    layout-grid-line: auto;
+}
+
+.layoutGridLineCm {
+    layout-grid-line: 1cm;
+}
+
+.layoutGridLineMm {
+    layout-grid-line: 1mm;
+}
+
+.layoutGridLineIn {
+    layout-grid-line: 1in;
+}
+
+.layoutGridLinePx {
+    layout-grid-line: 1px;
+}
+
+.layoutGridLinePt {
+    layout-grid-line: 1pt;
+}
+
+.layoutGridLinePc {
+    layout-grid-line: 1pc;
+}
+
+.layoutGridLineEm {
+    layout-grid-line: 1em;
+}
+
+.layoutGridLineEx {
+    layout-grid-line: 1ex;
+}
+
+.layoutGridLineCh {
+    layout-grid-line: 1ch;
+}
+
+.layoutGridLineRem {
+    layout-grid-line: 1rem;
+}
+
+.layoutGridLineVw {
+    layout-grid-line: 1vw;
+}
+
+.layoutGridLineVh {
+    layout-grid-line: 1vh;
+}
+
+.layoutGridLineVmin {
+    layout-grid-line: 1vmin;
+}
+
+.layoutGridLineVmax {
+    layout-grid-line: 1vmax;
+}
+
+.layoutGridLinePercent {
+    layout-grid-line: 1%;
+}
+
+.layoutGridLineNone {
+    layout-grid-line: none;
+}
+
+.transitionPropertyNone {
+    transition-property: none;
+}
+
+.transitionPropertyAll {
+    transition-property: all;
+}
+
+.transitionPropertyProperty {
+    transition-property: width;
+}
+
+.transitionPropertyInitial {
+    transition-property: initial;
+}
+
+.transitionPropertyInherit {
+    transition-property: inherit;
+}
+
+.borderBottomColorColor {
+    border-bottom-color: #000;
+}
+
+.borderBottomColorTransparent {
+    border-bottom-color: transparent;
+}
+
+.borderBottomColorInitial {
+    border-bottom-color: initial;
+}
+
+.borderBottomColorInherit {
+    border-bottom-color: inherit;
+}
+
+.objectPositionCenterTop {
+    object-position: center top;
+}
+
+.objectPositionPxPx {
+    object-position: 100px 50px;
+}
+
+.objectPositionInherit {
+    object-position: inherit;
+}
+
+.objectPositionInitial {
+    object-position: initial;
+}
+
+.objectPositionUnset {
+    object-position: unset;
+}
+
+.boxReflectAbove {
+    box-reflect: above;
+}
+
+.boxReflectBelow {
+    box-reflect: below;
+}
+
+.boxReflectLeft {
+    box-reflect: left;
+}
+
+.boxReflectRight {
+    box-reflect: right;
+}
+
+.boxReflectOffset {
+    box-reflect: below 10px;
+}
+
+.boxReflectMask {
+    box-reflect: below 0 linear-gradient(transparent, white);
+}
+
+.boxReflectInherit {
+    box-reflect: inherit;
+}
+
+.boxReflectInitial {
+    box-reflect: initial;
+}
+
+.boxReflectUnset {
+    box-reflect: unset;
+}
+
+.borderBeforeWidthMedium {
+    border-before-width: medium;
+}
+
+.borderBeforeWidthThin {
+    border-before-width: thin;
+}
+
+.borderBeforeWidthThick {
+    border-before-width: thick;
+}
+
+.borderBeforeWidthLengthCm {
+    border-before-width: 1cm;
+}
+
+.borderBeforeWidthLengthMm {
+    border-before-width: 1mm;
+}
+
+.borderBeforeWidthLengthIn {
+    border-before-width: 1in;
+}
+
+.borderBeforeWidthLengthPx {
+    border-before-width: 1px;
+}
+
+.borderBeforeWidthLengthPt {
+    border-before-width: 1pt;
+}
+
+.borderBeforeWidthLengthPc {
+    border-before-width: 1pc;
+}
+
+.borderBeforeWidthLengthEm {
+    border-before-width: 1em;
+}
+
+.borderBeforeWidthLengthEx {
+    border-before-width: 1ex;
+}
+
+.borderBeforeWidthLengthRem {
+    border-before-width: 1rem;
+}
+
+.borderBeforeWidthLengthVw {
+    border-before-width: 1vw;
+}
+
+.borderBeforeWidthLengthVh {
+    border-before-width: 1vh;
+}
+
+.borderBeforeWidthLengthVmin {
+    border-before-width: 1vmin;
+}
+
+.borderBeforeWidthLengthVmax {
+    border-before-width: 1vmax;
+}
+
+.borderBeforeWidthLengthPercent {
+    border-before-width: 1%;
+}
+
+.borderBeforeWidthInitial {
+    border-before-width: initial;
+}
+
+.borderBeforeWidthInherit {
+    border-before-width: inherit;
+}
+
+.backgroundInlinePolicyBoundingBox {
+    background-inline-policy: bounding-box;
+}
+
+.borderImageOutsetLengthPxPxPxPx {
+    border-image-outset: 10px 5px 15px 5px;
+}
+
+.borderImageOutsetLengthPxPxPx {
+    border-image-outset: 10px 5px 15px;
+}
+
+.borderImageOutsetLengthPxPx {
+    border-image-outset: 10px 5px;
+}
+
+.borderImageOutsetLengthPx {
+    border-image-outset: 10px;
+}
+
+.borderImageOutsetNumberNum {
+    border-image-outset: 1;
+}
+
+.borderImageOutsetNumberNumNum {
+    border-image-outset: 1 0;
+}
+
+.borderImageOutsetNumberNumNumNum {
+    border-image-outset: 1 0 0;
+}
+
+.borderImageOutsetNumberNumNumNumNum {
+    border-image-outset: 1 0 1 1;
+}
+
+.borderImageOutsetInitial {
+    border-image-outset: initial;
+}
+
+.borderImageOutsetInherit {
+    border-image-outset: inherit;
+}
+
+.maxLogicalWidthNone {
+    max-logical-width: none;
+}
+
+.maxLogicalWidthCm {
+    max-logical-width: 1cm;
+}
+
+.maxLogicalWidthMm {
+    max-logical-width: 1mm;
+}
+
+.maxLogicalWidthIn {
+    max-logical-width: 1in;
+}
+
+.maxLogicalWidthPx {
+    max-logical-width: 1px;
+}
+
+.maxLogicalWidthPt {
+    max-logical-width: 1pt;
+}
+
+.maxLogicalWidthPc {
+    max-logical-width: 1pc;
+}
+
+.maxLogicalWidthEm {
+    max-logical-width: 1em;
+}
+
+.maxLogicalWidthEx {
+    max-logical-width: 1ex;
+}
+
+.maxLogicalWidthCh {
+    max-logical-width: 1ch;
+}
+
+.maxLogicalWidthRem {
+    max-logical-width: 1rem;
+}
+
+.maxLogicalWidthVw {
+    max-logical-width: 1vw;
+}
+
+.maxLogicalWidthVh {
+    max-logical-width: 1vh;
+}
+
+.maxLogicalWidthVmin {
+    max-logical-width: 1vmin;
+}
+
+.maxLogicalWidthVmax {
+    max-logical-width: 1vmax;
+}
+
+.maxLogicalWidthPercent {
+    max-logical-width: 1%;
+}
+
+.borderTopRightRadiusLengthCm {
+    border-top-right-radius: 1cm;
+}
+
+.borderTopRightRadiusLengthMm {
+    border-top-right-radius: 1mm;
+}
+
+.borderTopRightRadiusLengthIn {
+    border-top-right-radius: 1in;
+}
+
+.borderTopRightRadiusLengthPx {
+    border-top-right-radius: 1px;
+}
+
+.borderTopRightRadiusLengthPt {
+    border-top-right-radius: 1pt;
+}
+
+.borderTopRightRadiusLengthPc {
+    border-top-right-radius: 1pc;
+}
+
+.borderTopRightRadiusLengthEm {
+    border-top-right-radius: 1em;
+}
+
+.borderTopRightRadiusLengthEx {
+    border-top-right-radius: 1ex;
+}
+
+.borderTopRightRadiusLengthRem {
+    border-top-right-radius: 1rem;
+}
+
+.borderTopRightRadiusLengthVw {
+    border-top-right-radius: 1vw;
+}
+
+.borderTopRightRadiusLengthVh {
+    border-top-right-radius: 1vh;
+}
+
+.borderTopRightRadiusLengthVmin {
+    border-top-right-radius: 1vmin;
+}
+
+.borderTopRightRadiusLengthVmax {
+    border-top-right-radius: 1vmax;
+}
+
+.borderTopRightRadiusLengthPercent {
+    border-top-right-radius: 1%;
+}
+
+.borderTopRightRadiusInitial {
+    border-top-right-radius: initial;
+}
+
+.borderTopRightRadiusInherit {
+    border-top-right-radius: inherit;
+}
+
+.flexDirectionRow {
+    flex-direction: row;
+}
+
+.flexDirectionRowReverse {
+    flex-direction: row-reverse;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.flexDirectionColumnReverse {
+    flex-direction: column-reverse;
+}
+
+.flexDirectionInitial {
+    flex-direction: initial;
+}
+
+.flexDirectionInherit {
+    flex-direction: inherit;
+}
+
+.floatEdgeBorderBox {
+    float-edge: border-box;
+}
+
+.floatEdgeContentBox {
+    float-edge: content-box;
+}
+
+.floatEdgeMarginBox {
+    float-edge: margin-box;
+}
+
+.floatEdgePaddingBox {
+    float-edge: padding-box;
+}
+
+.floatEdgeInherit {
+    float-edge: inherit;
+}
+
+.floatEdgeInitial {
+    float-edge: initial;
+}
+
+.floatEdgeUnset {
+    float-edge: unset;
+}
+
+.widthAuto {
+    width: auto;
+}
+
+.widthLengthCm {
+    width: 1cm;
+}
+
+.widthLengthMm {
+    width: 1mm;
+}
+
+.widthLengthIn {
+    width: 1in;
+}
+
+.widthLengthPx {
+    width: 1px;
+}
+
+.widthLengthPt {
+    width: 1pt;
+}
+
+.widthLengthPc {
+    width: 1pc;
+}
+
+.widthLengthEm {
+    width: 1em;
+}
+
+.widthLengthEx {
+    width: 1ex;
+}
+
+.widthLengthCh {
+    width: 1ch;
+}
+
+.widthLengthRem {
+    width: 1rem;
+}
+
+.widthLengthVw {
+    width: 1vw;
+}
+
+.widthLengthVh {
+    width: 1vh;
+}
+
+.widthLengthVmin {
+    width: 1vmin;
+}
+
+.widthLengthVmax {
+    width: 1vmax;
+}
+
+.widthLengthPercent {
+    width: 1%;
+}
+
+.widthInitial {
+    width: initial;
+}
+
+.widthInherit {
+    width: inherit;
+}
+
+.animationDelayTime {
+    animation-delay: 2s;
+}
+
+.animationDelayInitial {
+    animation-delay: initial;
+}
+
+.animationDelayInherit {
+    animation-delay: inherit;
+}
+
+.textShadowAll {
+    text-shadow: 2px 2px #ff0000;
+}
+
+.textShadowColor {
+    text-shadow: color;
+}
+
+.textShadowNone {
+    text-shadow: none;
+}
+
+.textShadowInitial {
+    text-shadow: initial;
+}
+
+.textShadowInherit {
+    text-shadow: inherit;
+}
+
+.marginAfterNone {
+    margin-after: none;
+}
+
+.marginAfterAuto {
+    margin-after: auto;
+}
+
+.marginAfterCm {
+    margin-after: 1cm;
+}
+
+.marginAfterMm {
+    margin-after: 1mm;
+}
+
+.marginAfterIn {
+    margin-after: 1in;
+}
+
+.marginAfterPx {
+    margin-after: 1px;
+}
+
+.marginAfterPt {
+    margin-after: 1pt;
+}
+
+.marginAfterPc {
+    margin-after: 1pc;
+}
+
+.marginAfterEm {
+    margin-after: 1em;
+}
+
+.marginAfterEx {
+    margin-after: 1ex;
+}
+
+.marginAfterCh {
+    margin-after: 1ch;
+}
+
+.marginAfterRem {
+    margin-after: 1rem;
+}
+
+.marginAfterVw {
+    margin-after: 1vw;
+}
+
+.marginAfterVh {
+    margin-after: 1vh;
+}
+
+.marginAfterVmin {
+    margin-after: 1vmin;
+}
+
+.marginAfterVmax {
+    margin-after: 1vmax;
+}
+
+.marginAfterPercent {
+    margin-after: 1%;
+}
+
+.marginAfterInherit {
+    margin-after: inherit;
+}
+
+.marginAfterInitial {
+    margin-after: initial;
+}
+
+.borderWidthMedium {
+    border-width: medium;
+}
+
+.borderWidthThin {
+    border-width: thin;
+}
+
+.borderWidthThick {
+    border-width: thick;
+}
+
+.borderWidthLengthCm {
+    border-width: 1cm;
+}
+
+.borderWidthLengthMm {
+    border-width: 1mm;
+}
+
+.borderWidthLengthIn {
+    border-width: 1in;
+}
+
+.borderWidthLengthPx {
+    border-width: 1px;
+}
+
+.borderWidthLengthPt {
+    border-width: 1pt;
+}
+
+.borderWidthLengthPc {
+    border-width: 1pc;
+}
+
+.borderWidthLengthEm {
+    border-width: 1em;
+}
+
+.borderWidthLengthEx {
+    border-width: 1ex;
+}
+
+.borderWidthLengthRem {
+    border-width: 1rem;
+}
+
+.borderWidthLengthVw {
+    border-width: 1vw;
+}
+
+.borderWidthLengthVh {
+    border-width: 1vh;
+}
+
+.borderWidthLengthVmin {
+    border-width: 1vmin;
+}
+
+.borderWidthLengthVmax {
+    border-width: 1vmax;
+}
+
+.borderWidthLengthPercent {
+    border-width: 1%;
+}
+
+.borderWidthInitial {
+    border-width: initial;
+}
+
+.borderWidthInherit {
+    border-width: inherit;
+}
+
+.positionStatic {
+    position: static;
+}
+
+.positionAbsolute {
+    position: absolute;
+}
+
+.positionFixed {
+    position: fixed;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.positionSticky {
+    position: sticky;
+}
+
+.positionInitial {
+    position: initial;
+}
+
+.positionInherit {
+    position: inherit;
+}
+
+.textCombineHorizontal {
+    text-combine: horizontal;
+}
+
+.marginTopLengthMm {
+   margin-top: 1mm;
+}
+
+.marginTopLengthIn {
+   margin-top: 1in;
+}
+
+.marginTopLengthPx {
+   margin-top: 1px;
+}
+
+.marginTopLengthPt {
+   margin-top: 1pt;
+}
+
+.marginTopLengthPc {
+   margin-top: 1pc;
+}
+
+.marginTopLengthEm {
+   margin-top: 1em;
+}
+
+.marginTopLengthEx {
+   margin-top: 1ex;
+}
+
+.marginTopLengthRem {
+   margin-top: 1rem;
+}
+
+.marginTopLengthVw {
+   margin-top: 1vw;
+}
+
+.marginTopLengthVh {
+   margin-top: 1vh;
+}
+
+.marginTopLengthVmin {
+   margin-top: 1vmin;
+}
+
+.marginTopLengthVmax {
+   margin-top: 1vmax;
+}
+
+.marginTopLengthPercent {
+   margin-top: 1%;
+}
+
+.marginTopAuto {
+    margin-top: auto;
+}
+
+.marginTopInitial {
+    margin-top: initial;
+}
+
+.marginTopInherit {
+    margin-top: inherit;
+}
+
+.orderNumber {
+    order: 4;
+}
+
+.orderInitial {
+    order: initial;
+}
+
+.orderInherit {
+    order: inherit;
+}
+
+.perspectiveOriginXAxisYAxis {
+    perspective-origin: 10% 20%;
+}
+
+.perspectiveOriginInitial {
+    perspective-origin: initial;
+}
+
+.perspectiveOriginInherit {
+    perspective-origin: inherit;
+}
+
+.textCombineHorizontalNone {
+    text-combine-horizontal: none;
+}
+
+.textCombineHorizontalAll {
+    text-combine-horizontal: all;
+}
+
+.textCombineHorizontalDigits {
+    text-combine-horizontal: digits;
+}
+
+.textCombineHorizontalDigits 2 {
+    text-combine-horizontal: digits 2;
+}
+
+.textCombineHorizontalDigits 4 {
+    text-combine-horizontal: digits 4;
+}
+
+.textCombineUprightNone {
+    text-combine-upright: none;
+}
+
+.textCombineUprightAll {
+    text-combine-upright: all;
+}
+
+.textCombineUprightDigits {
+    text-combine-upright: digits;
+}
+
+.textCombineUprightDigitsNumber {
+    text-combine-upright: digits 4;
+}
+
+.textCombineUprightInherit {
+    text-combine-upright: inherit;
+}
+
+.textCombineUprightInitial {
+    text-combine-upright: initial;
+}
+
+.boxPackStart {
+    box-pack: start;
+}
+
+.boxPackCenter {
+    box-pack: center;
+}
+
+.boxPackEnd {
+    box-pack: end;
+}
+
+.boxPackJustify {
+    box-pack: justify;
+}
+
+.boxPackInherit {
+    box-pack: inherit;
+}
+
+.boxPackInitial {
+    box-pack: initial;
+}
+
+.boxPackUnset {
+    box-pack: unset;
+}
+
+.backgroundPositionValueLeftTop {
+    background-position: left top;
+}
+
+.backgroundPositionValueLeftCenter {
+    background-position: left center;
+}
+
+.backgroundPositionValueLeftBottom {
+    background-position: left bottom;
+}
+
+.backgroundPositionValueRightTop {
+    background-position: right top;
+}
+
+.backgroundPositionValueRightCenter {
+    background-position: right center;
+}
+
+.backgroundPositionValueRightBottom {
+    background-position: right bottom;
+}
+
+.backgroundPositionValueCenterTop {
+    background-position: center top;
+}
+
+.backgroundPositionValueCenterCenter {
+    background-position: center center;
+}
+
+.backgroundPositionValueCenterBottom {
+    background-position: center bottom;
+}
+
+.backgroundPositionValueCenter {
+    background-position: center;
+}
+
+.backgroundPositionValueCm {
+    background-position: 1cm 1cm;
+}
+
+.backgroundPositionValueMm {
+    background-position: 1mm 1mm;
+}
+
+.backgroundPositionValueIn {
+    background-position: 1in 1in;
+}
+
+.backgroundPositionValuePx {
+    background-position: 1px 1px;
+}
+
+.backgroundPositionValuePt {
+    background-position: 1pt 1pt;
+}
+
+.backgroundPositionValuePc {
+    background-position: 1pc 1pc;
+}
+
+.backgroundPositionValueEm {
+    background-position: 1em 1em;
+}
+
+.backgroundPositionValueEx {
+    background-position: 1ex 1ex;
+}
+
+.backgroundPositionValueCh {
+    background-position: 1ch 1ch;
+}
+
+.backgroundPositionValueRem {
+    background-position: 1rem 1rem;
+}
+
+.backgroundPositionValueVw {
+    background-position: 1vw 1vw;
+}
+
+.backgroundPositionValueVh {
+    background-position: 1vh 1vh;
+}
+
+.backgroundPositionValueVmin {
+    background-position: 1vmin 1vmin;
+}
+
+.backgroundPositionValueVmax {
+    background-position: 1vmax 1vmax;
+}
+
+.backgroundPositionValuePercent {
+    background-position: 1% 1%;
+}
+
+.zoomPercent {
+    zoom: 150%;
+}
+
+.zoomNumber {
+    zoom: 1.5;
+}
+
+.zoomNormal {
+    zoom: normal;
+}
+
+.listStyleTypeValue {
+    list-style-type: disc;
+}
+
+.listStyleTypeValue {
+    list-style-type: armenian;
+}
+
+.listStyleTypeValue {
+    list-style-type: circle;
+}
+
+.listStyleTypeValue {
+    list-style-type: cjk-ideographic;
+}
+
+.listStyleTypeValue {
+    list-style-type: decimal;
+}
+
+.listStyleTypeValue {
+    list-style-type: decimal-leading-zero;
+}
+
+.listStyleTypeValue {
+    list-style-type: georgian;
+}
+
+.listStyleTypeValue {
+    list-style-type: hebrew;
+}
+
+.listStyleTypeValue {
+    list-style-type: hiragana;
+}
+
+.listStyleTypeValue {
+    list-style-type: hiragana-iroha;
+}
+
+.listStyleTypeValue {
+    list-style-type: katakana;
+}
+
+.listStyleTypeValue {
+    list-style-type: katakana-iroha;
+}
+
+.listStyleTypeValue {
+    list-style-type: lower-alpha;
+}
+
+.listStyleTypeValue {
+    list-style-type: lower-greek;
+}
+
+.listStyleTypeValue {
+    list-style-type: lower-latin;
+}
+
+.listStyleTypeValue {
+    list-style-type: lower-roman;
+}
+
+.listStyleTypeValue {
+    list-style-type: none;
+}
+
+.listStyleTypeValue {
+    list-style-type: square;
+}
+
+.listStyleTypeValue {
+    list-style-type: upper-alpha;
+}
+
+.listStyleTypeValue {
+    list-style-type: upper-greek;
+}
+
+.listStyleTypeValue {
+    list-style-type: upper-latin;
+}
+
+.listStyleTypeValue {
+    list-style-type: upper-roman;
+}
+
+.listStyleTypeValue {
+    list-style-type: initial;
+}
+
+.listStyleTypeValue {
+    list-style-type: inherit;
+}
+
+.isolationAuto {
+    isolation: auto;
+}
+
+.isolationIsolate {
+    isolation: isolate;
+}
+
+.isolationInitial {
+    isolation: initial;
+}
+
+.isolationInherit {
+    isolation: inherit;
+}
+
+.wordWrapNormal {
+    word-wrap: normal;
+}
+
+.wordWrapBreakWord {
+    word-wrap: break-word;
+}
+
+.wordWrapInitial {
+    word-wrap: initial;
+}
+
+.wordWrapInherit {
+    word-wrap: inherit;
+}
+
+.borderAfterStyleSolid {
+    border-after-style: solid;
+}
+
+.borderAfterAll {
+    border-after: medium dashed blue;
+}
+
+.borderAfterLengthStyle {
+    border-after: 2px dotted;
+}
+
+.borderAfterLength {
+    border-after: 1px;
+}
+
+.alignSelfAuto {
+    align-self: auto;
+}
+
+.alignSelfStretch {
+    align-self: stretch;
+}
+
+.alignSelfCenter {
+    align-self: center;
+}
+
+.alignSelfFlexStart {
+    align-self: flex-start;
+}
+
+.alignSelfFlexEnd {
+    align-self: flex-end;
+}
+
+.alignSelfBaseline {
+    align-self: baseline;
+}
+
+.alignSelfInitial {
+    align-self: initial;
+}
+
+.alignSelfInherit {
+    align-self: inherit;
+}
+
+.borderRightColorHex {
+    border-right-color: #000;
+}
+
+.borderRightColorName {
+    border-right-color: black;
+}
+
+.borderRightColorTransparent {
+    border-right-color: transparent;
+}
+
+.borderRightColorInitial {
+    border-right-color: initial;
+}
+
+.borderRightColorInherit {
+    border-right-color: inherit;
+}
+
+.fontWeightNormal {
+    font-weight: normal;
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.fontWeightBolder {
+    font-weight: bolder;
+}
+
+.fontWeightLighter {
+    font-weight: lighter;
+}
+
+.fontWeightNumber {
+    font-weight: 100;
+}
+
+.fontWeightInitial {
+    font-weight: initial;
+}
+
+.fontWeightInherit {
+    font-weight: inherit;
+}
+
+.animationFillModeNone {
+    animation-fill-mode: none;
+}
+
+.animationFillModeForwards {
+    animation-fill-mode: forwards;
+}
+
+.animationFillModeBackwards {
+    animation-fill-mode: backwards;
+}
+
+.animationFillModeBoth {
+    animation-fill-mode: both;
+}
+
+.animationFillModeInitial {
+    animation-fill-mode: initial;
+}
+
+.animationFillModeInherit {
+    animation-fill-mode: inherit;
+}
+
+.marginBottomLengthMm {
+   margin-bottom: 1mm;
+}
+
+.marginBottomLengthIn {
+   margin-bottom: 1in;
+}
+
+.marginBottomLengthPx {
+   margin-bottom: 1px;
+}
+
+.marginBottomLengthPt {
+   margin-bottom: 1pt;
+}
+
+.marginBottomLengthPc {
+   margin-bottom: 1pc;
+}
+
+.marginBottomLengthEm {
+   margin-bottom: 1em;
+}
+
+.marginBottomLengthEx {
+   margin-bottom: 1ex;
+}
+
+.marginBottomLengthRem {
+   margin-bottom: 1rem;
+}
+
+.marginBottomLengthVw {
+   margin-bottom: 1vw;
+}
+
+.marginBottomLengthVh {
+   margin-bottom: 1vh;
+}
+
+.marginBottomLengthVmin {
+   margin-bottom: 1vmin;
+}
+
+.marginBottomLengthVmax {
+   margin-bottom: 1vmax;
+}
+
+.marginBottomLengthPercent {
+   margin-bottom: 1%;
+}
+
+.marginBottomAuto {
+    margin-bottom: auto;
+}
+
+.marginBottomInitial {
+    margin-bottom: initial;
+}
+
+.marginBottomInherit {
+    margin-bottom: inherit;
+}
+
+.flexWrapNowrap {
+    flex-wrap: nowrap;
+}
+
+.flexWrapWrap {
+    flex-wrap: wrap;
+}
+
+.flexWrapWrapReverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flexWrapInitial {
+    flex-wrap: initial;
+}
+
+.flexWrapInherit {
+    flex-wrap: inherit;
+}
+
+.fontSizeFontSizeMedium {
+    font-size: medium;
+}
+
+.fontSizeXxSmall {
+    font-size: xx-small;
+}
+
+.fontSizeXSmall {
+    font-size: x-small;
+}
+
+.fontSizeSmall {
+    font-size: small;
+}
+
+.fontSizeLarge {
+    font-size: large;
+}
+
+.fontSizeXLarge {
+    font-size: x-large;
+}
+
+.fontSizeXxLarge {
+    font-size: xx-large;
+}
+
+.fontSizeSmaller {
+    font-size: smaller;
+}
+
+.fontSizeLarger {
+    font-size: larger;
+}
+
+.fontSizeMm {
+    font-size: 1mm;
+}
+
+.fontSizeIn {
+    font-size: 1in;
+}
+
+.fontSizePx {
+    font-size: 1px;
+}
+
+.fontSizePt {
+    font-size: 1pt;
+}
+
+.fontSizePc {
+    font-size: 1pc;
+}
+
+.fontSizeEm {
+    font-size: 1em;
+}
+
+.fontSizeEx {
+    font-size: 1ex;
+}
+
+.fontSizeRem {
+    font-size: 1rem;
+}
+
+.fontSizeVw {
+    font-size: 1vw;
+}
+
+.fontSizeVh {
+    font-size: 1vh;
+}
+
+.fontSizeVmin {
+    font-size: 1vmin;
+}
+
+.fontSizeVmax {
+    font-size: 1vmax;
+}
+
+.fontSizePercent {
+    font-size: 1%;
+}
+
+.fontSizeInitial {
+    font-size: initial;
+}
+
+.fontSizeInherit {
+    font-size: inherit;
+}
+
+.textSecurityCircle {
+    text-security: circle;
+}
+
+.textSecurityDisc {
+    text-security: disc;
+}
+
+.textSecurityNone {
+    text-security: none;
+}
+
+.textSecuritySquare {
+    text-security: square;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.textAlignJustify {
+    text-align: justify;
+}
+
+.textAlignInitial {
+    text-align: initial;
+}
+
+.textAlignInherit {
+    text-align: inherit;
+}
+
+.scrollbar3dLightColorHex
+{
+    scrollbar-3dlight-color: #000;
+}
+
+.scrollbar3dLightColorInherit
+{
+    scrollbar-3dlight-color: inherit;
+}
+
+.textStrokeColorRed {
+    text-stroke-color: red;
+}
+
+.textStrokeColorHex {
+    text-stroke-color: #e08ab4;
+}
+
+.textStrokeColorRgb {
+    text-stroke-color: rgb(200, 100, 0);
+}
+
+.textStrokeColorInherit {
+    text-stroke-color: inherit;
+}
+
+.textStrokeColorInitial {
+    text-stroke-color: initial;
+}
+
+.textStrokeColorUnset {
+    text-stroke-color: unset;
+}
+
+.marqueeDirectionAhead {
+    margin-direction: ahead;
+}
+
+.marqueeDirectionAuto {
+    margin-direction: auto;
+}
+
+.marqueeDirectionBackwards {
+    margin-direction: backwards;
+}
+
+.marqueeDirectionDown {
+    margin-direction: down;
+}
+
+.marqueeDirectionForwards {
+    margin-direction: forwards;
+}
+
+.marqueeDirectionInherit {
+    margin-direction: inherit;
+}
+
+.marqueeDirectionLeft {
+    margin-direction: left;
+}
+
+.marqueeDirectionReverse {
+    margin-direction: reverse;
+}
+
+.marqueeDirectionRight {
+    margin-direction: right;
+}
+
+.marqueeDirectionUp {
+    margin-direction: up;
+}
+
+.animationNameKeyframename {
+    animation-name: myMove;
+}
+
+.animationNameNone {
+    animation-name: none;
+}
+
+.animationNameInitial {
+    animation-name: initial;
+}
+
+.animationNameInherit {
+    animation-name: inherit;
+}
+
+.marginAll {
+   margin: 10px 1px 15px 50px;
+}
+
+.marginLengthMm {
+   margin: 1mm;
+}
+
+.marginLengthIn {
+   margin: 1in;
+}
+
+.marginLengthPx {
+   margin: 1px;
+}
+
+.marginLengthPt {
+   margin: 1pt;
+}
+
+.marginLengthPc {
+   margin: 1pc;
+}
+
+.marginLengthEm {
+   margin: 1em;
+}
+
+.marginLengthEx {
+   margin: 1ex;
+}
+
+.marginLengthRem {
+   margin: 1rem;
+}
+
+.marginLengthVw {
+   margin: 1vw;
+}
+
+.marginLengthVh {
+   margin: 1vh;
+}
+
+.marginLengthVmin {
+   margin: 1vmin;
+}
+
+.marginLengthVmax {
+   margin: 1vmax;
+}
+
+.marginLengthPercent {
+   margin: 1%;
+}
+
+.marginAuto {
+    margin: auto;
+}
+
+.marginInitial {
+    margin: initial;
+}
+
+.marginInherit {
+    margin: inherit;
+}
+
+.borderLeftBorderAll {
+    border-left: 5px solid red;
+}
+
+.borderLeftBorderWidthStyle {
+    border-left: 5px solid;
+}
+
+.borderLeftInitial {
+    border-left: initial;
+}
+
+.borderLeftInherit {
+    border-left: inherit;
+}
+
+.outlineRadiusTopRightNone {
+    outline-radius-topright: none;
+}
+
+.outlineRadiusTopRightMm {
+    outline-radius-topright: 1mm;
+}
+
+.outlineRadiusTopRightIn {
+    outline-radius-topright: 1in;
+}
+
+.outlineRadiusTopRightPx {
+    outline-radius-topright: 1px;
+}
+
+.outlineRadiusTopRightPt {
+    outline-radius-topright: 1pt;
+}
+
+.outlineRadiusTopRightPc {
+    outline-radius-topright: 1pc;
+}
+
+.outlineRadiusTopRightEm {
+    outline-radius-topright: 1em;
+}
+
+.outlineRadiusTopRightEx {
+    outline-radius-topright: 1ex;
+}
+
+.outlineRadiusTopRightCh {
+    outline-radius-topright: 1ch;
+}
+
+.outlineRadiusTopRightRem {
+    outline-radius-topright: 1rem;
+}
+
+.outlineRadiusTopRightVw {
+    outline-radius-topright: 1vw;
+}
+
+.outlineRadiusTopRightVh {
+    outline-radius-topright: 1vh;
+}
+
+.outlineRadiusTopRightVmin {
+    outline-radius-topright: 1vmin;
+}
+
+.outlineRadiusTopRightVmax {
+    outline-radius-topright: 1vmax;
+}
+
+.outlineRadiusTopRightPercent {
+    outline-radius-topright: 1%;
+}
+
+.outlineRadiusTopRightInherit {
+    outline-radius-topright: inherit;
+}
+
+.outlineRadiusTopRightInitial {
+    outline-radius-topright: initial;
+}
+
+.outlineRadiusTopRightUnset {
+    outline-radius-topright: unset;
+}
+
+.fontSizeAdjustNumber {
+    font-size-adjust: 0.58;
+}
+
+.fontSizeAdjustNone {
+    font-size-adjust: none;
+}
+
+.fontSizeAdjustInitial {
+    font-size-adjust: initial;
+}
+
+.fontSizeAdjustInherit {
+    font-size-adjust: inherit;
+}
+
+.boxLinesSingle {
+    box-lines: single;
+}
+
+.boxLinesMultiple {
+    box-lines: multiple;
+}
+
+.boxLinesInherit {
+    box-lines: inherit;
+}
+
+.boxLinesInitial {
+    box-lines: initial;
+}
+
+.boxLinesUnset {
+    box-lines: unset;
+}
+
+.transitionAll {
+    transition: width .35s ease-in-out;
+}
+
+.transitionInitial {
+    transition: initial;
+}
+
+.transitionInherit {
+    transition: inherit;
+}
+
+.transformOriginYNumber {
+    transform-origin-y: 123;
+}
+
+.transformOriginYPercent {
+    transform-origin-y: 10%;
+}
+
+.transformOriginYInitial {
+    transform-origin-y: initial;
+}
+
+.transformOriginYInherit {
+    transform-origin-y: inherit;
+}
+
+.columnGapLengthPx {
+    column-gap: 1px;
+}
+
+.columnGapNormal {
+    column-gap: normal;
+}
+
+.columnGapInitial {
+    column-gap: initial;
+}
+
+.columnGapInherit {
+    column-gap: inherit;
+}
+
+.marginEndAuto {
+    margin-end: auto;
+}
+
+.marginEndNone {
+    margin-end: none;
+}
+
+.marginEndCm {
+    margin-end: 1cm;
+}
+
+.marginEndMm {
+    margin-end: 1mm;
+}
+
+.marginEndIn {
+    margin-end: 1in;
+}
+
+.marginEndPx {
+    margin-end: 1px;
+}
+
+.marginEndPt {
+    margin-end: 1pt;
+}
+
+.marginEndPc {
+    margin-end: 1pc;
+}
+
+.marginEndEm {
+    margin-end: 1em;
+}
+
+.marginEndEx {
+    margin-end: 1ex;
+}
+
+.marginEndCh {
+    margin-end: 1ch;
+}
+
+.marginEndRem {
+    margin-end: 1rem;
+}
+
+.marginEndVw {
+    margin-end: 1vw;
+}
+
+.marginEndVh {
+    margin-end: 1vh;
+}
+
+.marginEndVmin {
+    margin-end: 1vmin;
+}
+
+.marginEndVmax {
+    margin-end: 1vmax;
+}
+
+.marginEndPercent {
+    margin-end: 1%;
+}
+
+.marginEndInitial {
+    list-style-type: initial;
+}
+
+.marginEndInherit {
+    list-style-type: inherit;
+}
+
+.scrollbarTrackColorHex
+{
+    scrollbar-track-color: #000;
+}
+
+.scrollbarTrackColorInherit
+{
+    scrollbar-track-color: inherit;
+}
+
+.resizeNone {
+    resize: none;
+}
+
+.resizeBoth {
+    resize: both;
+}
+
+.resizeHorizontal {
+    resize: horizontal;
+}
+
+.resizeVertical {
+    resize: vertical;
+}
+
+.resizeInitial {
+    resize: initial;
+}
+
+.resizeInherit {
+    resize: inherit;
+}
+
+.transformOriginXNumber {
+    transform-origin-x: 123;
+}
+
+.transformOriginXPercent {
+    transform-origin-x: 10%;
+}
+
+.transformOriginXInitial {
+    transform-origin-x: initial;
+}
+
+.transformOriginXInherit {
+    transform-origin-x: inherit;
+}
+
+.behaviourUrl {
+    behaviour: url('flyin.htc');
+}
+
+.boxFlexNumber {
+    box-flex: 3.5;
+}
+
+.boxFlexInherit {
+    box-flex: inherit;
+}
+
+.boxFlexInitial {
+    box-flex: initial;
+}
+
+.boxFlexunset {
+    box-flex: unset;
+}
+
+.counterResetNone {
+    counter-reset: none;
+}
+
+.counterResetName {
+    counter-reset: mySecCounter;
+}
+
+.counterResetNameNumber {
+    counter-reset: mySecCounter 2;
+}
+
+.counterResetInitial {
+    counter-reset: initial;
+}
+
+.counterResetInherit {
+    counter-reset: inherit;
+}
+
+.gridTemplateRowsNone {
+    grid-template-rows: none;
+}
+
+.gridTemplateRowsAuto {
+    grid-template-rows: auto;
+}
+
+.gridTemplateRowsMaxContent {
+    grid-template-rows: max-content;
+}
+
+.gridTemplateRowsMinContent {
+    grid-template-rows: min-content;
+}
+
+.gridTemplateRowsLengthMm {
+    grid-template-rows: 1mm;
+}
+
+.gridTemplateRowsLengthIn {
+    grid-template-rows: 1in;
+}
+
+.gridTemplateRowsLengthPx {
+    grid-template-rows: 1px;
+}
+
+.gridTemplateRowsLengthPt {
+    grid-template-rows: 1pt;
+}
+
+.gridTemplateRowsLengthPc {
+    grid-template-rows: 1pc;
+}
+
+.gridTemplateRowsLengthEm {
+    grid-template-rows: 1em;
+}
+
+.gridTemplateRowsLengthEx {
+    grid-template-rows: 1ex;
+}
+
+.gridTemplateRowsLengthRem {
+    grid-template-rows: 1rem;
+}
+
+.gridTemplateRowsLengthVw {
+    grid-template-rows: 1vw;
+}
+
+.gridTemplateRowsLengthVh {
+    grid-template-rows: 1vh;
+}
+
+.gridTemplateRowsLengthVmin {
+    grid-template-rows: 1vmin;
+}
+
+.gridTemplateRowsLengthVmax {
+    grid-template-rows: 1vmax;
+}
+
+.gridTemplateRowsLengthPercent {
+    grid-template-rows: 1%;
+}
+
+.gridTemplateRowsInitial {
+    grid-template-rows: initial;
+}
+
+.gridTemplateRowsInherit {
+    grid-template-rows: inherit;
+}
+
+.maskSizeCover {
+    mask-size: cover;
+}
+
+.maskSizeContain {
+    mask-size: contain;
+}
+
+.maskSize50% {
+    mask-size: 50%;
+}
+
+.maskSize3em {
+    mask-size: 3em;
+}
+
+.maskSize12px {
+    mask-size: 12px;
+}
+
+.maskSizeAuto {
+    mask-size: auto;
+}
+
+.maskSizePercentAuto {
+    mask-size: 50% auto;
+}
+
+.maskSizeEmPercent {
+    mask-size: 3em 25%;
+}
+
+.maskSizeAutoPx {
+    mask-size: auto 6px;
+}
+
+.maskSizeAutoAuto {
+    mask-size: auto auto;
+}
+
+.maskSizeAutoCommaAuto {
+    mask-size: auto, auto;
+}
+
+.maskSizePercentPercentPercent {
+    mask-size: 50%, 25%, 25%;
+}
+
+.maskSizePxAutoContain {
+    mask-size: 6px, auto, contain;
+}
+
+.maskSizeInherit {
+    mask-size: inherit;
+}
+
+.maskSizeInitial {
+    mask-size: initial;
+}
+
+.maskSizeUnset {
+    mask-size: unset;
+}
+
+.borderBottomLeftRadiusLengthPx {
+    border-bottom-left-radius: 25px;
+}
+
+.borderBottomLeftRadiusLengthPxPx {
+    border-bottom-left-radius: 50px 10px;
+}
+
+.borderBottomLeftRadiusPercent {
+    border-bottom-left-radius: 2%;
+}
+
+.borderBottomLeftRadiusInitial {
+    border-bottom-left-radius: initial;
+}
+
+.borderBottomLeftRadiusInherit {
+    border-bottom-left-radius: inherit;
+}
+
+.gridAreaAll {
+    grid-area: 2 / 1 / span 2 / span 3;
+}
+
+.gridAreaItemname {
+    grid-area: myArea;
+}
+
+.fontLanguageOverrideNormal {
+    font-language-override: normal;
+}
+
+.fontLanguageOverrideString {
+    font-language-override: "ENG";
+}
+
+.fontLanguageOverrideInitial {
+    font-language-override: initial;
+}
+
+.fontLanguageOverrideInherit {
+    font-language-override: inherit;
+}
+
+.fontLanguageOverrideUnset {
+    font-language-override: unset;
+}
+
+.textStrokeLengthColour {
+    text-stroke: 4px navy;
+}
+
+.textStrokeInherit {
+    text-stroke: inherit;
+}
+
+.textStrokeInitial {
+    text-stroke: initial;
+}
+
+.textStrokeUnset {
+    text-stroke: unset;
+}
+
+.textDecorationLineNone {
+    text-decoration-line: none;
+}
+
+.textDecorationLineUnderline {
+    text-decoration-line: underline;
+}
+
+.textDecorationLineOverline {
+    text-decoration-line: overline;
+}
+
+.textDecorationLineLineThrough {
+    text-decoration-line: line-through;
+}
+
+.textDecorationLineInitial {
+    text-decoration-line: initial;
+}
+
+.textDecorationLineInherit {
+    text-decoration-line: inherit;
+}
+
+.userModifyReadOnly {
+    user-modify: read-only;
+}
+
+.userModifyReadWrite {
+    user-modify: read-write;
+}
+
+.userModifyWriteOnly {
+    user-modify: write-only;
+}
+
+.userModifyInherit {
+    user-modify: inherit;
+}
+
+.userModifyInitial {
+    user-modify: initial;
+}
+
+.userModifyUnset {
+    user-modify: unset;
+}
+
+.transformOriginZNumber {
+    transform-origin-z: 123;
+}
+
+.transformOriginZPercent {
+    transform-origin-z: 10%;
+}
+
+.transformOriginZInitial {
+    transform-origin-z: initial;
+}
+
+.transformOriginZInherit {
+    transform-origin-z: inherit;
+}
+
+.borderBeforeStyleSolid {
+    border-before-style: solid;
+}
+
+.marginAfterCollapseCollapse {
+    margin-after-collapse: collapse;
+}
+
+.marginAfterCollapseDiscard {
+    margin-after-collapse: discard;
+}
+
+.marginAfterCollapseSeperate {
+    margin-after-collapse: seperate;
+}
+
+.marginAfterCollapseInherit {
+    margin-after-collapse: inherit;
+}
+
+.perspectiveOriginYNone {
+    perspective-origin-y: none;
+}
+
+.perspectiveOriginYCm {
+    perspective-origin-y: 1cm;
+}
+
+.perspectiveOriginYMm {
+    perspective-origin-y: 1mm;
+}
+
+.perspectiveOriginYIn {
+    perspective-origin-y: 1in;
+}
+
+.perspectiveOriginYPx {
+    perspective-origin-y: 1px;
+}
+
+.perspectiveOriginYPt {
+    perspective-origin-y: 1pt;
+}
+
+.perspectiveOriginYPc {
+    perspective-origin-y: 1pc;
+}
+
+.perspectiveOriginYEm {
+    perspective-origin-y: 1em;
+}
+
+.perspectiveOriginYEx {
+    perspective-origin-y: 1ex;
+}
+
+.perspectiveOriginYCh {
+    perspective-origin-y: 1ch;
+}
+
+.perspectiveOriginYRem {
+    perspective-origin-y: 1rem;
+}
+
+.perspectiveOriginYVw {
+    perspective-origin-y: 1vw;
+}
+
+.perspectiveOriginYVh {
+    perspective-origin-y: 1vh;
+}
+
+.perspectiveOriginYVmin {
+    perspective-origin-y: 1vmin;
+}
+
+.perspectiveOriginYVmax {
+    perspective-origin-y: 1vmax;
+}
+
+.perspectiveOriginYPercent {
+    perspective-origin-y: 1%;
+}
+
+.perspectiveOriginYInitial {
+    perspective-origin: initial;
+}
+
+.perspectiveOriginYInherit {
+    perspective-origin: inherit;
+}
+
+
+.hyphenateCharacterString {
+    hyphenate-character: '\2112';
+}
+
+.maskAttachmentScroll {
+    mask-attachment: scroll;
+}
+
+.maskAttachmentFixed {
+    mask-attachment: fixed;
+}
+
+.maskAttachmentLocal {
+    mask-attachment: local;
+}
+
+.maskAttachmentScrollLocal {
+    mask-attachment: scroll, local;
+}
+
+.maskAttachmentFixedLocalScroll {
+    mask-attachment: fixed, local, scroll;
+}
+
+.maskAttachmentInitial {
+    mask-attachment: initial;
+}
+
+.maskAttachmentInherit {
+    mask-attachment: inherit;
+}
+
+.maskAttachmentUnset {
+    mask-attachment: unset;
+}
+
+.minHeightNone {
+    min-height: none;
+}
+
+.minHeightLengthMm {
+   min-height: 1mm;
+}
+
+.minHeightLengthIn {
+   min-height: 1in;
+}
+
+.minHeightLengthPx {
+   min-height: 1px;
+}
+
+.minHeightLengthPt {
+   min-height: 1pt;
+}
+
+.minHeightLengthPc {
+   min-height: 1pc;
+}
+
+.minHeightLengthEm {
+   min-height: 1em;
+}
+
+.minHeightLengthEx {
+   min-height: 1ex;
+}
+
+.minHeightLengthRem {
+   min-height: 1rem;
+}
+
+.minHeightLengthVw {
+   min-height: 1vw;
+}
+
+.minHeightLengthVh {
+   min-height: 1vh;
+}
+
+.minHeightLengthVmin {
+   min-height: 1vmin;
+}
+
+.minHeightLengthVmax {
+   min-height: 1vmax;
+}
+
+.minHeightLengthPercent {
+   min-height: 1%;
+}
+
+.minHeightInitial {
+    min-height: initial;
+}
+
+.minHeightInherit {
+    min-height: inherit;
+}
+
+.paddingBottomLengthNone {
+    padding-bottom: none;
+}
+
+.paddingBottomLengthMm {
+    padding-bottom: 1mm;
+}
+
+.paddingBottomLengthIn {
+    padding-bottom: 1in;
+}
+
+.paddingBottomLengthPx {
+    padding-bottom: 1px;
+}
+
+.paddingBottomLengthPt {
+    padding-bottom: 1pt;
+}
+
+.paddingBottomLengthPc {
+    padding-bottom: 1pc;
+}
+
+.paddingBottomLengthEm {
+    padding-bottom: 1em;
+}
+
+.paddingBottomLengthEx {
+    padding-bottom: 1ex;
+}
+
+.paddingBottomLengthRem {
+    padding-bottom: 1rem;
+}
+
+.paddingBottomLengthVw {
+    padding-bottom: 1vw;
+}
+
+.paddingBottomLengthVh {
+    padding-bottom: 1vh;
+}
+
+.paddingBottomLengthVmin {
+    padding-bottom: 1vmin;
+}
+
+.paddingBottomLengthVmax {
+    padding-bottom: 1vmax;
+}
+
+.paddingBottomLengthPercent {
+    padding-bottom: 1%;
+}
+
+.paddingBottomInitial {
+     padding-bottom: initial;
+}
+
+.paddingBottomInherit {
+     padding-bottom: inherit;
+}
+
+.minLogicalHeightNone {
+    min-logical-height: none;
+}
+
+.minLogicalHeightCm {
+    min-logical-height: 1cm;
+}
+
+.minLogicalHeightMm {
+    min-logical-height: 1mm;
+}
+
+.minLogicalHeightIn {
+    min-logical-height: 1in;
+}
+
+.minLogicalHeightPx {
+    min-logical-height: 1px;
+}
+
+.minLogicalHeightPt {
+    min-logical-height: 1pt;
+}
+
+.minLogicalHeightPc {
+    min-logical-height: 1pc;
+}
+
+.minLogicalHeightEm {
+    min-logical-height: 1em;
+}
+
+.minLogicalHeightEx {
+    min-logical-height: 1ex;
+}
+
+.minLogicalHeightCh {
+    min-logical-height: 1ch;
+}
+
+.minLogicalHeightRem {
+    min-logical-height: 1rem;
+}
+
+.minLogicalHeightVw {
+    min-logical-height: 1vw;
+}
+
+.minLogicalHeightVh {
+    min-logical-height: 1vh;
+}
+
+.minLogicalHeightVmin {
+    min-logical-height: 1vmin;
+}
+
+.minLogicalHeightVmax {
+    min-logical-height: 1vmax;
+}
+
+.minLogicalHeightPercent {
+    min-logical-height: 1%;
+}
+
+.pageBreakInsideAuto {
+    page-break-inside: auto;
+}
+
+.pageBreakInsideAvoid {
+    page-break-inside: avoid;
+}
+
+.pageBreakInsideInitial {
+    page-break-inside: initial;
+}
+
+.pageBreakInsideInherit {
+    page-break-inside: inherit;
+}
+
+.marginLeftLengthMm {
+   margin-left: 1mm;
+}
+
+.marginLeftLengthIn {
+   margin-left: 1in;
+}
+
+.marginLeftLengthPx {
+   margin-left: 1px;
+}
+
+.marginLeftLengthPt {
+   margin-left: 1pt;
+}
+
+.marginLeftLengthPc {
+   margin-left: 1pc;
+}
+
+.marginLeftLengthEm {
+   margin-left: 1em;
+}
+
+.marginLeftLengthEx {
+   margin-left: 1ex;
+}
+
+.marginLeftLengthRem {
+   margin-left: 1rem;
+}
+
+.marginLeftLengthVw {
+   margin-left: 1vw;
+}
+
+.marginLeftLengthVh {
+   margin-left: 1vh;
+}
+
+.marginLeftLengthVmin {
+   margin-left: 1vmin;
+}
+
+.marginLeftLengthVmax {
+   margin-left: 1vmax;
+}
+
+.marginLeftLengthPercent {
+   margin-left: 1%;
+}
+
+.marginLeftAuto {
+    margin-left: auto;
+}
+
+.marginLeftInitial {
+    margin-left: initial;
+}
+
+.marginLeftInherit {
+    margin-left: inherit;
+}
+
+.perspectiveOriginXNone {
+    perspective-origin-x: none;
+}
+
+.perspectiveOriginXCm {
+    perspective-origin-x: 1cm;
+}
+
+.perspectiveOriginXMm {
+    perspective-origin-x: 1mm;
+}
+
+.perspectiveOriginXIn {
+    perspective-origin-x: 1in;
+}
+
+.perspectiveOriginXPx {
+    perspective-origin-x: 1px;
+}
+
+.perspectiveOriginXPt {
+    perspective-origin-x: 1pt;
+}
+
+.perspectiveOriginXPc {
+    perspective-origin-x: 1pc;
+}
+
+.perspectiveOriginXEm {
+    perspective-origin-x: 1em;
+}
+
+.perspectiveOriginXEx {
+    perspective-origin-x: 1ex;
+}
+
+.perspectiveOriginXCh {
+    perspective-origin-x: 1ch;
+}
+
+.perspectiveOriginXRem {
+    perspective-origin-x: 1rem;
+}
+
+.perspectiveOriginXVw {
+    perspective-origin-x: 1vw;
+}
+
+.perspectiveOriginXVh {
+    perspective-origin-x: 1vh;
+}
+
+.perspectiveOriginXVmin {
+    perspective-origin-x: 1vmin;
+}
+
+.perspectiveOriginXVmax {
+    perspective-origin-x: 1vmax;
+}
+
+.perspectiveOriginXPercent {
+    perspective-origin-x: 1%;
+}
+
+.perspectiveOriginXInitial {
+    perspective-origin: initial;
+}
+
+.perspectiveOriginXInherit {
+    perspective-origin: inherit;
+}
+
+
+.zIndexAuto {
+    z-index: auto;
+}
+
+.zIndexNumber {
+    z-index: 999;
+}
+
+.zIndexInitial {
+    z-index: initial;
+}
+
+.zIndexInherit {
+    z-index: inherit;
+}
+
+.borderTopLeftRadiusLengthCm {
+    border-top-left-radius: 1cm;
+}
+
+.borderTopLeftRadiusLengthMm {
+    border-top-left-radius: 1mm;
+}
+
+.borderTopLeftRadiusLengthIn {
+    border-top-left-radius: 1in;
+}
+
+.borderTopLeftRadiusLengthPx {
+    border-top-left-radius: 1px;
+}
+
+.borderTopLeftRadiusLengthPt {
+    border-top-left-radius: 1pt;
+}
+
+.borderTopLeftRadiusLengthPc {
+    border-top-left-radius: 1pc;
+}
+
+.borderTopLeftRadiusLengthEm {
+    border-top-left-radius: 1em;
+}
+
+.borderTopLeftRadiusLengthEx {
+    border-top-left-radius: 1ex;
+}
+
+.borderTopLeftRadiusLengthRem {
+    border-top-left-radius: 1rem;
+}
+
+.borderTopLeftRadiusLengthVw {
+    border-top-left-radius: 1vw;
+}
+
+.borderTopLeftRadiusLengthVh {
+    border-top-left-radius: 1vh;
+}
+
+.borderTopLeftRadiusLengthVmin {
+    border-top-left-radius: 1vmin;
+}
+
+.borderTopLeftRadiusLengthVmax {
+    border-top-left-radius: 1vmax;
+}
+
+.borderTopLeftRadiusLengthPercent {
+    border-top-left-radius: 1%;
+}
+
+.borderTopLeftRadiusInitial {
+    border-top-left-radius: initial;
+}
+
+.borderTopLeftRadiusInherit {
+    border-top-left-radius: inherit;
+}
+
+.borderTopColorsAll {
+    border-top-colors: #000 #050 #fff #f00;
+}
+
+.hyphenateLocaleAuto {
+    hyphenate-locale: auto;
+}
+
+.hypenateLocaleIdString {
+    hypenate-locale: 'de-DE';
+}
+
+.columnCountNumber {
+    column-count: 3;
+}
+
+.columnCountAuto {
+    column-count: auto;
+}
+
+.columnCountInitial {
+    column-count: initial;
+}
+
+.columnCountInherit {
+    column-count: inherit;
+}
+
+.animationIterationCountNumber {
+    animation-iteration-count: 2;
+}
+
+.animationIterationCountInfinite {
+    animation-iteration-count: infinite;
+}
+
+.animationIterationCountInitial {
+    animation-iteration-count: initial;
+}
+
+.animationIterationCountInherit {
+    animation-iteration-count: inherit;
+}
+
+.listStylePositionInside {
+    list-style-position: inside;
+}
+
+.listStylePositionOutside {
+    list-style-position: outside;
+}
+
+.listStylePositionInitial {
+    list-style-position: initial;
+}
+
+.listStylePositionInherit {
+    list-style-position: inherit;
+}
+
+.textEmphasisColorCurrentColor {
+    text-emphasis-color: currentColor;
+}
+
+.textEmphasisColorHex {
+    text-emphasis-color: #555;
+}
+
+.textEmphasisColorBlue {
+    text-emphasis-color: blue;
+}
+
+.textEmphasisColorRgba {
+    text-emphasis-color: rgba(90, 200, 160, 0.8);
+}
+
+.textEmphasisColorTransparent {
+    text-emphasis-color: transparent;
+}
+
+.textEmphasisColorInherit {
+    text-emphasis-color: inherit;
+}
+
+.textEmphasisColorInitial {
+    text-emphasis-color: initial;
+}
+
+.textEmphasisColorUnset {
+    text-emphasis-color: unset;
+}
+
+.textIndentLengthCm {
+    text-indent: 1cm;
+}
+
+.textIndentLengthMm {
+    text-indent: 1mm;
+}
+
+.textIndentLengthIn {
+    text-indent: 1in;
+}
+
+.textIndentLengthPx {
+    text-indent: 1px;
+}
+
+.textIndentLengthPt {
+    text-indent: 1pt;
+}
+
+.textIndentLengthPc {
+    text-indent: 1pc;
+}
+
+.textIndentLengthEm {
+    text-indent: 1em;
+}
+
+.textIndentLengthEx {
+    text-indent: 1ex;
+}
+
+.textIndentLengthCh {
+    text-indent: 1ch;
+}
+
+.textIndentLengthRem {
+    text-indent: 1rem;
+}
+
+.textIndentLengthVw {
+    text-indent: 1vw;
+}
+
+.textIndentLengthVh {
+    text-indent: 1vh;
+}
+
+.textIndentLengthVmin {
+    text-indent: 1vmin;
+}
+
+.textIndentLengthVmax {
+    text-indent: 1vmax;
+}
+
+.textIndentLengthPercent {
+    text-indent: 1%;
+}
+
+.textIndentInitial {
+    text-indent: initial;
+}
+
+.textIndentInherit {
+    text-indent: inherit;
+}
+
+.fontFamilyFamilyNameGenericFamily {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fontFamilyInitial {
+    font-family: initial;
+}
+
+.fontFamilyInherit {
+    font-family: inherit;
+}
+
+.marginStartAuto {
+    margin-start: auto;
+}
+
+.marginStartNone {
+    margin-start: none;
+}
+
+.marginStartCm {
+    margin-start: 1cm;
+}
+
+.marginStartMm {
+    margin-start: 1mm;
+}
+
+.marginStartIn {
+    margin-start: 1in;
+}
+
+.marginStartPx {
+    margin-start: 1px;
+}
+
+.marginStartPt {
+    margin-start: 1pt;
+}
+
+.marginStartPc {
+    margin-start: 1pc;
+}
+
+.marginStartEm {
+    margin-start: 1em;
+}
+
+.marginStartEx {
+    margin-start: 1ex;
+}
+
+.marginStartCh {
+    margin-start: 1ch;
+}
+
+.marginStartRem {
+    margin-start: 1rem;
+}
+
+.marginStartVw {
+    margin-start: 1vw;
+}
+
+.marginStartVh {
+    margin-start: 1vh;
+}
+
+.marginStartVmin {
+    margin-start: 1vmin;
+}
+
+.marginStartVmax {
+    margin-start: 1vmax;
+}
+
+.marginStartPercent {
+    margin-start: 1%;
+}
+
+.marginStartInitial {
+    list-style-type: initial;
+}
+
+.marginStartInherit {
+    list-style-type: inherit;
+}
+
+.interpolationModeBicubic {
+    interpolation-mode: bicubic;
+}
+
+.interpolationModeNearestNeighbor {
+    interpolation-mode: nearest-neighbor;
+}
+
+.borderStyleNone {
+    border-style: none;
+}
+
+.borderStyleHidden {
+    border-style: hidden;
+}
+
+.borderStyleDotted {
+    border-style: dotted;
+}
+
+.borderStyleDashed {
+    border-style: dashed;
+}
+
+.borderStyleSolid {
+    border-style: solid;
+}
+
+.borderStyleDouble {
+    border-style: double;
+}
+
+.borderStyleGroove {
+    border-style: groove;
+}
+
+.borderStyleRidge {
+    border-style: ridge;
+}
+
+.borderStyleInset {
+    border-style: inset;
+}
+
+.borderStyleOutset {
+    border-style: outset;
+}
+
+.borderStyleInitial {
+    border-style: initial;
+}
+
+.borderStyleInherit {
+    border-style: inherit;
+}
+
+.borderTopBorderAll {
+    border-top: 5px solid red;
+}
+
+.borderTopBorderWidthStyle {
+    border-top: 5px solid;
+}
+
+.borderTopInitial {
+    border-top: initial;
+}
+
+.borderTopInherit {
+    border-top: inherit;
+}
+
+.textAlignLastAuto {
+    text-align-last: auto;
+}
+
+.textAlignLastLeft {
+    text-align-last: left;
+}
+
+.textAlignLastRight {
+    text-align-last: right;
+}
+
+.textAlignLastCenter {
+    text-align-last: center;
+}
+
+.textAlignLastJustify {
+    text-align-last: justify;
+}
+
+.textAlignLastStart {
+    text-align-last: start;
+}
+
+.textAlignLastEnd {
+    text-align-last: end;
+}
+
+.textAlignLastInitial {
+    text-align-last: initial;
+}
+
+.textAlignLastInherit {
+    text-align-last: inherit;
+}
+
+.layoutGridModeAuto {
+    layout-grid-mode: auto;
+}
+
+.layoutGridModeCm {
+    layout-grid-mode: 1cm;
+}
+
+.layoutGridModeMm {
+    layout-grid-mode: 1mm;
+}
+
+.layoutGridModeIn {
+    layout-grid-mode: 1in;
+}
+
+.layoutGridModePx {
+    layout-grid-mode: 1px;
+}
+
+.layoutGridModePt {
+    layout-grid-mode: 1pt;
+}
+
+.layoutGridModePc {
+    layout-grid-mode: 1pc;
+}
+
+.layoutGridModeEm {
+    layout-grid-mode: 1em;
+}
+
+.layoutGridModeEx {
+    layout-grid-mode: 1ex;
+}
+
+.layoutGridModeCh {
+    layout-grid-mode: 1ch;
+}
+
+.layoutGridModeRem {
+    layout-grid-mode: 1rem;
+}
+
+.layoutGridModeVw {
+    layout-grid-mode: 1vw;
+}
+
+.layoutGridModeVh {
+    layout-grid-mode: 1vh;
+}
+
+.layoutGridModeVmin {
+    layout-grid-mode: 1vmin;
+}
+
+.layoutGridModeVmax {
+    layout-grid-mode: 1vmax;
+}
+
+.layoutGridModePercent {
+    layout-grid-mode: 1%;
+}
+
+.layoutGridModeNone {
+    layout-grid-mode: none;
+}
+
+.marginRightLengthMm {
+   margin-right: 1mm;
+}
+
+.marginRightLengthIn {
+   margin-right: 1in;
+}
+
+.marginRightLengthPx {
+   margin-right: 1px;
+}
+
+.marginRightLengthPt {
+   margin-right: 1pt;
+}
+
+.marginRightLengthPc {
+   margin-right: 1pc;
+}
+
+.marginRightLengthEm {
+   margin-right: 1em;
+}
+
+.marginRightLengthEx {
+   margin-right: 1ex;
+}
+
+.marginRightLengthRem {
+   margin-right: 1rem;
+}
+
+.marginRightLengthVw {
+   margin-right: 1vw;
+}
+
+.marginRightLengthVh {
+   margin-right: 1vh;
+}
+
+.marginRightLengthVmin {
+   margin-right: 1vmin;
+}
+
+.marginRightLengthVmax {
+   margin-right: 1vmax;
+}
+
+.marginRightLengthPercent {
+   margin-right: 1%;
+}
+
+.marginRightAuto {
+    margin-right: auto;
+}
+
+.marginRightInitial {
+    margin-right: initial;
+}
+
+.marginRightInherit {
+    margin-right: inherit;
+}
+
+.borderSpacingLengthCm {
+    border-spacing: 1cm;
+}
+
+.borderSpacingLengthMm {
+    border-spacing: 1mm;
+}
+
+.borderSpacingLengthIn {
+    border-spacing: 1in;
+}
+
+.borderSpacingLengthPx {
+    border-spacing: 1px;
+}
+
+.borderSpacingLengthPt {
+    border-spacing: 1pt;
+}
+
+.borderSpacingLengthPc {
+    border-spacing: 1pc;
+}
+
+.borderSpacingLengthEm {
+    border-spacing: 1em;
+}
+
+.borderSpacingLengthEx {
+    border-spacing: 1ex;
+}
+
+.borderSpacingLengthRem {
+    border-spacing: 1rem;
+}
+
+.borderSpacingLengthVw {
+    border-spacing: 1vw;
+}
+
+.borderSpacingLengthVh {
+    border-spacing: 1vh;
+}
+
+.borderSpacingLengthVmin {
+    border-spacing: 1vmin;
+}
+
+.borderSpacingLengthVmax {
+    border-spacing: 1vmax;
+}
+
+.borderSpacingLengthPercent {
+    border-spacing: 1%;
+}
+
+.borderSpacingInitial {
+    border-spacing: initial;
+}
+
+.borderSpacingInherit {
+    border-spacing: inherit;
+}
+
+.gridColumnStartAuto {
+    grid-column-start: auto;
+}
+
+.gridColumnStartColumnLine {
+    grid-column-start: 2;
+}
+
+.textDecorationColorColor {
+    text-decoration-color: color;
+}
+
+.textDecorationColorInitial {
+    text-decoration-color: initial;
+}
+
+.textDecorationColorInherit {
+    text-decoration-color: inherit;
+}
+
+.whiteSpaceNormal {
+    white-space: normal;
+}
+
+.whiteSpaceNowrap {
+    white-space: nowrap;
+}
+
+.whiteSpacePre {
+    white-space: pre;
+}
+
+.whiteSpacePreLine {
+    white-space: pre-line;
+}
+
+.whiteSpacePreWrap {
+    white-space: pre-wrap;
+}
+
+.whiteSpaceInitial {
+    white-space: initial;
+}
+
+.whiteSpaceInherit {
+    white-space: inherit;
+}
+
+.appearanceCheckbox {
+    appearance: checkbox;
+}
+
+.layoutGridTypeFixed {
+    layout-grid-type: fixed;
+}
+
+.layoutGridTypeLoose {
+    layout-grid-type: loose;
+}
+
+.layoutGridTypeStrict {
+    layout-grid-type: strict;
+}
+
+.textCombineHotizontalNone {
+    text-combine-hotizontal: none;
+}
+
+.textCombineHotizontalAll {
+    text-combine-hotizontal: all;
+}
+
+.textCombineHotizontalDigits {
+    text-combine-hotizontal: digits;
+}
+
+.textCombineHotizontalDigitsNum {
+    text-combine-hotizontal: digits 2;
+}
+
+.textCombineHotizontalDigitsNum {
+    text-combine-hotizontal: digits 4;
+}
+
+.textTransformNone {
+    text-transform: none;
+}
+
+.textTransformCapitalize {
+    text-transform: capitalize;
+}
+
+.textTransformUppercase {
+    text-transform: uppercase;
+}
+
+.textTransformLowercase {
+    text-transform: lowercase;
+}
+
+.textTransformInitial {
+    text-transform: initial;
+}
+
+.textTransformInherit {
+    text-transform: inherit;
+}
+
+.outlineColorInvert {
+    outline-color: invert;
+}
+
+.outlineColorColor {
+    outline-color: color;
+}
+
+.outlineColorInitial {
+    outline-color: initial;
+}
+
+.outlineColorInherit {
+    outline-color: inherit;
+}
+
+.marqueeIncrementCm {
+    marquee-increment: 1cm;
+}
+
+.marqueeIncrementMm {
+    marquee-increment: 1mm;
+}
+
+.marqueeIncrementIn {
+    marquee-increment: 1in;
+}
+
+.marqueeIncrementPx {
+    marquee-increment: 1px;
+}
+
+.marqueeIncrementPt {
+    marquee-increment: 1pt;
+}
+
+.marqueeIncrementPc {
+    marquee-increment: 1pc;
+}
+
+.marqueeIncrementEm {
+    marquee-increment: 1em;
+}
+
+.marqueeIncrementEx {
+    marquee-increment: 1ex;
+}
+
+.marqueeIncrementCh {
+    marquee-increment: 1ch;
+}
+
+.marqueeIncrementRem {
+    marquee-increment: 1rem;
+}
+
+.marqueeIncrementVw {
+    marquee-increment: 1vw;
+}
+
+.marqueeIncrementVh {
+    marquee-increment: 1vh;
+}
+
+.marqueeIncrementVmin {
+    marquee-increment: 1vmin;
+}
+
+.marqueeIncrementVmax {
+    marquee-increment: 1vmax;
+}
+
+.marqueeIncrementPercent {
+    marquee-increment: 1%;
+}
+
+.marqueeIncrementLarge {
+    marquee-increment: large;
+}
+
+.marqueeIncrementMedium {
+    marquee-increment: medium;
+}
+
+.marqueeIncrementSmall {
+    marquee-incrememnt: small;
+}
+
+.marqueeIncrementInherit {
+    marqueeIncrement: inherit;
+}
+
+.bindingUrl {
+    binding: url('http://www.example.org/xbl/htmlBindings.xml#checkbox');
+}
+
+.bindingInherited {
+    binding: inherited;
+}
+
+.bindingInitial {
+    binding: initial;
+}
+
+.bindingUnset {
+    binding: unset;
+}
+
+.maskAll {
+    mask: all;
+}
+
+.maskNone {
+    mask: none;
+}
+
+.maskUrl {
+    mask: url('mask.svg') 0 0/50px 50px;
+}
+
+.maskInitial {
+    mask: initial;
+}
+
+.maskInherit {
+    mask: inherit;
+}
+
+.maskUnset {
+    mask: unset;
+}
+
+.verticalAlignBaseline {
+    vertical-align: baseline;
+}
+
+.verticalAlignLengthCm {
+    vertical-align: 1cm;
+}
+
+.verticalAlignLengthMm {
+    vertical-align: 1mm;
+}
+
+.verticalAlignLengthIn {
+    vertical-align: 1in;
+}
+
+.verticalAlignLengthPx {
+    vertical-align: 1px;
+}
+
+.verticalAlignLengthPt {
+    vertical-align: 1pt;
+}
+
+.verticalAlignLengthPc {
+    vertical-align: 1pc;
+}
+
+.verticalAlignLengthEm {
+    vertical-align: 1em;
+}
+
+.verticalAlignLengthEx {
+    vertical-align: 1ex;
+}
+
+.verticalAlignLengthCh {
+    vertical-align: 1ch;
+}
+
+.verticalAlignLengthRem {
+    vertical-align: 1rem;
+}
+
+.verticalAlignLengthVw {
+    vertical-align: 1vw;
+}
+
+.verticalAlignLengthVh {
+    vertical-align: 1vh;
+}
+
+.verticalAlignLengthVmin {
+    vertical-align: 1vmin;
+}
+
+.verticalAlignLengthVmax {
+    vertical-align: 1vmax;
+}
+
+.verticalAlignLengthPercent {
+    vertical-align: 1%;
+}
+
+.verticalAlignSub {
+    vertical-align: sub;
+}
+
+.verticalAlignSuper {
+    vertical-align: super;
+}
+
+.verticalAlignTop {
+    vertical-align: top;
+}
+
+.verticalAlignTextTop {
+    vertical-align: text-top;
+}
+
+.verticalAlignMiddle {
+    vertical-align: middle;
+}
+
+.verticalAlignBottom {
+    vertical-align: bottom;
+}
+
+.verticalAlignTextBottom {
+    vertical-align: text-bottom;
+}
+
+.verticalAlignInitial {
+    vertical-align: initial;
+}
+
+.verticalAlignInherit {
+    vertical-align: inherit;
+}
+
+.boxFlexGroupNumber {
+    box-flex-group: 5;
+}
+
+.boxFlexGroupInherit {
+    box-flex-group: inherit;
+}
+
+.boxFlexGroupInitial {
+    box-flex-group: initial;
+}
+
+.boxFlexGroupunset {
+    box-flex-group: unset;
+}
+
+.fontFeatureSettingsNormal {
+    font-feature-settings: normal;
+}
+
+.fontFeatureSettingsSmcp {
+    font-feature-settings: 'smcp';
+}
+
+.fontFeatureSettingsSmcpOn {
+    font-feature-settings: 'smcp' on;
+}
+
+.fontFeatureSettingsSwshTwo {
+    font-feature-settings: 'swsh' 2;
+}
+
+.fontFeatureSettingsSmcpSwshTwo {
+    font-feature-settings: 'smcp', 'swsh' 2;
+}
+
+.fontFeatureSettingsInherit {
+    font-feature-settings: inherit;
+}
+
+.fontFeatureSettingsInitial {
+    font-feature-settings: initial;
+}
+
+.fontFeatureSettingsUnset {
+    font-feature-settings: unset;
+}
+
+.borderStartColorHex {
+    border-start-color: #000;
+}
+
+.opacityNumber {
+    opacity: 0.5;
+}
+
+.opacityInitial {
+    opacity: initial;
+}
+
+.opacityInherit {
+    opacity: inherit;
+}
+
+.backgroundPositionXLeft {
+    background-position-x: left;
+}
+
+.hyphensNone {
+    hyphens: none;
+}
+
+.hyphensManual {
+    hyphens: manual;
+}
+
+.hyphensAuto {
+    hyphens: auto;
+}
+
+.hyphensInitial {
+    hyphens: initial;
+}
+
+.hyphensInherit {
+    hyphens: inherit;
+}
+
+.pageBreakBeforeAuto {
+    page-break-before: auto;
+}
+
+.pageBreakBeforeAlways {
+    page-break-before: always;
+}
+
+.pageBreakBeforeAvoid {
+    page-break-before: avoid;
+}
+
+.pageBreakBeforeLeft {
+    page-break-before: left;
+}
+
+.pageBreakBeforeRight {
+    page-break-before: right;
+}
+
+.pageBreakBeforeInitial {
+    page-break-before: initial;
+}
+
+.pageBreakBeforeInherit {
+    page-break-before: inherit;
+}
+
+.scrollbarHighlightColorHex
+{
+    scrollbar-highlight-color: #000;
+}
+
+.scrollbarHighlightColorInherit
+{
+    scrollbar-highlight-color: inherit;
+}
+
+.scrollbarArrowColorHex
+{
+    scrollbar-arrow-color: #000;
+}
+
+.scrollbarArrowColorInherit
+{
+    scrollbar-arrow-color: inherit;
+}
+
+.borderTopColorHex {
+    border-top-color: #000;
+}
+
+.borderTopColorName {
+    border-top-color: black;
+}
+
+.borderTopColorTransparent {
+    border-top-color: transparent;
+}
+
+.borderTopColorInitial {
+    border-top-color: initial;
+}
+
+.borderTopColorInherit {
+    border-top-color: inherit;
+}
+
+.backgroundClipBorderBox {
+    background-clip: border-box;
+}
+
+.backgroundClipPaddingBox {
+    background-clip: padding-box;
+}
+
+.backgroundClipContentBox {
+    background-clip: content-box;
+}
+
+.backgroundClipInitial {
+    background-clip: initial;
+}
+
+.backgroundClipInherit {
+    background-clip: inherit;
+}
+
+.outlineRadiusPx {
+    outline-radius: 25px;
+}
+
+.outlineRadiusPxEm {
+    outline-radius: 25px 1em;
+}
+
+.outlineRadiusPxEmPercent {
+    outline-radius: 25px 1em 12%;
+}
+
+.outlineRadiusPxEmPercentMm {
+    outline-radius: 25px 1em 12% 4mm;
+}
+
+.outlineRadiusInherit {
+    outline-radius: inherit;
+}
+
+.outlineRadiusInitial {
+    outline-radius: initial;
+}
+
+.outlineRadiusUnset {
+    outline-radius: unset;
+}
+
+.rightAuto {
+    right: auto;
+}
+
+.rightLengthCm {
+    right: 1cm;
+}
+
+.rightLengthMm {
+    right: 1mm;
+}
+
+.rightLengthIn {
+    right: 1in;
+}
+
+.rightLengthPx {
+    right: 1px;
+}
+
+.rightLengthPt {
+    right: 1pt;
+}
+
+.rightLengthPc {
+    right: 1pc;
+}
+
+.rightLengthEm {
+    right: 1em;
+}
+
+.rightLengthEx {
+    right: 1ex;
+}
+
+.rightLengthCh {
+    right: 1ch;
+}
+
+.rightLengthRem {
+    right: 1rem;
+}
+
+.rightLengthVw {
+    right: 1vw;
+}
+
+.rightLengthVh {
+    right: 1vh;
+}
+
+.rightLengthVmin {
+    right: 1vmin;
+}
+
+.rightLengthVmax {
+    right: 1vmax;
+}
+
+.rightLengthPercent {
+    right: 1%;
+}
+
+.rightInitial {
+    right: initial;
+}
+
+.rightInherit {
+    right: inherit;
+}
+
+.borderBeforeAll {
+    border-before: medium dashed blue;
+}
+
+.borderBeforeLengthStyle {
+    border-before: 2px dotted;
+}
+
+.borderBeforeLength {
+    border-before: 1px;
+}
+
+.borderEndColorHex {
+    border-end-color: #000;
+}
+
+.unicodeBidiNormal {
+    unicode-bidi: normal;
+}
+
+.unicodeBidiEmbed {
+    unicode-bidi: embed;
+}
+
+.unicodeBidiBidiOverride {
+    unicode-bidi: bidi-override;
+}
+
+.unicodeBidiInitial {
+    unicode-bidi: initial;
+}
+
+.unicodeBidiInherit {
+    unicode-bidi: inherit;
+}
+
+.maskCompositeAdd {
+    mask-composite: add;
+}
+
+.maskCompositeSubtract {
+    mask-composite: subtract;
+}
+
+.maskCompositeIntersect {
+    mask-composite: intersect;
+}
+
+.maskCompositeExclude {
+    mask-composite: exclude;
+}
+
+.maskCompositeInitial {
+    mask-composite: initial;
+}
+
+.maskCompositeInherit {
+    mask-composite: inherit;
+}
+
+.maskCompositeUnset {
+    mask-composite: unset;
+}
+
+.marginBeforeCollapseCollapse {
+    margin-before-collapse: collapse;
+}
+
+.marginBeforeCollapseDiscard {
+    margin-before-collapse: discard;
+}
+
+.marginBeforeCollapseSeperate {
+    margin-before-collapse: seperate;
+}
+
+.marginBeforeCollapseInherit {
+    margin-before-collapse: inherit;
+}
+
+
+.borderImageSource {
+    border-image: url('chess.png');
+}
+
+.borderImageSlice {
+    border-image: slice;
+}
+
+.borderImageWidth {
+    border-image: width;
+}
+
+.borderImageOutset {
+    border-image: outset;
+}
+
+.borderImageRepeat {
+    border-image: repeat;
+}
+
+.borderImageInitial {
+    border-image: initial;
+}
+
+.borderImageInherit {
+    border-image: inherit;
+}
+
+.textOverflowClip {
+    text-overflow: clip;
+}
+
+.textOverflowEllipsis {
+    text-overflow: ellipsis;
+}
+
+.textOverflowString {
+    text-overflow: 'myString';
+}
+
+.textOverflowInitial {
+    text-overflow: initial;
+}
+
+.textOverflowInherit {
+    text-overflow: inherit;
+}
+
+.borderRightBorderAll {
+    border-right: 5px solid red;
+}
+
+.borderRightBorderWidthStyle {
+    border-right: 5px solid;
+}
+
+.borderRightInitial {
+    border-right: initial;
+}
+
+.borderRightInherit {
+    border-right: inherit;
+}
+
+.backgroundPositionYLeft {
+    background-position-y: left;
+}
+
+.emptyCellsShow {
+    empty-cells: show;
+}
+
+.emptyCellsHide {
+    empty-cells: hide;
+}
+
+.emptyCellsInitial {
+    empty-cells: initial;
+}
+
+.emptyCellsInherit {
+    empty-cells: inherit;
+}
+
+.layoutFlowHorizontal {
+    layout-flow: horizontal;
+}
+
+.layoutFlowVerticalIdeographic {
+    layout-flow: vertical-ideographic;
+}
+
+.borderStartAll {
+    border-start: 4px solid red;    
+}
+
+.borderAfterWidthMedium {
+    border-after-width: medium;
+}
+
+.borderAfterWidthThin {
+    border-after-width: thin;
+}
+
+.borderAfterWidthThick {
+    border-after-width: thick;
+}
+
+.borderAfterWidthLengthCm {
+    border-after-width: 1cm;
+}
+
+.borderAfterWidthLengthMm {
+    border-after-width: 1mm;
+}
+
+.borderAfterWidthLengthIn {
+    border-after-width: 1in;
+}
+
+.borderAfterWidthLengthPx {
+    border-after-width: 1px;
+}
+
+.borderAfterWidthLengthPt {
+    border-after-width: 1pt;
+}
+
+.borderAfterWidthLengthPc {
+    border-after-width: 1pc;
+}
+
+.borderAfterWidthLengthEm {
+    border-after-width: 1em;
+}
+
+.borderAfterWidthLengthEx {
+    border-after-width: 1ex;
+}
+
+.borderAfterWidthLengthRem {
+    border-after-width: 1rem;
+}
+
+.borderAfterWidthLengthVw {
+    border-after-width: 1vw;
+}
+
+.borderAfterWidthLengthVh {
+    border-after-width: 1vh;
+}
+
+.borderAfterWidthLengthVmin {
+    border-after-width: 1vmin;
+}
+
+.borderAfterWidthLengthVmax {
+    border-after-width: 1vmax;
+}
+
+.borderAfterWidthLengthPercent {
+    border-after-width: 1%;
+}
+
+.borderAfterWidthInitial {
+    border-after-width: initial;
+}
+
+.borderAfterWidthInherit {
+    border-after-width: inherit;
+}
+
+.gridRowEndAuto {
+    grid-row-end: auto;
+}
+
+.gridRowEndRowLineSpan {
+    grid-row-end: span 2;
+}
+
+.gridRowEndN {
+    grid-row-end: 3;
+}
+
+.backgroundOriginPaddingBox {
+    background-origin: padding-box;
+}
+
+.backgroundOriginBorderBox {
+    background-origin: border-box;
+}
+
+.backgroundOriginContentBox {
+    background-origin: content-box;
+}
+
+.backgroundOriginInitial {
+    background-origin: initial;
+}
+
+.backgroundOriginInherit {
+    background-origin: inherit;
+}
+
+.perspectiveLengthCm {
+    perspective: 1cm;
+}
+
+.perspectiveLengthMm {
+    perspective: 1mm;
+}
+
+.perspectiveLengthIn {
+    perspective: 1in;
+}
+
+.perspectiveLengthPx {
+    perspective: 1px;
+}
+
+.perspectiveLengthPt {
+    perspective: 1pt;
+}
+
+.perspectiveLengthPc {
+    perspective: 1pc;
+}
+
+.perspectiveLengthEm {
+    perspective: 1em;
+}
+
+.perspectiveLengthEx {
+    perspective: 1ex;
+}
+
+.perspectiveLengthCh {
+    perspective: 1ch;
+}
+
+.perspectiveLengthRem {
+    perspective: 1rem;
+}
+
+.perspectiveLengthVw {
+    perspective: 1vw;
+}
+
+.perspectiveLengthVh {
+    perspective: 1vh;
+}
+
+.perspectiveLengthVmin {
+    perspective: 1vmin;
+}
+
+.perspectiveLengthVmax {
+    perspective: 1vmax;
+}
+
+.perspectiveLengthPercent {
+    perspective: 1%;
+}
+
+.perspectiveNone {
+    perspective: none;
+}
+
+.textSizeAdjustNone {
+    text-size-adjust: none;
+}
+
+.textSizeAdjustAuto {
+    text-size-adjust: auto;
+}
+
+.textSizeAdjustPercent {
+    text-size-adjust: 80%;
+}
+
+.textSizeAdjustInherit {
+    text-size-adjust: inherit;
+}
+
+.textSizeAdjustInitial {
+    text-size-adjust: initial;
+}
+
+.textSizeAdjustUnset {
+    text-size-adjust: unset;
+}
+
+.boxAlignStart {
+    box-align: start;
+}
+
+.boxAlignCenter {
+    box-align: center;
+}
+
+.boxAlignEnd {
+    box-align: end;
+}
+
+.boxAlignBaseline {
+    box-align: baseline;
+}
+
+.boxAlignStretch {
+    box-align: stretch;
+}
+
+.boxAlignInherit {
+    box-align: inherit;
+}
+
+.boxAlignInitial {
+    box-align: initial;
+}
+
+.boxAlignUnset {
+    box-align: unset;
+}
+
+.quotesNone {
+    quotes: none;
+}
+
+.quotesString {
+    quotes: "'" "'";
+}
+
+.quotesStringAlt {
+    quotes: '"' '"';
+}
+
+.quotesInitial {
+    quotes: initial;
+}
+
+.quotesInherit {
+    quotes: inherit;
+}
+
+.borderLeftWidthMedium {
+    border-left-width: medium;
+}
+
+.borderLeftWidthThin {
+    border-left-width: thin;
+}
+
+.borderLeftWidthThick {
+    border-left-width: thick;
+}
+
+.borderLeftWidthLengthCm {
+    border-left-width: 1cm;
+}
+
+.borderLeftWidthLengthMm {
+    border-left-width: 1mm;
+}
+
+.borderLeftWidthLengthIn {
+    border-left-width: 1in;
+}
+
+.borderLeftWidthLengthPx {
+    border-left-width: 1px;
+}
+
+.borderLeftWidthLengthPt {
+    border-left-width: 1pt;
+}
+
+.borderLeftWidthLengthPc {
+    border-left-width: 1pc;
+}
+
+.borderLeftWidthLengthEm {
+    border-left-width: 1em;
+}
+
+.borderLeftWidthLengthEx {
+    border-left-width: 1ex;
+}
+
+.borderLeftWidthLengthRem {
+    border-left-width: 1rem;
+}
+
+.borderLeftWidthLengthVw {
+    border-left-width: 1vw;
+}
+
+.borderLeftWidthLengthVh {
+    border-left-width: 1vh;
+}
+
+.borderLeftWidthLengthVmin {
+    border-left-width: 1vmin;
+}
+
+.borderLeftWidthLengthVmax {
+    border-left-width: 1vmax;
+}
+
+.borderLeftWidthLengthPercent {
+    border-left-width: 1%;
+}
+
+.borderLeftWidthInitial {
+    border-left-width: initial;
+}
+
+.borderLeftWidthInherit {
+    border-left-width: inherit;
+}
+
+.maskOriginContentBox {
+    mask-origin: content-box;
+}
+
+.maskOriginPaddingBox {
+    mask-origin: padding-box;
+}
+
+.maskOriginBorderBox {
+    mask-origin: border-box;
+}
+
+.maskOriginMarginBox {
+    mask-origin: margin-box;
+}
+
+.maskOriginFillBox {
+    mask-origin: fill-box;
+}
+
+.maskOriginStrokeBox {
+    mask-origin: stroke-box;
+}
+
+.maskOriginViewBox {
+    mask-origin: view-box;
+}
+
+.maskOriginPaddingBoxContentBox {
+    mask-origin: padding-box, content-box;
+}
+
+.maskOriginViewBoxFillBoxBorderBox {
+    mask-origin: view-box, fill-box, border-box;
+}
+
+.maskOriginContent {
+    mask-origin: content;
+}
+
+.maskOriginPadding {
+    mask-origin: padding;
+}
+
+.maskOriginBorder {
+    mask-origin: border;
+}
+
+.maskOriginInherit {
+    mask-origin: inherit;
+}
+
+.maskOriginInitial {
+    mask-origin: initial;
+}
+
+.maskOriginUnset {
+    mask-origin: unset;
+}
+
+.fontVariantNormal {
+    font-variant: normal;
+}
+
+.fontVariantSmallCaps {
+    font-variant: small-caps;
+}
+
+.fontVariantInitial {
+    font-variant: initial;
+}
+
+.fontVariantInherit {
+    font-variant: inherit;
+}
+
+.wordBreakNormal {
+    word-break: normal;
+}
+
+.wordBreakBreakAll {
+    word-break: break-all;
+}
+
+.wordBreakKeepAll {
+    word-break: keep-all;
+}
+
+.wordBreakInitial {
+    word-break: initial;
+}
+
+.wordBreakInherit {
+    word-break: inherit;
+}
+
+.fontAll {
+    font: italic bold 12px/30px Georgia, serif;
+}
+
+.fontCaption {
+    font: caption;
+}
+
+.fontIcon {
+    font: icon;
+}
+
+.fontMenu {
+    font: menu;
+}
+
+.fontMessageBox {
+    font: message-box;
+}
+
+.fontSmallCaption {
+    font: small-caption;
+}
+
+.fontStatusBar {
+    font: status-bar;
+}
+
+.fontInitial {
+    font: initial;
+}
+
+.fontInherit {
+    font: inherit;
+}
+
+.animationTimingFunctionLinear {
+    animation-timing-function: linear;
+}
+
+.animationTimingFunctionEase {
+    animation-timing-function: ease;
+}
+
+.animationTimingFunctionEaseIn {
+    animation-timing-function: ease-in;
+}
+
+.animationTimingFunctionEaseOut {
+    animation-timing-function: ease-out;
+}
+
+.animationTimingFunctionEaseInOut {
+    animation-timing-function: ease-in-out;
+}
+
+.animationTimingFunctionStepStart {
+    animation-timing-function: step-start;
+}
+
+.animationTimingFunctionStepEnd {
+    animation-timing-function: step-end;
+}
+
+.animationTimingFunctionStepsStart {
+    animation-timing-function: steps(1, start);
+}
+
+.animationTimingFunctionStepsEnd {
+    animation-timing-function: steps(1, end);
+}
+
+.animationTimingFunctionCubicBezier {
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.animationTimingFunctionInitial {
+    animation-timing-function: initial;
+}
+
+.animationTimingFunctionInherit {
+    animation-timing-function: inherit;
+}
+
+.maskBoxImageAll {
+    mask-box-image: url('chess.png') 100 100 0 0 round round;
+}
+
+.columnRuleWidthMedium {
+    column-rule-width: medium;
+}
+
+.columnRuleWidthThin {
+    column-rule-width: thin;
+}
+
+.columnRuleWidthThick {
+    column-rule-width: thick;
+}
+
+.columnRuleWidthLengthCm {
+    column-rule-width: 1cm;
+}
+
+.columnRuleWidthLengthMm {
+    column-rule-width: 1mm;
+}
+
+.columnRuleWidthLengthIn {
+    column-rule-width: 1in;
+}
+
+.columnRuleWidthLengthPx {
+    column-rule-width: 1px;
+}
+
+.columnRuleWidthLengthPt {
+    column-rule-width: 1pt;
+}
+
+.columnRuleWidthLengthPc {
+    column-rule-width: 1pc;
+}
+
+.columnRuleWidthLengthEm {
+    column-rule-width: 1em;
+}
+
+.columnRuleWidthLengthEx {
+    column-rule-width: 1ex;
+}
+
+.columnRuleWidthLengthRem {
+    column-rule-width: 1rem;
+}
+
+.columnRuleWidthLengthVw {
+    column-rule-width: 1vw;
+}
+
+.columnRuleWidthLengthVh {
+    column-rule-width: 1vh;
+}
+
+.columnRuleWidthLengthVmin {
+    column-rule-width: 1vmin;
+}
+
+.columnRuleWidthLengthVmax {
+    column-rule-width: 1vmax;
+}
+
+.columnRuleWidthLengthPercent {
+    column-rule-width: 1%;
+}
+
+.columnRuleWidthInitial {
+    column-rule-width: initial;
+}
+
+.columnRuleWidthInherit {
+    column-rule-width: inherit;
+}
+
+.captionSideTop {
+    caption-side: top;
+}
+
+.captionSideBottom {
+    caption-side: bottom;
+}
+
+.captionSideInitial {
+    caption-side: initial;
+}
+
+.captionSideInherit {
+    caption-side: inherit;
+}
+
+.topAuto {
+    top: auto;
+}
+
+.topLengthCm {
+    top: 1cm;
+}
+
+.topLengthMm {
+    top: 1mm;
+}
+
+.topLengthIn {
+    top: 1in;
+}
+
+.topLengthPx {
+    top: 1px;
+}
+
+.topLengthPt {
+    top: 1pt;
+}
+
+.topLengthPc {
+    top: 1pc;
+}
+
+.topLengthEm {
+    top: 1em;
+}
+
+.topLengthEx {
+    top: 1ex;
+}
+
+.topLengthRem {
+    top: 1rem;
+}
+
+.topLengthVw {
+    top: 1vw;
+}
+
+.topLengthVh {
+    top: 1vh;
+}
+
+.topLengthVmin {
+    top: 1vmin;
+}
+
+.topLengthVmax {
+    top: 1vmax;
+}
+
+.topLengthPercent {
+    top: 1%;
+}
+
+.topInitial {
+    top: initial;
+}
+
+.topInherit {
+    top: inherit;
+}
+
+.forceBrokenImageIcon {
+    force-broken-image-icon: 1; 
+}
+
+.paddingBeforeLengthNone {
+    padding-before: none;
+}
+
+.paddingBeforeLengthMm {
+    padding-before: 1mm;
+}
+
+.paddingBeforeLengthIn {
+    padding-before: 1in;
+}
+
+.paddingBeforeLengthPx {
+    padding-before: 1px;
+}
+
+.paddingBeforeLengthPt {
+    padding-before: 1pt;
+}
+
+.paddingBeforeLengthPc {
+    padding-before: 1pc;
+}
+
+.paddingBeforeLengthEm {
+    padding-before: 1em;
+}
+
+.paddingBeforeLengthEx {
+    padding-before: 1ex;
+}
+
+.paddingBeforeLengthRem {
+    padding-before: 1rem;
+}
+
+.paddingBeforeLengthVw {
+    padding-before: 1vw;
+}
+
+.paddingBeforeLengthVh {
+    padding-before: 1vh;
+}
+
+.paddingBeforeLengthVmin {
+    padding-before: 1vmin;
+}
+
+.paddingBeforeLengthVmax {
+    padding-before: 1vmax;
+}
+
+.paddingBeforeLengthPercent {
+    padding-before: 1%;
+}
+
+.paddingBeforeInitial {
+    padding-before: initial;
+}
+
+.paddingBeforeInherit {
+    padding-before: inherit;
+}
+
+.paddingAfterLengthNone {
+    padding-after: none;
+}
+
+.paddingAfterLengthMm {
+    padding-after: 1mm;
+}
+
+.paddingAfterLengthIn {
+    padding-after: 1in;
+}
+
+.paddingAfterLengthPx {
+    padding-after: 1px;
+}
+
+.paddingAfterLengthPt {
+    padding-after: 1pt;
+}
+
+.paddingAfterLengthPc {
+    padding-after: 1pc;
+}
+
+.paddingAfterLengthEm {
+    padding-after: 1em;
+}
+
+.paddingAfterLengthEx {
+    padding-after: 1ex;
+}
+
+.paddingAfterLengthRem {
+    padding-after: 1rem;
+}
+
+.paddingAfterLengthVw {
+    padding-after: 1vw;
+}
+
+.paddingAfterLengthVh {
+    padding-after: 1vh;
+}
+
+.paddingAfterLengthVmin {
+    padding-after: 1vmin;
+}
+
+.paddingAfterLengthVmax {
+    padding-after: 1vmax;
+}
+
+.paddingAfterLengthPercent {
+    padding-after: 1%;
+}
+
+.paddingAfterInitial {
+    padding-after: initial;
+}
+
+.paddingAfterInherit {
+    padding-after: inherit;
+}
+
+.leftAuto {
+    left: auto;
+}
+
+.leftLengthMm {
+   left: 1mm;
+}
+
+.leftLengthIn {
+   left: 1in;
+}
+
+.leftLengthPx {
+   left: 1px;
+}
+
+.leftLengthPt {
+   left: 1pt;
+}
+
+.leftLengthPc {
+   left: 1pc;
+}
+
+.leftLengthEm {
+   left: 1em;
+}
+
+.leftLengthEx {
+   left: 1ex;
+}
+
+.leftLengthRem {
+   left: 1rem;
+}
+
+.leftLengthVw {
+   left: 1vw;
+}
+
+.leftLengthVh {
+   left: 1vh;
+}
+
+.leftLengthVmin {
+   left: 1vmin;
+}
+
+.leftLengthVmax {
+   left: 1vmax;
+}
+
+.leftLengthPercent {
+   left: 1%;
+}
+
+.leftLengthInitial {
+   left: initial;
+}
+
+.leftLengthInherit {
+   left: inherit;
+}
+
+.leftInitial {
+    left: initial;
+}
+
+.leftInherit {
+    left: inherit;
+}
+
+.textDecorationsInEffectNone {
+    text-decorations-in-effect: none;
+}
+
+.wordSpacingNormal {
+    word-spacing: normal;
+}
+
+.wordSpacingLengthCm {
+    word-spacing: 1cm;
+}
+
+.wordSpacingLengthMm {
+    word-spacing: 1mm;
+}
+
+.wordSpacingLengthIn {
+    word-spacing: 1in;
+}
+
+.wordSpacingLengthPx {
+    word-spacing: 1px;
+}
+
+.wordSpacingLengthPt {
+    word-spacing: 1pt;
+}
+
+.wordSpacingLengthPc {
+    word-spacing: 1pc;
+}
+
+.wordSpacingLengthEm {
+    word-spacing: 1em;
+}
+
+.wordSpacingLengthEx {
+    word-spacing: 1ex;
+}
+
+.wordSpacingLengthCh {
+    word-spacing: 1ch;
+}
+
+.wordSpacingLengthRem {
+    word-spacing: 1rem;
+}
+
+.wordSpacingLengthVw {
+    word-spacing: 1vw;
+}
+
+.wordSpacingLengthVh {
+    word-spacing: 1vh;
+}
+
+.wordSpacingLengthVmin {
+    word-spacing: 1vmin;
+}
+
+.wordSpacingLengthVmax {
+    word-spacing: 1vmax;
+}
+
+.wordSpacingLengthPercent {
+    word-spacing: 1%;
+}
+
+.wordSpacingInitial {
+    word-spacing: initial;
+}
+
+.wordSpacingInherit {
+    word-spacing: inherit;
+}
+
+.columnBreakInsideAlways {
+    column-break-inside: always;
+}
+
+.columnBreakInsideAuto {
+    column-break-inside: auto;
+}
+
+.columnBreakInsideAvoid {
+    column-break-inside: avoid;
+}
+
+.columnBreakInsideInherit {
+    column-break-inside: inherit;
+}
+
+.lineGridModeNone {
+    line-grid-mode: none;
+}
+
+.scrollbarShadowColorHex
+{
+    scrollbar-shadow-color: #000;
+}
+
+.scrollbarShadowColorInherit
+{
+    scrollbar-shadow-color: inherit;
+}
+
+.maskImageNone {
+    mask-image: none;
+}
+
+.maskImageUrl {
+    mask-image: url('chess.png');
+}
+
+.maskImageLinearGradient {
+    mask-image: linear-gradient(rgba(0, 0, 0, 1.0), transparent);
+}
+
+.maskImageImageUrl {
+    mask-image: image(url('chess.png'), skyblue);
+}
+
+.maskImageImage {
+    mask-image: image(url('chess.png'), skyblue), linear-gradient(rgba(0, 0, 0, 1.0), transparent);
+}
+
+.maskImageInitial {
+    mask-image: initial;
+}
+
+.maskImageInherit {
+    mask-image: inherit;
+}
+
+.maskImageUnset {
+    mask-image: unset;
+}
+
+.textDecorationTextDecorationAll {
+    text-decoration: underline overline dotted red;
+}
+
+.textDecorationInitial {
+    text-decoration: initial;
+}
+
+.textDecorationInherit {
+    text-decoration: inherit;
+}
+
+.fontKerningAuto {
+    font-kerning: auto;
+}
+
+.fontKerningNormal {
+    font-kerning: normal;
+}
+
+.fontKerningNone {
+    font-kerning: none;
+}
+
+.backgroundRepeatRepeat {
+    background-repeat: repeat;
+}
+
+.backgroundRepeatRepeatX {
+    background-repeat: repeat-x;
+}
+
+.backgroundRepeatRepeatY {
+    background-repeat: repeat-y;
+}
+
+.backgroundRepeatNoRepeat {
+    background-repeat: no-repeat;
+}
+
+.backgroundRepeatInitial {
+    background-repeat: initial;
+}
+
+.backgroundRepeatInherit {
+    background-repeat: inherit;
+}
+
+.transformStyleFlat {
+    transform-style: flat;
+}
+
+.transformStylePreserve3d {
+    transform-style: preserve-3d;
+}
+
+.transformStyleInitial {
+    transform-style: initial;
+}
+
+.transformStyleInherit {
+    transform-style: inherit;
+}
+
+.borderLeftColorsAll {
+    border-left-colors: #000 #050 #fff #f00;
+}
+
+.maskRepeatRepeatX {
+    mask-repeat: repeat-x;
+}
+
+.maskRepeatRepeatY {
+    mask-repeat: repeat-y;
+}
+
+.maskRepeatRepeat {
+    mask-repeat: repeat;
+}
+
+.maskRepeatSpace {
+    mask-repeat: space;
+}
+
+.maskRepeatRound {
+    mask-repeat: round;
+}
+
+.maskRepeatNoRepeat {
+    mask-repeat: no-repeat;
+}
+
+.maskRepeatRepeatSpace {
+    mask-repeat: repeat space;
+}
+
+.maskRepeatRepeatRepeat {
+    mask-repeat: repeat repeat;
+}
+
+.maskRepeatRoundSpace {
+    mask-repeat: round space;
+}
+
+.maskRepeatNoRepeatRound {
+    mask-repeat: no-repeat round;
+}
+
+.maskRepeatSpaceRoundNoRepeat {
+    mask-repeat: space round, no-repeat;
+}
+
+.maskRepeatRoundRepeatSpaceRepeatX {
+    mask-repeat: round repeat, space, repeat-x;
+}
+
+.maskRepeatInherit {
+    mask-repeat: inherit;
+}
+
+.maskRepeatInitial {
+    mask-repeat: initial;
+}
+
+.maskRepeatUnset {
+    mask-repeat: unset;
+}
+
+.maskClipContentBox {
+    mask-clip: content-box;
+}
+
+.maskClipPaddingBox {
+    mask-clip: padding-box;
+}
+
+.maskClipBorderBox {
+    mask-clip: border-box;
+}
+
+.maskClipMarginBox {
+    mask-clip: margin-box;
+}
+
+.maskClipFillBox {
+    mask-clip: fill-box;
+}
+
+.maskClipStrokeBox {
+    mask-clip: stroke-box;
+}
+
+.maskClipViewBox {
+    mask-clip: view-box;
+}
+
+.maskClipNoClip {
+    mask-clip: no-clip;
+}
+
+.maskClipBorder {
+    mask-clip: border;
+}
+
+.maskClipPadding {
+    mask-clip: padding;
+}
+
+.maskClipContent {
+    mask-clip: content;
+}
+
+.maskClipText {
+    mask-clip: text;
+}
+
+.maskClipPaddingBoxNoClip {
+    mask-clip: padding-box, no-clip;
+}
+
+.maskClipViewBoxFillBoxBorderBox {
+    mask-clip: view-box, fill-box, border-box;
+}
+
+.maskClipInherit {
+    mask-clip: inherit;
+}
+
+.maskClipInitial {
+    mask-clip: initial;
+}
+
+.maskClipUnset {
+    mask-clip: unset;
+}
+
+.borderBottomWidthMedium {
+    border-bottom-width: medium;
+}
+
+.borderBottomWidthThin {
+    border-bottom-width: thin;
+}
+
+.borderBottomWidthThick {
+    border-bottom-width: thick;
+}
+
+.borderBottomWidthLengthCm {
+    border-bottom-width: 1cm;
+}
+
+.borderBottomWidthLengthMm {
+    border-bottom-width: 1mm;
+}
+
+.borderBottomWidthLengthIn {
+    border-bottom-width: 1in;
+}
+
+.borderBottomWidthLengthPx {
+    border-bottom-width: 1px;
+}
+
+.borderBottomWidthLengthPt {
+    border-bottom-width: 1pt;
+}
+
+.borderBottomWidthLengthPc {
+    border-bottom-width: 1pc;
+}
+
+.borderBottomWidthLengthEm {
+    border-bottom-width: 1em;
+}
+
+.borderBottomWidthLengthEx {
+    border-bottom-width: 1ex;
+}
+
+.borderBottomWidthLengthRem {
+    border-bottom-width: 1rem;
+}
+
+.borderBottomWidthLengthVw {
+    border-bottom-width: 1vw;
+}
+
+.borderBottomWidthLengthVh {
+    border-bottom-width: 1vh;
+}
+
+.borderBottomWidthLengthVmin {
+    border-bottom-width: 1vmin;
+}
+
+.borderBottomWidthLengthVmax {
+    border-bottom-width: 1vmax;
+}
+
+.borderBottomWidthLengthPercent {
+    border-bottom-width: 1%;
+}
+
+.borderBottomWidthInitial {
+    border-bottom-width: initial;
+}
+
+.borderBottomWidthInherit {
+    border-bottom-width: inherit;
+}
+
+.borderBeforeColor {
+    border-before-color: #000;
+}
+
+.marginCollapseCollapse {
+    margin-collapse: collapse;
+}
+
+.marginCollapseDiscard {
+    margin-collapse: discard;
+}
+
+.marginCollapseSeperate {
+    margin-collapse: seperate;
+}
+
+.marginCollapseInherit {
+    margin-collapse: inherit;
+}
+
+
+.backgroundAttachmentScroll {
+    background-attachment: scroll;
+}
+
+.backgroundAttachmentFixed {
+    background-attachment: fixed;
+}
+
+.backgroundAttachmentLocal {
+    background-attachment: local;
+}
+
+.backgroundAttachmentInitial {
+    background-attachment: initial;
+}
+
+.backgroundAttachmentInherit {
+    background-attachment: inherit;
+}
+
+.scrollbarDarkshadowColorHex
+{
+    scrollbar-darkshadow-color: #000;
+}
+
+.scrollbarDarkshadowColorInherit
+{
+    scrollbar-darkshadow-color: inherit;
+}
+
+.matchNearestMailBlockquoteColorLengthPx {
+    match-nearest-mail-blockquote-color: 25px;
+}
+
+.matchNearestMailBlockquoteColorLengthPxPx {
+    match-nearest-mail-blockquote-color: 50px 10px;
+}
+
+.matchNearestMailBlockquoteColorPercent {
+    match-nearest-mail-blockquote-color: 2%;
+}
+
+.matchNearestMailBlockquoteColorInitial {
+    match-nearest-mail-blockquote-color: initial;
+}
+
+.matchNearestMailBlockquoteColorInherit {
+    match-nearest-mail-blockquote-color: inherit;
+}
+
+.userFocusNormal {
+    user-focus: normal;
+}
+
+.userFocusIgnore {
+    user-focus: ignore;
+}
+
+.userFocusInherit {
+    user-focus: inherit;
+}
+
+.userFocusInitial {
+    user-focus: initial;
+}
+
+.userFocusUnset {
+    user-focus: unset;
+}
+
+.textEmphasisPositionOverRight {
+    text-emphasis-position: over right;
+}
+
+.textEmphasisPositionOverLeft {
+    text-emphasis-position: over left;
+}
+
+.textEmphasisPositionUnderRight {
+    text-emphasis-position: under right;
+}
+
+.textEmphasisPositionUnderLeft {
+    text-emphasis-position: under left;
+}
+
+.textEmphasisPositionLeftOver {
+    text-emphasis-position: left over;
+}
+
+.textEmphasisPositionRightUnder {
+    text-emphasis-position: right under;
+}
+
+.textEmphasisPositionLeftUnder {
+    text-emphasis-position: left under;
+}
+
+.textEmphasisPositionInherit {
+    text-emphasis-position: inherit;
+}
+
+.textEmphasisPositionInitial {
+    text-emphasis-position: initial;
+}
+
+.textEmphasisPositionUnset {
+    text-emphasis-position: unset;
+}
+
+.displayInline {
+    display: inline;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.displayContents {
+    display: contents;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.displayGrid {
+    display: grid;
+}
+
+.displayInlineBlock {
+    display: inline-block;
+}
+
+.displayInlineFlex {
+    display: inline-flex;
+}
+
+.displayInlineGrid {
+    display: inline-grid;
+}
+
+.displayInlineTable {
+    display: inline-table;
+}
+
+.displaylistItem {
+    display: list-item;
+}
+
+.displayRunIn {
+    display: run-in;
+}
+
+.displayTable {
+    display: table;
+}
+
+.displayTableCaption {
+    display: table-caption;
+}
+
+.displayTableColumnGroup {
+    display: table-column-group;
+}
+
+.displayTableHeaderGroup {
+    display: table-header-group;
+}
+
+.displayTableFooterGroup {
+    display: table-footer-group;
+}
+
+.displayTableRowGroup {
+    display: table-row-group;
+}
+
+.displayTableCell {
+    display: table-cell;
+}
+
+.displayTableColumn {
+    display: table-column;
+}
+
+.displayTableRow {
+    display: table-row;
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayInitial {
+    display: initial;
+}
+
+.displayInherit {
+    display: inherit;
+}
+
+.colorHex {
+    color: #000;
+}
+
+.colorHexFull {
+    color: #000000;
+}
+
+.colorRgb {
+    color: rgb(255, 0, 0);
+}
+
+.colorRgba {
+    color: rgba(255, 0, 0, 0.3);
+}
+
+.colorHsl {
+    color: hsl(120, 100%, 50%);
+}
+
+.colorHsla {
+    color: hsla(120, 100%, 50%, 0.3);
+}
+
+.colorName {
+    color: black;
+}
+
+.colorInitial {
+    color: initial;
+}
+
+.colorInherit {
+    color: inherit;
+}
+
+.outlineRadiusBottomRightNone {
+    outline-radius-bottomright: none;
+}
+
+.outlineRadiusBottomRightMm {
+    outline-radius-bottomright: 1mm;
+}
+
+.outlineRadiusBottomRightIn {
+    outline-radius-bottomright: 1in;
+}
+
+.outlineRadiusBottomRightPx {
+    outline-radius-bottomright: 1px;
+}
+
+.outlineRadiusBottomRightPt {
+    outline-radius-bottomright: 1pt;
+}
+
+.outlineRadiusBottomRightPc {
+    outline-radius-bottomright: 1pc;
+}
+
+.outlineRadiusBottomRightEm {
+    outline-radius-bottomright: 1em;
+}
+
+.outlineRadiusBottomRightEx {
+    outline-radius-bottomright: 1ex;
+}
+
+.outlineRadiusBottomRightCh {
+    outline-radius-bottomright: 1ch;
+}
+
+.outlineRadiusBottomRightRem {
+    outline-radius-bottomright: 1rem;
+}
+
+.outlineRadiusBottomRightVw {
+    outline-radius-bottomright: 1vw;
+}
+
+.outlineRadiusBottomRightVh {
+    outline-radius-bottomright: 1vh;
+}
+
+.outlineRadiusBottomRightVmin {
+    outline-radius-bottomright: 1vmin;
+}
+
+.outlineRadiusBottomRightVmax {
+    outline-radius-bottomright: 1vmax;
+}
+
+.outlineRadiusBottomRightPercent {
+    outline-radius-bottomright: 1%;
+}
+
+.outlineRadiusBottomRightInherit {
+    outline-radius-bottomright: inherit;
+}
+
+.outlineRadiusBottomRightInitial {
+    outline-radius-bottomright: initial;
+}
+
+.outlineRadiusBottomRightUnset {
+    outline-radius-bottomright: unset;
+}
+
+.columnBreakBeforeAlways {
+    column-break-before: always;
+}
+
+.columnBreakBeforeAuto {
+    column-break-before: auto;
+}
+
+.columnBreakBeforeAvoid {
+    column-break-before: avoid;
+}
+
+.columnBreakBeforeInherit {
+    column-break-before: inherit;
+}
+
+.outlineStyleNone {
+    outline-style: none;
+}
+
+.outlineStyleHidden {
+    outline-style: hidden;
+}
+
+.outlineStyleDotted {
+    outline-style: dotted;
+}
+
+.outlineStyleDashed {
+    outline-style: dashed;
+}
+
+.outlineStyleSolid {
+    outline-style: solid;
+}
+
+.outlineStyleDouble {
+    outline-style: double;
+}
+
+.outlineStyleGroove {
+    outline-style: groove;
+}
+
+.outlineStyleRidge {
+    outline-style: ridge;
+}
+
+.outlineStyleInset {
+    outline-style: inset;
+}
+
+.outlineStyleOutset {
+    outline-style: outset;
+}
+
+.outlineStyleInitial {
+    outline-style: initial;
+}
+
+.outlineStyleInherit {
+    outline-style: inherit;
+}
+
+.objectFitFill {
+    object-fit: fill;
+}
+
+.objectFitContain {
+    object-fit: contain;
+}
+
+.objectFitCover {
+    object-fit: cover;
+}
+
+.objectFitScaleDown {
+    object-fit: scale-down;
+}
+
+.objectFitNone {
+    object-fit: none;
+}
+
+.objectFitInitial {
+    object-fit: initial;
+}
+
+.objectFitInherit {
+    object-fit: inherit;
+}
+
+.borderImageWidthLengthCm {
+    border-image-width: 1cm;
+}
+
+.borderImageWidthLengthMm {
+    border-image-width: 1mm;
+}
+
+.borderImageWidthLengthIn {
+    border-image-width: 1in;
+}
+
+.borderImageWidthLengthPx {
+    border-image-width: 1px;
+}
+
+.borderImageWidthLengthPt {
+    border-image-width: 1pt;
+}
+
+.borderImageWidthLengthPc {
+    border-image-width: 1pc;
+}
+
+.borderImageWidthLengthEm {
+    border-image-width: 1em;
+}
+
+.borderImageWidthLengthEx {
+    border-image-width: 1ex;
+}
+
+.borderImageWidthLengthRem {
+    border-image-width: 1rem;
+}
+
+.borderImageWidthLengthVw {
+    border-image-width: 1vw;
+}
+
+.borderImageWidthLengthVh {
+    border-image-width: 1vh;
+}
+
+.borderImageWidthLengthVmin {
+    border-image-width: 1vmin;
+}
+
+.borderImageWidthLengthVmax {
+    border-image-width: 1vmax;
+}
+
+.borderImageWidthLengthPercent {
+    border-image-width: 1%;
+}
+
+.borderImageWidthAuto {
+    border-image-width: auto;
+}
+
+.borderImageWidthInitial {
+    border-image-width: initial;
+}
+
+.borderImageWidthInherit {
+    border-image-width: inherit;
+}
+
+.paddingTopLengthNone {
+    padding-top: none;
+}
+
+.paddingTopLengthMm {
+    padding-top: 1mm;
+}
+
+.paddingTopLengthIn {
+    padding-top: 1in;
+}
+
+.paddingTopLengthPx {
+    padding-top: 1px;
+}
+
+.paddingTopLengthPt {
+    padding-top: 1pt;
+}
+
+.paddingTopLengthPc {
+    padding-top: 1pc;
+}
+
+.paddingTopLengthEm {
+    padding-top: 1em;
+}
+
+.paddingTopLengthEx {
+    padding-top: 1ex;
+}
+
+.paddingTopLengthRem {
+    padding-top: 1rem;
+}
+
+.paddingTopLengthVw {
+    padding-top: 1vw;
+}
+
+.paddingTopLengthVh {
+    padding-top: 1vh;
+}
+
+.paddingTopLengthVmin {
+    padding-top: 1vmin;
+}
+
+.paddingTopLengthVmax {
+    padding-top: 1vmax;
+}
+
+.paddingTopLengthPercent {
+    padding-top: 1%;
+}
+
+.paddingTopInitial {
+    padding-top: initial;
+}
+
+.paddingTopInherit {
+    padding-top: inherit;
+}
+
+.textDecorationStyleSolid {
+    text-decoration-style: solid;
+}
+
+.textDecorationStyleDouble {
+    text-decoration-style: double;
+}
+
+.textDecorationStyleDotted {
+    text-decoration-style: dotted;
+}
+
+.textDecorationStyleDashed {
+    text-decoration-style: dashed;
+}
+
+.textDecorationStyleWavy {
+    text-decoration-style: wavy;
+}
+
+.textDecorationStyleInitial {
+    text-decoration-style: initial;
+}
+
+.textDecorationStyleInherit {
+    text-decoration-style: inherit;
+}
+
+.marqueeSpeedSlow {
+    marquee-speed: slow;
+}
+
+.marqueeSpeedNormal {
+    marquee-speed: normal;
+}
+
+.marqueeSpeedFast {
+    marquee-speed: fast;
+}
+
+.marqueeSpeedInitial {
+    marquee-speed: initial;
+}
+
+.marqueeSpeedInherit {
+    marquee-speed: inherit;
+}
+
+.marqueeSpeedUnset {
+    marquee-speed: unset;
+}
+
+.borderImageSourceNone {
+    border-image-source: none;
+}
+
+.borderImageSourceImage {
+    border-image-source: url('chess.png');
+}
+
+.borderImageSourceInitial {
+    border-image-source: initial;
+}
+
+.borderImageSourceInherit {
+    border-image-source: inherit;
+}
+
+.fontStyleNormal {
+    font-style: normal;
+}
+
+.fontStyleItalic {
+    font-style: italic;
+}
+
+.fontStyleOblique {
+    font-style: oblique;
+}
+
+.fontStyleInitial {
+    font-style: initial;
+}
+
+.fontStyleInherit {
+    font-style: inherit;
+}
+
+.lineClampNone {
+    line-clamp: none;
+}
+
+.lineClampNumber {
+    line-clamp: 3;
+}
+
+.textFillColorRed {
+    text-fill-color: red;
+}
+
+.textFillColorHex {
+    text-fill-color: #000;
+}
+
+.textFillColorRgb {
+    text-fill-color: rgb(100, 200, 0);
+}
+
+.textFillColorInherit {
+    text-fill-color: inherit;
+}
+
+.textFillColorInitial {
+    text-fill-color: initial;
+}
+
+.textFillColorUnset {
+    text-fill-color: unset;
+}
+
+.borderBottomAll {
+    border-bottom: 5px solid red;
+}
+
+.borderBottomInitial {
+    border-bottom: 5px solid initial;
+}
+
+.borderBottomInherit {
+    border-bottom: 5px solid inherit;
+}
+
+.borderColorColor {
+    border-color: #000;
+}
+
+.borderColorTransparent {
+    border-color: transparent;
+}
+
+.borderColorInitial {
+    border-color: initial;
+}
+
+.borderColorInherit {
+    border-color: inherit;
+}
+
+.flexGrowNumber {
+    flex-grow: 1;
+}
+
+.flexGrowInitial {
+    flex-grow: initial;
+}
+
+.flexGrowInherit {
+    flex-grow: inherit;
+}
+
+.textEmphasisStyleNone {
+    text-emphasis-style: none;
+}
+
+.textEmphasisStyleX {
+    text-emphasis-style: 'x';
+}
+
+.textEmphasisStyleChar {
+    text-emphasis-style: '*';
+}
+
+.textEmphasisStyleFilled {
+    text-emphasis-style: filled;
+}
+
+.textEmphasisStyleOpen {
+    text-emphasis-style: open;
+}
+
+.textEmphasisStyleFilledSesame {
+    text-emphasis-style: filled sesame;
+}
+
+.textEmphasisStyleOpenSesame {
+    text-emphasis-style: open sesame;
+}
+
+.textEmphasisStyleFilledSesameHex {
+    text-emphasis-style: filled sesame #555;
+}
+
+.textEmphasisStyleInherit {
+    text-emphasis-style: inherit;
+}
+
+.textEmphasisStyleInitial {
+    text-emphasis-style: initial;
+}
+
+.textEmphasisStyleUnset {
+    text-emphasis-style: unset;
+}
+
+.borderHorizontalSpacingCm {
+    border-horizontal-spacing: 1cm;
+}
+
+.borderHorizontalSpacingMm {
+    border-horizontal-spacing: 1mm;
+}
+
+.borderHorizontalSpacingIn {
+    border-horizontal-spacing: 1in;
+}
+
+.borderHorizontalSpacingPx {
+    border-horizontal-spacing: 1px;
+}
+
+.borderHorizontalSpacingPt {
+    border-horizontal-spacing: 1pt;
+}
+
+.borderHorizontalSpacingPc {
+    border-horizontal-spacing: 1pc;
+}
+
+.borderHorizontalSpacingEm {
+    border-horizontal-spacing: 1em;
+}
+
+.borderHorizontalSpacingEx {
+    border-horizontal-spacing: 1ex;
+}
+
+.borderHorizontalSpacingCh {
+    border-horizontal-spacing: 1ch;
+}
+
+.borderHorizontalSpacingRem {
+    border-horizontal-spacing: 1rem;
+}
+
+.borderHorizontalSpacingVw {
+    border-horizontal-spacing: 1vw;
+}
+
+.borderHorizontalSpacingVh {
+    border-horizontal-spacing: 1vh;
+}
+
+.borderHorizontalSpacingVmin {
+    border-horizontal-spacing: 1vmin;
+}
+
+.borderHorizontalSpacingVmax {
+    border-horizontal-spacing: 1vmax;
+}
+
+.borderHorizontalSpacingPercent {
+    border-horizontal-spacing: 1%;
+}
+
+.maskPositionTop {
+    mask-position: top;
+}
+
+.maskPositionBottom {
+    mask-position: bottom;
+}
+
+.maskPositionLeft {
+    mask-position: left;
+}
+
+.maskPositionRight {
+    mask-position: right;
+}
+
+.maskPositionCenter {
+    mask-position: center;
+}
+
+.maskPositionPercentPercent {
+    mask-position: 25% 75%;
+}
+
+.maskPositionPxPx {
+    mask-position: 0px 0px;
+}
+
+.maskPositionPercentEm {
+    mask-position: 10% 8em;
+}
+
+.maskPositionTopRight {
+    mask-position: top right;
+}
+
+.maskPositionRemRememCenter {
+    mask-position: 1rem 1rem, center;
+}
+
+.maskPositionInherit {
+    mask-position: inherit;
+}
+
+.maskPositionInitial {
+    mask-position: initial;
+}
+
+.maskPositionUnset {
+    mask-position: unset;
+}
+
+.filterNone {
+    filter: none;
+}
+
+.filterBlur {
+    filter: blur(5px);
+}
+
+.filterBrightness {
+    filter: brightness(200%);
+}
+
+.filterContrast {
+    filter: contrast(200%);
+}
+
+.filterDropShadow() {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.filterGrayscale {
+    filter: grayscale(100%);
+}
+
+.filterHueRotate {
+    filter: hue-rotate(90deg);
+}
+
+.filterInvert {
+    filter: invert(100%);
+}
+
+.filterOpacity {
+    filter: opacity(30%);
+}
+
+.filterSaturate {
+    filter: saturate(8);
+}
+
+.filterSepia {
+    filter: sepia(100%);
+}
+
+.filterContrastBrightness {
+    filter: contrast(200%) brightness(150%)
+}
+
+.filterUrl {
+    filter: url('chess.png');
+}
+
+.maskPositionYLeft {
+    mask-position-y: left;
+}
+
+.maskPositionYCenter {
+    mask-position-y: center;
+}
+
+.maskPositionYRight {
+    mask-position-y: right;
+}
+
+.maskPositionYPercent {
+    mask-position-y: 100%;
+}
+
+.maskPositionYNegPercent {
+    mask-position-y: -50%;
+}
+
+.maskPositionYPx {
+    mask-position-y: 50px;
+}
+
+.maskPositionYCm {
+    mask-position-y: -1cm;
+}
+
+.maskPositionYPxPercentEm {
+    mask-position-y: 50px, 25%, -3em;
+}
+
+.maskPositionYInherit {
+    mask-position-y: inherit;
+}
+
+.maskPositionYInitial {
+    mask-position-y: initial;
+}
+
+.maskPositionYUnset {
+    mask-position-y: unset;
+}
+
+.borderRadiusPxPxPxPx {
+    border-radius: 15px 50px 30px 5px;
+}
+
+.borderRadiusPxPxPx {
+    border-radius: 15px 50px 30px;
+}
+
+.borderRadiusPxPx {
+    border-radius: 15px 50px;
+}
+
+.borderRadiusLengthPx {
+    border-radius: 10px;
+}
+
+.borderRadiusPercentPercentPercentPercent {
+    border-radius: 15% 50% 30% 5%;
+}
+
+.borderRadiusPercentPercentPercent {
+    border-radius: 15% 50% 30%;
+}
+
+.borderRadiusPercentPercent {
+    border-radius: 15% 50%;
+}
+
+.borderRadiusLengthPercent {
+    border-radius: 10%;
+}
+
+.borderRadiusInitial {
+    border-radius: initial;
+}
+
+.borderRadiusInherit {
+    border-radius: inherit;
+}
+
+.minLogicalWidthNone {
+    min-logical-width: none;
+}
+
+.minLogicalWidthCm {
+    min-logical-width: 1cm;
+}
+
+.minLogicalWidthMm {
+    min-logical-width: 1mm;
+}
+
+.minLogicalWidthIn {
+    min-logical-width: 1in;
+}
+
+.minLogicalWidthPx {
+    min-logical-width: 1px;
+}
+
+.minLogicalWidthPt {
+    min-logical-width: 1pt;
+}
+
+.minLogicalWidthPc {
+    min-logical-width: 1pc;
+}
+
+.minLogicalWidthEm {
+    min-logical-width: 1em;
+}
+
+.minLogicalWidthEx {
+    min-logical-width: 1ex;
+}
+
+.minLogicalWidthCh {
+    min-logical-width: 1ch;
+}
+
+.minLogicalWidthRem {
+    min-logical-width: 1rem;
+}
+
+.minLogicalWidthVw {
+    min-logical-width: 1vw;
+}
+
+.minLogicalWidthVh {
+    min-logical-width: 1vh;
+}
+
+.minLogicalWidthVmin {
+    min-logical-width: 1vmin;
+}
+
+.minLogicalWidthVmax {
+    min-logical-width: 1vmax;
+}
+
+.minLogicalWidthPercent {
+    min-logical-width: 1%;
+}
+
+.overflowXVisible {
+    overflow-x: visible;
+}
+
+.overflowXHidden {
+    overflow-x: hidden;
+}
+
+.overflowXScroll {
+    overflow-x: scroll;
+}
+
+.overflowXAuto {
+    overflow-x: auto;
+}
+
+.overflowXInitial {
+    overflow-x: initial;
+}
+
+.overflowXInherit {
+    overflow-x: inherit;
+}
+
+.columnFillBalance {
+    column-fill: balance;
+}
+
+.columnFillAuto {
+    column-fill: auto;
+}
+
+.columnFillInitial {
+    column-fill: initial;
+}
+
+.columnFillInherit {
+    column-fill: inherit;
+}
+
+.tabSizeNumber {
+    tab-size: 16;
+}
+
+.tabSizeLengthCm {
+    tab-size: 1cm;
+}
+
+.tabSizeLengthMm {
+    tab-size: 1mm;
+}
+
+.tabSizeLengthIn {
+    tab-size: 1in;
+}
+
+.tabSizeLengthPx {
+    tab-size: 1px;
+}
+
+.tabSizeLengthPt {
+    tab-size: 1pt;
+}
+
+.tabSizeLengthPc {
+    tab-size: 1pc;
+}
+
+.tabSizeLengthEm {
+    tab-size: 1em;
+}
+
+.tabSizeLengthEx {
+    tab-size: 1ex;
+}
+
+.tabSizeLengthCh {
+    tab-size: 1ch;
+}
+
+.tabSizeLengthRem {
+    tab-size: 1rem;
+}
+
+.tabSizeLengthVw {
+    tab-size: 1vw;
+}
+
+.tabSizeLengthVh {
+    tab-size: 1vh;
+}
+
+.tabSizeLengthVmin {
+    tab-size: 1vmin;
+}
+
+.tabSizeLengthVmax {
+    tab-size: 1vmax;
+}
+
+.tabSizeLengthPercent {
+    tab-size: 1%;
+}
+
+.tabSizeInitial {
+    tab-size: initial;
+}
+
+.tabSizeInherit {
+    tab-size: inherit;
+}
+
+.backgroundBlendModeNormal {
+    background-blend-mode: normal;
+}
+
+.backgroundBlendModeMultiply {
+    background-blend-mode: multiply;
+}
+
+.backgroundBlendModeScreen {
+    background-blend-mode: screen;
+}
+
+.backgroundBlendModeOverlay {
+    background-blend-mode: overlay;
+}
+
+.backgroundBlendModeDarken {
+    background-blend-mode: darken;
+}
+
+.backgroundBlendModeLighten {
+    background-blend-mode: lighten;
+}
+
+.backgroundBlendModeColorDodge {
+    background-blend-mode: color-dodge;
+}
+
+.backgroundBlendModeSaturation {
+    background-blend-mode: saturation;
+}
+
+.backgroundBlendModeColor {
+    background-blend-mode: color;
+}
+
+.backgroundBlendModeLuminosity {
+    background-blend-mode: luminosity;
+}
+
+.minWidthNone {
+    min-width: none;
+}
+
+.minWidthLengthMm {
+   min-width: 1mm;
+}
+
+.minWidthLengthIn {
+   min-width: 1in;
+}
+
+.minWidthLengthPx {
+   min-width: 1px;
+}
+
+.minWidthLengthPt {
+   min-width: 1pt;
+}
+
+.minWidthLengthPc {
+   min-width: 1pc;
+}
+
+.minWidthLengthEm {
+   min-width: 1em;
+}
+
+.minWidthLengthEx {
+   min-width: 1ex;
+}
+
+.minWidthLengthRem {
+   min-width: 1rem;
+}
+
+.minWidthLengthVw {
+   min-width: 1vw;
+}
+
+.minWidthLengthVh {
+   min-width: 1vh;
+}
+
+.minWidthLengthVmin {
+   min-width: 1vmin;
+}
+
+.minWidthLengthVmax {
+   min-width: 1vmax;
+}
+
+.minWidthLengthPercent {
+   min-width: 1%;
+}
+
+.minWidthInitial {
+    min-width: initial;
+}
+
+.minWidthInherit {
+    min-width: inherit;
+}
+
+.borderTopStyleNone {
+    border-top-style: none;
+}
+
+.borderTopStyleHidden {
+    border-top-style: hidden;
+}
+
+.borderTopStyleDotted {
+    border-top-style: dotted;
+}
+
+.borderTopStyleDashed {
+    border-top-style: dashed;
+}
+
+.borderTopStyleSolid {
+    border-top-style: solid;
+}
+
+.borderTopStyleDouble {
+    border-top-style: double;
+}
+
+.borderTopStyleGroove {
+    border-top-style: groove;
+}
+
+.borderTopStyleRidge {
+    border-top-style: ridge;
+}
+
+.borderTopStyleInset {
+    border-top-style: inset;
+}
+
+.borderTopStyleOutset {
+    border-top-style: outset;
+}
+
+.borderTopStyleInitial {
+    border-top-style: initial;
+}
+
+.borderTopStyleInherit {
+    border-top-style: inherit;
+}
+
+.logicalWidthCm {
+    logical-width: 1cm;
+}
+
+.logicalWidthMm {
+    logical-width: 1mm;
+}
+
+.logicalWidthIn {
+    logical-width: 1in;
+}
+
+.logicalWidthPx {
+    logical-width: 1px;
+}
+
+.logicalWidthPt {
+    logical-width: 1pt;
+}
+
+.logicalWidthPc {
+    logical-width: 1pc;
+}
+
+.logicalWidthEm {
+    logical-width: 1em;
+}
+
+.logicalWidthEx {
+    logical-width: 1ex;
+}
+
+.logicalWidthCh {
+    logical-width: 1ch;
+}
+
+.logicalWidthRem {
+    logical-width: 1rem;
+}
+
+.logicalWidthVw {
+    logical-width: 1vw;
+}
+
+.logicalWidthVh {
+    logical-width: 1vh;
+}
+
+.logicalWidthVmin {
+    logical-width: 1vmin;
+}
+
+.logicalWidthVmax {
+    logical-width: 1vmax;
+}
+
+.logicalWidthPercent {
+    logical-width: 1%;
+}
+
+.borderEndStyleNone {
+    border-end-style: none;
+}
+
+.borderEndStyleHidden {
+    border-end-style: hidden;
+}
+
+.borderEndStyleDotted {
+    border-end-style: dotted;
+}
+
+.borderEndStyleDashed {
+    border-end-style: dashed;
+}
+
+.borderEndStyleSolid {
+    border-end-style: solid;
+}
+
+.borderEndStyleDouble {
+    border-end-style: double;
+}
+
+.borderEndStyleGroove {
+    border-end-style: groove;
+}
+
+.borderEndStyleRidge {
+    border-end-style: ridge;
+}
+
+.borderEndStyleInset {
+    border-end-style: inset;
+}
+
+.borderEndStyleOutset {
+    border-end-style: outset;
+}
+
+.borderEndStyleInitial {
+    border-end-style: initial;
+}
+
+.borderEndStyleInherit {
+    border-end-style: inherit;
+}
+
+.heightAuto {
+   height: auto;
+}
+
+.heightMm {
+   height: 1mm;
+}
+
+.heightIn {
+   height: 1in;
+}
+
+.heightPx {
+   height: 1px;
+}
+
+.heightPt {
+   height: 1pt;
+}
+
+.heightPc {
+   height: 1pc;
+}
+
+.heightEm {
+   height: 1em;
+}
+
+.heightEx {
+   height: 1ex;
+}
+
+.heightRem {
+   height: 1rem;
+}
+
+.heightVw {
+   height: 1vw;
+}
+
+.heightVh {
+   height: 1vh;
+}
+
+.heightVmin {
+   height: 1vmin;
+}
+
+.heightVmax {
+   height: 1vmax;
+}
+
+.heightPercent {
+   height: 1%;
+}
+
+.heightInitial {
+   height: initial;
+}
+
+.heightInherit {
+   height: inherit;
+}
+
+.textStrokeWidthThin {
+    text-stroke-width: thin;
+}
+
+.textStrokeWidthMedium {
+    text-stroke-width: medium;
+}
+
+.textStrokeWidthThick {
+    text-stroke-width: thick;
+}
+
+.textStrokeWidthCm {
+    text-stroke-width: 1cm;
+}
+
+.textStrokeWidthMm {
+    text-stroke-width: 1mm;
+}
+
+.textStrokeWidthIn {
+    text-stroke-width: 1in;
+}
+
+.textStrokeWidthPx {
+    text-stroke-width: 1px;
+}
+
+.textStrokeWidthPt {
+    text-stroke-width: 1pt;
+}
+
+.textStrokeWidthPc {
+    text-stroke-width: 1pc;
+}
+
+.textStrokeWidthEm {
+    text-stroke-width: 1em;
+}
+
+.textStrokeWidthEx {
+    text-stroke-width: 1ex;
+}
+
+.textStrokeWidthCh {
+    text-stroke-width: 1ch;
+}
+
+.textStrokeWidthRem {
+    text-stroke-width: 1rem;
+}
+
+.textStrokeWidthVw {
+    text-stroke-width: 1vw;
+}
+
+.textStrokeWidthVh {
+    text-stroke-width: 1vh;
+}
+
+.textStrokeWidthVmin {
+    text-stroke-width: 1vmin;
+}
+
+.textStrokeWidthVmax {
+    text-stroke-width: 1vmax;
+}
+
+.textStrokeWidthPercent {
+    text-stroke-width: 1%;
+}
+
+.textStrokeWidthInherit {
+    text-stroke-width: inherit;
+}
+
+.textStrokeWidthInitial {
+    text-stroke-width: initial;
+}
+
+.textStrokeWidthUnset {
+    text-stroke-width: unset;
+}
+
+.boxOrdinalGroupNumber {
+    box-ordinal-group: 5;
+}
+
+.boxOrdinalGroupInherit {
+    box-ordinal-group: inherit;
+}
+
+.boxOrdinalGroupInitial {
+    box-ordinal-group: initial;
+}
+
+.boxOrdinalGroupUnset {
+    box-ordinal-group: unset;
+}
+
+.overflowYVisible {
+    overflow-y: visible;
+}
+
+.overflowYHidden {
+    overflow-y: hidden;
+}
+
+.overflowYScroll {
+    overflow-y: scroll;
+}
+
+.overflowYAuto {
+    overflow-y: auto;
+}
+
+.overflowYInitial {
+    overflow-y: initial;
+}
+
+.overflowYInherit {
+    overflow-y: inherit;
+}
+
+.outlineAll {
+    outline: 4px solid red;
+}
+
+.outlineInitial {
+    outline: initial;
+}
+
+.outlineInherit {
+    outline: inherit;
+}
+
+.gridColumnGapLengthMm {
+    grid-column-gap: 1mm;
+}
+
+.gridColumnGapLengthIn {
+    grid-column-gap: 1in;
+}
+
+.gridColumnGapLengthPx {
+    grid-column-gap: 1px;
+}
+
+.gridColumnGapLengthPt {
+    grid-column-gap: 1pt;
+}
+
+.gridColumnGapLengthPc {
+    grid-column-gap: 1pc;
+}
+
+.gridColumnGapLengthEm {
+    grid-column-gap: 1em;
+}
+
+.gridColumnGapLengthEx {
+    grid-column-gap: 1ex;
+}
+
+.gridColumnGapLengthRem {
+    grid-column-gap: 1rem;
+}
+
+.gridColumnGapLengthVw {
+    grid-column-gap: 1vw;
+}
+
+.gridColumnGapLengthVh {
+    grid-column-gap: 1vh;
+}
+
+.gridColumnGapLengthVmin {
+    grid-column-gap: 1vmin;
+}
+
+.gridColumnGapLengthVmax {
+    grid-column-gap: 1vmax;
+}
+
+.gridColumnGapLengthPercent {
+    grid-column-gap: 1%;
+}
+
+.borderRightColorsAll {
+    border-right-colors: #000 #050 #fff #f00;
+}
+
+.letterSpacingNormal {
+    letter-spacing: normal;
+}
+
+.letterSpacingLengthMm {
+   letter-spacing: 1mm;
+}
+
+.letterSpacingLengthIn {
+   letter-spacing: 1in;
+}
+
+.letterSpacingLengthPx {
+   letter-spacing: 1px;
+}
+
+.letterSpacingLengthPt {
+   letter-spacing: 1pt;
+}
+
+.letterSpacingLengthPc {
+   letter-spacing: 1pc;
+}
+
+.letterSpacingLengthEm {
+   letter-spacing: 1em;
+}
+
+.letterSpacingLengthEx {
+   letter-spacing: 1ex;
+}
+
+.letterSpacingLengthRem {
+   letter-spacing: 1rem;
+}
+
+.letterSpacingLengthVw {
+   letter-spacing: 1vw;
+}
+
+.letterSpacingLengthVh {
+   letter-spacing: 1vh;
+}
+
+.letterSpacingLengthVmin {
+   letter-spacing: 1vmin;
+}
+
+.letterSpacingLengthVmax {
+   letter-spacing: 1vmax;
+}
+
+.letterSpacingLengthPercent {
+   letter-spacing: 1%;
+}
+
+.letterSpacingInitial {
+    letter-spacing: initial;
+}
+
+.letterSpacingInherit {
+    letter-spacing: inherit;
+}
+
+.alignContentStretch {
+    align-content: stretch;
+}
+
+.alignContentCenter {
+    align-content: center;
+}
+
+.alignContentFlexStart {
+    align-content: flex-start;
+}
+
+.alignContentFlexEnd {
+    align-content: flex-end;
+}
+
+.alignContentSpaceBetween {
+    align-content: space-between;
+}
+
+.alignContentSpaceAround {
+    align-content: space-around;
+}
+
+.alignContentInitial {
+    align-content: initial;
+}
+
+.alignContentInherit {
+    align-content: inherit;
+}
+
+.borderRightWidthMedium {
+    border-right-width: medium;
+}
+
+.borderRightWidthThin {
+    border-right-width: thin;
+}
+
+.borderRightWidthThick {
+    border-right-width: thick;
+}
+
+.borderRightWidthLengthCm {
+    border-right-width: 1cm;
+}
+
+.borderRightWidthLengthMm {
+    border-right-width: 1mm;
+}
+
+.borderRightWidthLengthIn {
+    border-right-width: 1in;
+}
+
+.borderRightWidthLengthPx {
+    border-right-width: 1px;
+}
+
+.borderRightWidthLengthPt {
+    border-right-width: 1pt;
+}
+
+.borderRightWidthLengthPc {
+    border-right-width: 1pc;
+}
+
+.borderRightWidthLengthEm {
+    border-right-width: 1em;
+}
+
+.borderRightWidthLengthEx {
+    border-right-width: 1ex;
+}
+
+.borderRightWidthLengthRem {
+    border-right-width: 1rem;
+}
+
+.borderRightWidthLengthVw {
+    border-right-width: 1vw;
+}
+
+.borderRightWidthLengthVh {
+    border-right-width: 1vh;
+}
+
+.borderRightWidthLengthVmin {
+    border-right-width: 1vmin;
+}
+
+.borderRightWidthLengthVmax {
+    border-right-width: 1vmax;
+}
+
+.borderRightWidthLengthPercent {
+    border-right-width: 1%;
+}
+
+.borderRightWidthInitial {
+    border-right-width: initial;
+}
+
+.borderRightWidthInherit {
+    border-right-width: inherit;
+}
+
+.borderStartStyleNone {
+    border-start-style: none;
+}
+
+.borderStartStyleHidden {
+    border-start-style: hidden;
+}
+
+.borderStartStyleDotted {
+    border-start-style: dotted;
+}
+
+.borderStartStyleDashed {
+    border-start-style: dashed;
+}
+
+.borderStartStyleSolid {
+    border-start-style: solid;
+}
+
+.borderStartStyleDouble {
+    border-start-style: double;
+}
+
+.borderStartStyleGroove {
+    border-start-style: groove;
+}
+
+.borderStartStyleRidge {
+    border-start-style: ridge;
+}
+
+.borderStartStyleInset {
+    border-start-style: inset;
+}
+
+.borderStartStyleOutset {
+    border-start-style: outset;
+}
+
+.borderStartStyleInitial {
+    border-start-style: initial;
+}
+
+.borderStartStyleInherit {
+    border-start-style: inherit;
+}
+
+.maskPositionXLeft {
+    mask-position-x: left;
+}
+
+.maskPositionXCenter {
+    mask-position-x: center;
+}
+
+.maskPositionXRight {
+    mask-position-x: right;
+}
+
+.maskPositionXPercent {
+    mask-position-x: 100%;
+}
+
+.maskPositionXNegPercent {
+    mask-position-x: -50%;
+}
+
+.maskPositionXPx {
+    mask-position-x: 50px;
+}
+
+.maskPositionXCm {
+    mask-position-x: -1cm;
+}
+
+.maskPositionXPxPercentEm {
+    mask-position-x: 50px, 25%, -3em;
+}
+
+.maskPositionXInherit {
+    mask-position-x: inherit;
+}
+
+.maskPositionXInitial {
+    mask-position-x: initial;
+}
+
+.maskPositionXUnset {
+    mask-position-x: unset;
+}
+
+.backgroundSizeAuto {
+    background-size: auto;
+}
+
+.backgroundSizeLengthPx {
+    background-size: 300px;
+}
+
+.backgroundSizeLengthPxPx {
+    background-size: 300px 100px;
+}
+
+.backgroundSizeCover {
+    background-size: cover;
+}
+
+.backgroundSizeContain {
+    background-size: contain;
+}
+
+.backgroundSizeInitial {
+    background-size: initial;
+}
+
+.backgroundSizeInherit {
+    background-size: inherit;
+}
+

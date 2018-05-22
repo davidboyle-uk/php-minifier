@@ -1,0 +1,67 @@
+.rgbColorBlack {
+	color: rgb(0, 0, 0);
+}
+
+.rgbColorWhite {
+	color: rgb(255, 255, 255);
+}
+
+.rgbColorRed {
+	color: rgb(255, 0, 0);
+}
+
+.rgbColorLime {
+	color: rgb(0, 255, 0);
+}
+
+.rgbColorBlue {
+	color: rgb(0, 0, 255);
+}
+
+.rgbColorYellow {
+	color: rgb(255, 255, 0);
+}
+
+.rgbColorCyan {
+	color: rgb(0, 255, 255);
+}
+
+.rgbColorMagenta {
+	color: rgb(255, 0, 255);
+}
+
+.rgbColorSilver {
+	color: rgb(192, 192, 192);
+}
+
+.rgbColorGrey {
+	color: rgb(128, 128, 128);
+}
+
+.rgbColorMaroon {
+	color: rgb(128, 0, 0);
+}
+
+.rgbColorOlive {
+	color: rgb(128, 128, 0);
+}
+
+.rgbColorGreen {
+	color: rgb(0, 128, 0);
+}
+
+.rgbColorPurple {
+	color: rgb(128, 0, 128);
+}
+
+.rgbColorTeal {
+	color: rgb(0, 128, 128);
+}
+
+.rgbColorNavy {
+	color: rgb(0, 0, 128);
+}
+
+.rgbColorPercent {
+	color: rgb(0%, 0%, 100%);
+}

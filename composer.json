@@ -1,0 +1,32 @@
+{
+    "name": "dbx123/php-minifier", 
+    "description": "A PHP minifier for HTML, CSS and JS files.",
+    "type": "library",  
+    "keywords": ["minify","min","compress","html","html5","css","css3","js","javascript","phpmin","php","php5","free","open source"],
+	"license": "BSD",
+ 	"homepage": "https://github.com/dbx123/php-minifier",
+	"authors": [
+        {
+            "name": "David Boyle - Open Source PHP Contributor",
+            "homepage": "https://github.com/dbx123",
+            "role": "Developer"
+        }
+	],
+	"repositories": [ 
+        {
+            "type": "vcs",
+            "url": "https://github.com/dbx123/php-minifier"
+        }
+    ],
+    "autoload": {
+           "files": ["phpmin.php"]
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.1.*",
+        "squizlabs/php_codesniffer": "3.*",
+        "johnkary/phpunit-speedtrap": "^3.0"
+    }
+}

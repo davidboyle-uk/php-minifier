@@ -1,0 +1,6 @@
+/* Simple strings (using content as use case) */
+@charset "UTF-8";
+
+.stringDoubleQuotes {
+	content: "This string is demarkated by double quotes.";
+}

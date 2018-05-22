@@ -1,0 +1,28 @@
+.fontWeightNormal {
+    font-weight: normal;
+}
+
+.fontWeightBold {
+    font-weight: bold;
+}
+
+.fontWeightBolder {
+    font-weight: bolder;
+}
+
+.fontWeightLighter {
+    font-weight: lighter;
+}
+
+.fontWeightNumber {
+    font-weight: 100;
+}
+
+.fontWeightInitial {
+    font-weight: initial;
+}
+
+.fontWeightInherit {
+    font-weight: inherit;
+}
+

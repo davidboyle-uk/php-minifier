@@ -1,0 +1,740 @@
+.namedColorAliceBlue {
+    color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.namedColorAntiqueWhite {
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+}
+
+.namedColorAqua {
+    color: aqua;
+    border: 1px solid aqua;
+}
+
+.namedColorAquamarine {
+    color: aquamarine;
+    border: 1px solid aquamarine;
+}
+
+.namedColorAzure {
+    color: azure;
+    border: 1px solid azure;
+}
+
+.namedColorBeige {
+    color: beige;
+    border: 1px solid beige;
+}
+
+.namedColorBisque {
+    color: bisque;
+    border: 1px solid bisque;
+}
+
+.namedColorBlack {
+    color: black;
+    border: 1px solid black;
+}
+
+.namedColorBlanchedAlmond {
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+}
+
+.namedColorBlue {
+    color: blue;
+    border: 1px solid blue;
+}
+
+.namedColorBlueViolet {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.namedColorBrown {
+    color: brown;
+    border: 1px solid brown;
+}
+
+.namedColorBurlyWood {
+    color: burlywood;
+    border: 1px solid burlywood;
+}
+
+.namedColorCadetBlue {
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+
+.namedColorChartreuse {
+    color: chartreuse;
+    border: 1px solid chartreuse;
+}
+
+.namedColorChocolate {
+    color: chocolate;
+    border: 1px solid chocolate;
+}
+
+.namedColorCoral {
+    color: coral;
+    border: 1px solid coral;
+}
+
+.namedColorCornflowerBlue {
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+
+.namedColorCornsilk {
+    color: cornsilk;
+    border: 1px solid cornsilk;
+}
+
+.namedColorCrimson {
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+.namedColorCyan {
+    color: cyan;
+    border: 1px solid cyan;
+}
+
+.namedColorDarkBlue {
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+.namedColorDarkCyan {
+    color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+.namedColorDarkGoldenRod {
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+}
+
+.namedColorDarkGray {
+    color: darkgray;
+    border: 1px solid darkgray;
+}
+
+.namedColorDarkGrey {
+    color: darkgrey;
+    border: 1px solid darkgrey;
+}
+
+.namedColorDarkGreen {
+    color: darkgreen;
+    border: 1px solid darkgreen;
+}
+
+.namedColorDarkKhaki {
+    color: darkkhaki;
+    border: 1px solid darkkhaki;
+}
+
+.namedColorDarkMagenta {
+    color: darkmagenta;
+    border: 1px solid darkmagenta;
+}
+
+.namedColorDarkOliveGreen {
+    color: darkolivegreen;
+    border: 1px solid darkolivegreen;
+}
+
+.namedColorDarkOrange {
+    color: darkorange;
+    border: 1px solid darkorange;
+}
+
+.namedColorDarkOrchid {
+    color: darkorchid;
+    border: 1px solid darkorchid;
+}
+
+.namedColorDarkRed {
+    color: darkred;
+    border: 1px solid darkred;
+}
+
+.namedColorDarkSalmon {
+    color: darksalmon;
+    border: 1px solid darksalmon;
+}
+
+.namedColorDarkSeaGreen {
+    color: darkseagreen;
+    border: 1px solid darkseagreen;
+}
+
+.namedColorDarkSlateBlue {
+    color: darkslateblue;
+    border: 1px solid darkslateblue;
+}
+
+.namedColorDarkSlateGray {
+    color: darkslategray;
+    border: 1px solid darkslategray;
+}
+
+.namedColorDarkSlateGrey {
+    color: darkslategrey;
+    border: 1px solid darkslategrey;
+}
+
+.namedColorDarkTurquoise {
+    color: darkturquoise;
+    border: 1px solid darkturquoise;
+}
+
+.namedColorDarkViolet {
+    color: darkviolet;
+    border: 1px solid darkviolet;
+}
+
+.namedColorDeepPink {
+    color: deeppink;
+    border: 1px solid deeppink;
+}
+
+.namedColorDeepSkyBlue {
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+}
+
+.namedColorDimGray {
+    color: dimgray;
+    border: 1px solid dimgray;
+}
+
+.namedColorDimGrey {
+    color: dimgrey;
+    border: 1px solid dimgrey;
+}
+
+.namedColorDodgerBlue {
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+
+.namedColorFireBrick {
+    color: firebrick;
+    border: 1px solid firebrick;
+}
+
+.namedColorFloralWhite {
+    color: floralwhite;
+    border: 1px solid floralwhite;
+}
+
+.namedColorForestGreen {
+    color: forestgreen;
+    border: 1px solid forestgreen;
+}
+
+.namedColorFuchsia {
+    color: fuchsia;
+    border: 1px solid fuchsia;
+}
+
+.namedColorGainsboro {
+    color: gainsboro;
+    border: 1px solid gainsboro;
+}
+
+.namedColorGhostWhite {
+    color: ghostwhite;
+    border: 1px solid ghostwhite;
+}
+
+.namedColorGold {
+    color: gold;
+    border: 1px solid gold;
+}
+
+.namedColorGoldenRod {
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+
+.namedColorGray {
+    color: gray;
+    border: 1px solid gray;
+}
+
+.namedColorGrey {
+    color: grey;
+    border: 1px solid grey;
+}
+
+.namedColorGreen {
+    color: green;
+    border: 1px solid green;
+}
+
+.namedColorGreenYellow {
+    color: greenyellow;
+    border: 1px solid greenyellow;
+}
+
+.namedColorHoneyDew {
+    color: honeydew;
+    border: 1px solid honeydew;
+}
+
+.namedColorHotPink {
+    color: hotpink;
+    border: 1px solid hotpink;
+}
+
+.namedColorIndianRed  {
+    color: indianred ;
+    border: 1px solid indianred ;
+}
+
+.namedColorIndigo   {
+    color: indigo  ;
+    border: 1px solid indigo  ;
+}
+
+.namedColorIvory {
+    color: ivory;
+    border: 1px solid ivory;
+}
+
+.namedColorKhaki {
+    color: khaki;
+    border: 1px solid khaki;
+}
+
+.namedColorLavender {
+    color: lavender;
+    border: 1px solid lavender;
+}
+
+.namedColorLavenderBlush {
+    color: lavenderblush;
+    border: 1px solid lavenderblush;
+}
+
+.namedColorLawnGreen {
+    color: lawngreen;
+    border: 1px solid lawngreen;
+}
+
+.namedColorLemonChiffon {
+    color: lemonchiffon;
+    border: 1px solid lemonchiffon;
+}
+
+.namedColorLightBlue {
+    color: lightblue;
+    border: 1px solid lightblue;
+}
+
+.namedColorLightCoral {
+    color: lightcoral;
+    border: 1px solid lightcoral;
+}
+
+.namedColorLightCyan {
+    color: lightcyan;
+    border: 1px solid lightcyan;
+}
+
+.namedColorLightGoldenRodYellow {
+    color: lightgoldenrodyellow;
+    border: 1px solid lightgoldenrodyellow;
+}
+
+.namedColorLightGray {
+    color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.namedColorLightGrey {
+    color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+.namedColorLightGreen {
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+
+.namedColorLightPink {
+    color: lightpink;
+    border: 1px solid lightpink;
+}
+
+.namedColorLightSalmon {
+    color: lightsalmon;
+    border: 1px solid lightsalmon;
+}
+
+.namedColorLightSeaGreen {
+    color: lightseagreen;
+    border: 1px solid lightseagreen;
+}
+
+.namedColorLightSkyBlue {
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.namedColorLightSlateGray {
+    color: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+.namedColorLightSlateGrey {
+    color: lightslategrey;
+    border: 1px solid lightslategrey;
+}
+
+.namedColorLightSteelBlue {
+    color: lightsteelblue;
+    border: 1px solid lightsteelblue;
+}
+
+.namedColorLightYellow {
+    color: lightyellow;
+    border: 1px solid lightyellow;
+}
+
+.namedColorLime {
+    color: lime;
+    border: 1px solid lime;
+}
+
+.namedColorLimeGreen {
+    color: limegreen;
+    border: 1px solid limegreen;
+}
+
+.namedColorLinen {
+    color: linen;
+    border: 1px solid linen;
+}
+
+.namedColorMagenta {
+    color: magenta;
+    border: 1px solid magenta;
+}
+
+.namedColorMaroon {
+    color: maroon;
+    border: 1px solid maroon;
+}
+
+.namedColorMediumAquaMarine {
+    color: mediumaquamarine;
+    border: 1px solid mediumaquamarine;
+}
+
+.namedColorMediumBlue {
+    color: mediumblue;
+    border: 1px solid mediumblue;
+}
+
+.namedColorMediumOrchid {
+    color: mediumorchid;
+    border: 1px solid mediumorchid;
+}
+
+.namedColorMediumPurple {
+    color: mediumpurple;
+    border: 1px solid mediumpurple;
+}
+
+.namedColorMediumSeaGreen {
+    color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+}
+
+.namedColorMediumSlateBlue {
+    color: mediumslateblue;
+    border: 1px solid mediumslateblue;
+}
+
+.namedColorMediumSpringGreen {
+    color: mediumspringgreen;
+    border: 1px solid mediumspringgreen;
+}
+
+.namedColorMediumTurquoise {
+    color: mediumturquoise;
+    border: 1px solid mediumturquoise;
+}
+
+.namedColorMediumVioletRed {
+    color: mediumvioletred;
+    border: 1px solid mediumvioletred;
+}
+
+.namedColorMidnightBlue {
+    color: midnightblue;
+    border: 1px solid midnightblue;
+}
+
+.namedColorMintCream {
+    color: mintcream;
+    border: 1px solid mintcream;
+}
+
+.namedColorMistyRose {
+    color: mistyrose;
+    border: 1px solid mistyrose;
+}
+
+.namedColorMoccasin {
+    color: moccasin;
+    border: 1px solid moccasin;
+}
+
+.namedColorNavajoWhite {
+    color: navajowhite;
+    border: 1px solid navajowhite;
+}
+
+.namedColorNavy {
+    color: navy;
+    border: 1px solid navy;
+}
+
+.namedColorOldLace {
+    color: oldlace;
+    border: 1px solid oldlace;
+}
+
+.namedColorOlive {
+    color: olive;
+    border: 1px solid olive;
+}
+
+.namedColorOliveDrab {
+    color: olivedrab;
+    border: 1px solid olivedrab;
+}
+
+.namedColorOrange {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.namedColorOrangeRed {
+    color: orangered;
+    border: 1px solid orangered;
+}
+
+.namedColorOrchid {
+    color: orchid;
+    border: 1px solid orchid;
+}
+
+.namedColorPaleGoldenRod {
+    color: palegoldenrod;
+    border: 1px solid palegoldenrod;
+}
+
+.namedColorPaleGreen {
+    color: palegreen;
+    border: 1px solid palegreen;
+}
+
+.namedColorPaleTurquoise {
+    color: paleturquoise;
+    border: 1px solid paleturquoise;
+}
+
+.namedColorPaleVioletRed {
+    color: palevioletred;
+    border: 1px solid palevioletred;
+}
+
+.namedColorPapayaWhip {
+    color: papayawhip;
+    border: 1px solid papayawhip;
+}
+
+.namedColorPeachPuff {
+    color: peachpuff;
+    border: 1px solid peachpuff;
+}
+
+.namedColorPeru {
+    color: peru;
+    border: 1px solid peru;
+}
+
+.namedColorPink {
+    color: pink;
+    border: 1px solid pink;
+}
+
+.namedColorPlum {
+    color: plum;
+    border: 1px solid plum;
+}
+
+.namedColorPowderBlue {
+    color: powderblue;
+    border: 1px solid powderblue;
+}
+
+.namedColorPurple {
+    color: purple;
+    border: 1px solid purple;
+}
+
+.namedColorRebeccaPurple {
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+}
+
+.namedColorRed {
+    color: red;
+    border: 1px solid red;
+}
+
+.namedColorRosyBrown {
+    color: rosybrown;
+    border: 1px solid rosybrown;
+}
+
+.namedColorRoyalBlue {
+    color: royalblue;
+    border: 1px solid royalblue;
+}
+
+.namedColorSaddleBrown {
+    color: saddlebrown;
+    border: 1px solid saddlebrown;
+}
+
+.namedColorSalmon {
+    color: salmon;
+    border: 1px solid salmon;
+}
+
+.namedColorSandyBrown {
+    color: sandybrown;
+    border: 1px solid sandybrown;
+}
+
+.namedColorSeaGreen {
+    color: seagreen;
+    border: 1px solid seagreen;
+}
+
+.namedColorSeaShell {
+    color: seashell;
+    border: 1px solid seashell;
+}
+
+.namedColorSienna {
+    color: sienna;
+    border: 1px solid sienna;
+}
+
+.namedColorSilver {
+    color: silver;
+    border: 1px solid silver;
+}
+
+.namedColorSkyBlue {
+    color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.namedColorSlateBlue {
+    color: slateblue;
+    border: 1px solid slateblue;
+}
+
+.namedColorSlateGray {
+    color: slategray;
+    border: 1px solid slategray;
+}
+
+.namedColorSlateGrey {
+    color: slategrey;
+    border: 1px solid slategrey;
+}
+
+.namedColorSnow {
+    color: snow;
+    border: 1px solid snow;
+}
+
+.namedColorSpringGreen {
+    color: springgreen;
+    border: 1px solid springgreen;
+}
+
+.namedColorSteelBlue {
+    color: steelblue;
+    border: 1px solid steelblue;
+}
+
+.namedColorTan {
+    color: tan;
+    border: 1px solid tan;
+}
+
+.namedColorTeal {
+    color: teal;
+    border: 1px solid teal;
+}
+
+.namedColorThistle {
+    color: thistle;
+    border: 1px solid thistle;
+}
+
+.namedColorTomato {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.namedColorTurquoise {
+    color: turquoise;
+    border: 1px solid turquoise;
+}
+
+.namedColorViolet {
+    color: violet;
+    border: 1px solid violet;
+}
+
+.namedColorWheat {
+    color: wheat;
+    border: 1px solid wheat;
+}
+
+.namedColorWhite {
+    color: white;
+    border: 1px solid white;
+}
+
+.namedColorWhiteSmoke {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.namedColorYellow {
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.namedColorYellowGreen {
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+}
+

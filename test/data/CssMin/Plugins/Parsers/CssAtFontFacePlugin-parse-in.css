@@ -1,0 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('sansation_light.woff');
+    font-stretch: normal !important;
+    font-style: italic;
+    font-weight: normal;
+    unicode-range: "U+0-10FFFF";
+}

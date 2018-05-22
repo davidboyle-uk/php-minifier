@@ -1,0 +1,29 @@
+/* Hsl colors (using color as use case) */
+.colorHsl {
+    color: hsl(120, 100%, 50%);
+}
+
+.colorHslZeroSaturation {
+    color: hsl(120, 0%, 50%);
+}
+
+.colorHslLowLightness {
+    color: hsl(120, 100%, 5%);
+}
+
+.colorHslZeroHue {
+    color: hsl(0, 100%, 50%);
+}
+
+.colorHslHighHue {
+    color: hsl(360, 100%, 50%);
+}
+
+.colorHslMedHue {
+    color: hsl(200, 100%, 50%);
+}
+
+.colorHsla {
+    color: hsla(120, 100%, 50%, 0.3);
+}
+

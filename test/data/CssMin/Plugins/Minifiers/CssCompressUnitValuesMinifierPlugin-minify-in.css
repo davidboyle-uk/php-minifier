@@ -1,0 +1,73 @@
+/* Css units (using width as use case) */
+.widthAuto {
+    width: auto;
+}
+
+.widthLengthCm {
+    width: 0cm;
+}
+
+.widthLengthMm {
+    width: 0mm;
+}
+
+.widthLengthIn {
+    width: 0in;
+}
+
+.widthLengthPx {
+    width: 0px;
+}
+
+.widthLengthPt {
+    width: 0pt;
+}
+
+.widthLengthPc {
+    width: 0pc;
+}
+
+.widthLengthEm {
+    width: 0em;
+}
+
+.widthLengthEx {
+    width: 0ex;
+}
+
+.widthLengthCh {
+    width: 0ch;
+}
+
+.widthLengthRem {
+    width: 0rem;
+}
+
+.widthLengthVw {
+    width: 0vw;
+}
+
+.widthLengthVh {
+    width: 0vh;
+}
+
+.widthLengthVmin {
+    width: 0vmin;
+}
+
+.widthLengthVmax {
+    width: 0vmax;
+}
+
+.widthLengthPercent {
+    width: 0%;
+}
+
+.widthInitial {
+    width: initial;
+}
+
+.widthInherit {
+    width: inherit;
+}
+

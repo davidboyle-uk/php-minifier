@@ -1,0 +1,37 @@
+/* Simple strings (using content as use case) */
+.stringDoubleQuotes {
+	content: "This string is demarkated by double quotes.";
+}
+
+.stringSingleQuotes {
+	content: 'This string is demarkated by single quotes.';
+}
+
+/* Character escaping */
+.stringEscapedDoubleQuotes {
+	content: "This string also has \22 an escaped double quote.";
+}
+
+.stringEscapedSingleQuotes {
+	content: 'This is a string with \' an escaped single quote.';
+}
+
+.stringEscapedSingleQuotesAlt {
+	content: 'This string also has \27 an escaped single quote.';
+}
+
+.stringEcapedBackslash {
+	content: "This is a string with \\ an escaped backslash.";
+}
+
+/* New line in a string */
+.stringLineBreak {
+	content: "This string has a \Aline break in it.";
+}
+
+/* String spanning two lines of code (these two strings will have identical output) */
+.stringEscapedMultiLineLong {
+	content: "A really long \
+awesome string";
+}
+

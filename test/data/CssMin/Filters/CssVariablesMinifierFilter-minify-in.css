@@ -1,0 +1,8 @@
+.cssVariableDeclaration {
+	--main-bg-color: brown;
+}
+
+.cssVariableUsage {
+	background-color: var(--main-bg-color);
+}
+
