@@ -16,7 +16,7 @@ The best bit is its free and open source under the BSD license.
 Installing PHPMin should only take a minute. Here are your choices:
 
 - Install via composer
-```composer require dbx123/php-minifier```
+```composer require -dev dbx123/php-minifier```
 - Hit the 'Download Zip' button on GitHub.
 https://github.com/dbx123/php-minifier
 
