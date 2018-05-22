@@ -3,7 +3,7 @@
     "description": "A PHP minifier for HTML, CSS and JS files.",
     "type": "library",  
     "keywords": ["minify","min","compress","html","html5","css","css3","js","javascript","phpmin","php","php5","free","open source"],
-	"license": "BSD",
+	"license": "BSD-2-Clause-FreeBSD",
  	"homepage": "https://github.com/dbx123/php-minifier",
 	"authors": [
         {
