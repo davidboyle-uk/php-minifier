@@ -119,8 +119,15 @@ PHPMin is here to reduce filesizes and page load times, parse css
 
 
 ./vendor/bin/phpunit --configuration phpunit.xml
+
 ./vendor/bin/phpunit --configuration phpunit.xml --coverage-html coverage-report
+
 ./vendor/bin/phpunit --configuration phpunit.xml test/CssMin/CssMinTest.php --coverage-html coverage-report
+
 ./vendor/bin/phpunit --configuration phpunit.xml --filter testCssConvertLevel3AtKeyframesMinifierFilterMinification --coverage-html coverage-report
 
+
+
 ./vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 src
+
+
